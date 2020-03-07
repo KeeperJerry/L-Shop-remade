@@ -22,7 +22,17 @@ class SkinValidator
         $ratio = (int)($width / 64);
 
         $validWidth = $width / $ratio === 64;
-        $validHeight = $height / $ratio === 32;
+		
+		// НедоФикс для поддержки скинов 64x64
+		if ($height / $ratio === 32)
+		{
+			$validHeight = $height / $ratio === 32;
+		}
+			
+		if ($height / $ratio === 64)
+		{
+			$validHeight = $height / $ratio === 64;
+		}
 
         return $validWidth && $validHeight;
     }
