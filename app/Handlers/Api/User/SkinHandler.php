@@ -11,6 +11,9 @@ use App\Services\Media\Character\Skin\Image as SkinImage;
 use Intervention\Image\Image;
 use Intervention\Image\ImageManager;
 
+// Знакомая библиотека
+use Illuminate\Support\Facades\DB;
+
 class SkinHandler
 {
     /**
@@ -31,16 +34,20 @@ class SkinHandler
 
     public function front(string $username): Image
     {
+		// Костыль здесь
+		$usersUUID = DB::table('users')->where('username', $username)->value('uuid');
         $this->checkUser($username);
-        $canvas = $this->imageManager->make(SkinImage::absolutePath($username));
+        $canvas = $this->imageManager->make(SkinImage::absolutePath($usersUUID ));
 
         return $this->builder($canvas)->front(256);
     }
 
     public function back(string $username): Image
     {
+		// Костыль здесь
+		$usersUUID = DB::table('users')->where('username', $username)->value('uuid');
         $this->checkUser($username);
-        $canvas = $this->imageManager->make(SkinImage::absolutePath($username));
+        $canvas = $this->imageManager->make(SkinImage::absolutePath($usersUUID));
 
         return $this->builder($canvas)->back(256);
     }

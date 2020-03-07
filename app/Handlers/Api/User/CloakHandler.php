@@ -11,6 +11,9 @@ use App\Services\Media\Character\Cloak\Image as CloakImage;
 use Intervention\Image\Image;
 use Intervention\Image\ImageManager;
 
+// Знакомая библиотека
+use Illuminate\Support\Facades\DB;
+
 class CloakHandler
 {
     /**
@@ -31,22 +34,24 @@ class CloakHandler
 
     public function front(string $username): ?Image
     {
+		$usersUUID = DB::table('users')->where('username', $username)->value('uuid');
         $this->checkUser($username);
         if (!CloakImage::exists($username)) {
             return null;
         }
-        $canvas = $this->imageManager->make(CloakImage::absolutePath($username));
+        $canvas = $this->imageManager->make(CloakImage::absolutePath($usersUUID));
 
         return $this->builder($canvas)->front(256);
     }
 
     public function back(string $username): ?Image
     {
+		$usersUUID = DB::table('users')->where('username', $username)->value('uuid');
         $this->checkUser($username);
         if (!CloakImage::exists($username)) {
             return null;
         }
-        $canvas = $this->imageManager->make(CloakImage::absolutePath($username));
+        $canvas = $this->imageManager->make(CloakImage::absolutePath($usersUUID));
 
         return $this->builder($canvas)->back(256);
     }
