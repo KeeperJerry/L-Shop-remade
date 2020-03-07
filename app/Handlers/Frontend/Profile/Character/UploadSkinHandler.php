@@ -16,6 +16,9 @@ use Intervention\Image\Image;
 use Intervention\Image\ImageManager;
 use Symfony\Component\HttpFoundation\File\Exception\FileException;
 
+// Добавляем класс для обращения в БД (UUID нету в функциях)
+use Illuminate\Support\Facades\DB;
+
 class UploadSkinHandler
 {
     /**
@@ -106,6 +109,8 @@ class UploadSkinHandler
      */
     private function move(Image $image): void
     {
-        $image->save(SkinImage::getAbsolutePath($this->auth->getUser()->getUsername()));
+		// Привет костыли, помните меня?
+		$usersUUID = DB::table('users')->where('username', $this->auth->getUser()->getUsername())->value('uuid');
+        $image->save(SkinImage::getAbsolutePath($usersUUID));
     }
 }

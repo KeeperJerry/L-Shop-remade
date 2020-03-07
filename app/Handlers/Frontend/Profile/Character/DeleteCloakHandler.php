@@ -7,6 +7,9 @@ use App\Services\Auth\Auth;
 use App\Services\Media\Character\Cloak\Image;
 use Illuminate\Filesystem\Filesystem;
 
+// Знакомая библиотека
+use Illuminate\Support\Facades\DB;
+
 class DeleteCloakHandler
 {
     /**
@@ -27,11 +30,13 @@ class DeleteCloakHandler
 
     public function handle(): bool
     {
-        $username = $this->auth->getUser()->getUsername();
-        if (!Image::exists($username)) {
+		// Почемы бы и нет?
+		$usersUUID = DB::table('users')->where('username', $this->auth->getUser()->getUsername())->value('uuid');
+        // $username = $this->auth->getUser()->getUsername();
+        if (!Image::exists($usersUUID)) {
             return false;
         }
 
-        return $this->filesystem->delete(Image::absolutePath($username));
+        return $this->filesystem->delete(Image::absolutePath($usersUUID));
     }
 }
