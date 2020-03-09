@@ -27,10 +27,21 @@ class DefaultApplicator implements Applicator
     private $smallSegment;
 
     public function __construct(Image $canvas)
-    {
-        $this->canvas = $canvas;
-        $this->segment = $canvas->height() / 4;
-        $this->smallSegment = $canvas->height() / 8;
+    {	
+        $this->canvas = $canvas;		
+		$ratio = (int)($canvas->width() / 64);
+		
+		if ($canvas->height() / $ratio === 32)
+		{
+			$this->segment = $canvas->height() / 4;
+			$this->smallSegment = $canvas->height() / 8;
+		}
+		
+		if ($canvas->height() / $ratio === 64)
+		{
+			$this->segment = $canvas->height() / 8;
+			$this->smallSegment = $canvas->height() / 16;
+		}
     }
 
     /**
