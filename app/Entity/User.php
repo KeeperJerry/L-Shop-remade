@@ -227,7 +227,10 @@ class User implements HasRoles, HasPermissions
      */
     public function getBalance(): float
     {
-        return $this->balance;
+		// Мать ебал эти сессии
+		$result = DB::selectOne('SELECT balance FROM cabinet_users WHERE username = ?', [ $this->getUsername() ]);
+        return $result->balance;
+		//return $this->balance;
     }
 
     /**
