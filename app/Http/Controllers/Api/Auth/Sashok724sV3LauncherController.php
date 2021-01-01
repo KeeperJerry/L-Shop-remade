@@ -1,15 +1,15 @@
 <?php
 declare(strict_types = 1);
 
-namespace App\Http\Controllers\Api\Auth;
+namespace app\Http\Controllers\Api\Auth;
 
-use App\Exceptions\Api\InvalidIpAddressException;
-use App\Exceptions\ForbiddenException;
-use App\Handlers\Api\Auth\Sashok724sV3Handler;
-use App\Http\Controllers\Controller;
-use App\Services\Auth\Exceptions\BannedException;
-use App\Services\Auth\Exceptions\NotActivatedException;
-use App\Services\Auth\Exceptions\ThrottlingException;
+use app\Exceptions\Api\InvalidIpAddressException;
+use app\Exceptions\ForbiddenException;
+use app\Handlers\Api\Auth\Sashok724sV3Handler;
+use app\Http\Controllers\Controller;
+use app\Services\Auth\Exceptions\BannedException;
+use app\Services\Auth\Exceptions\NotActivatedException;
+use app\Services\Auth\Exceptions\ThrottlingException;
 use Illuminate\Http\Request;
 use Illuminate\Http\Response;
 

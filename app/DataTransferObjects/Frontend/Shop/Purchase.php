@@ -1,9 +1,9 @@
 <?php
 declare(strict_types = 1);
 
-namespace App\DataTransferObjects\Frontend\Shop;
+namespace app\DataTransferObjects\Frontend\Shop;
 
-use App\Entity\Product;
+use app\Entity\Product;
 
 class Purchase
 {

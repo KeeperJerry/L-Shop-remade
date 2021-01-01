@@ -1,10 +1,10 @@
 <?php
 declare(strict_types = 1);
 
-namespace App\Listeners\Auth;
+namespace app\Listeners\Auth;
 
-use App\Events\Auth\RegistrationSuccessfulEvent;
-use App\Services\User\RolesInitializer;
+use app\Events\Auth\RegistrationSuccessfulEvent;
+use app\Services\User\RolesInitializer;
 
 class AttachDefaultRoles
 {

@@ -1,16 +1,16 @@
 <?php
 declare(strict_types = 1);
 
-namespace App\Services\Auth;
+namespace app\Services\Auth;
 
-use App\Entity\Reminder as Entity;
-use App\Entity\User;
-use App\Events\Auth\PasswordReminderCreatedEvent;
-use App\Repository\Reminder\ReminderRepository;
-use App\Repository\User\UserRepository;
-use App\Services\Auth\Generators\CodeGenerator;
-use App\Services\Auth\Hashing\Hasher;
-use App\Services\DateTime\DateTimeUtil;
+use app\Entity\Reminder as Entity;
+use app\Entity\User;
+use app\Events\Auth\PasswordReminderCreatedEvent;
+use app\Repository\Reminder\ReminderRepository;
+use app\Repository\User\UserRepository;
+use app\Services\Auth\Generators\CodeGenerator;
+use app\Services\Auth\Hashing\Hasher;
+use app\Services\DateTime\DateTimeUtil;
 use Illuminate\Contracts\Config\Repository;
 use Illuminate\Contracts\Events\Dispatcher;
 use Illuminate\Http\Request;

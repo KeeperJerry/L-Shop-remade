@@ -1,12 +1,12 @@
 <?php
 declare(strict_types = 1);
 
-namespace App\DataTransferObjects\Admin\Statistic\Purchases;
+namespace app\DataTransferObjects\Admin\Statistic\Purchases;
 
-use App\DataTransferObjects\Frontend\Profile\Purchases\Item;
-use App\Entity\Purchase as Entity;
-use App\Services\DateTime\Formatting\JavaScriptFormatter;
-use App\Services\Purchasing\ViaContext;
+use app\DataTransferObjects\Frontend\Profile\Purchases\Item;
+use app\Entity\Purchase as Entity;
+use app\Services\DateTime\Formatting\JavaScriptFormatter;
+use app\Services\Purchasing\ViaContext;
 
 class Purchase implements \JsonSerializable
 {

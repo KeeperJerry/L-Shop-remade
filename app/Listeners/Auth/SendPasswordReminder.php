@@ -1,10 +1,10 @@
 <?php
 declare(strict_types = 1);
 
-namespace App\Listeners\Auth;
+namespace app\Listeners\Auth;
 
-use App\Events\Auth\PasswordReminderCreatedEvent;
-use App\Mail\Auth\Reminder;
+use app\Events\Auth\PasswordReminderCreatedEvent;
+use app\Mail\Auth\Reminder;
 use Illuminate\Contracts\Mail\Mailer;
 
 class SendPasswordReminder

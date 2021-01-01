@@ -1,15 +1,15 @@
 <?php
 declare(strict_types = 1);
 
-namespace App\Http\Controllers\Frontend\Profile;
+namespace app\Http\Controllers\Frontend\Profile;
 
-use App\Handlers\Frontend\Profile\Purchases\PaginationHandler;
-use App\Http\Controllers\Controller;
-use App\Services\Auth\Permissions;
-use App\Services\Response\JsonResponse;
-use App\Services\Response\Status;
+use app\Handlers\Frontend\Profile\Purchases\PaginationHandler;
+use app\Http\Controllers\Controller;
+use app\Services\Auth\Permissions;
+use app\Services\Response\JsonResponse;
+use app\Services\Response\Status;
 use Illuminate\Http\Request;
-use function App\permission_middleware;
+use function app\permission_middleware;
 
 /**
  * Class PurchasesController

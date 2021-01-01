@@ -1,12 +1,12 @@
 <?php
 declare(strict_types = 1);
 
-namespace App\Services\Auth;
+namespace app\Services\Auth;
 
-use App\Entity\Ban;
-use App\Entity\User;
-use App\Repository\User\UserRepository;
-use App\Services\DateTime\DateTimeUtil;
+use app\Entity\Ban;
+use app\Entity\User;
+use app\Repository\User\UserRepository;
+use app\Services\DateTime\DateTimeUtil;
 
 class DefaultBanManager implements BanManager
 {

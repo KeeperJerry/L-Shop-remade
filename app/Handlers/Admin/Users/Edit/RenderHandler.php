@@ -1,23 +1,23 @@
 <?php
 declare(strict_types = 1);
 
-namespace App\Handlers\Admin\Users\Edit;
+namespace app\Handlers\Admin\Users\Edit;
 
-use App\DataTransferObjects\Admin\Users\Edit\RenderResult;
-use App\DataTransferObjects\Admin\Users\Edit\User;
-use App\Entity\Permission;
-use App\Entity\Role;
-use App\Exceptions\User\UserNotFoundException;
-use App\Repository\Permission\PermissionRepository;
-use App\Repository\Role\RoleRepository;
-use App\Repository\User\UserRepository;
-use App\Services\Auth\Activator;
-use App\Services\Auth\Auth;
-use App\Services\Auth\BanManager;
-use App\Services\Auth\Permissions;
-use App\Services\DateTime\Formatting\JavaScriptFormatter;
-use App\Services\Media\Character\Cloak\Image as CloakImage;
-use App\Services\Media\Character\Skin\Image as SkinImage;
+use app\DataTransferObjects\Admin\Users\Edit\RenderResult;
+use app\DataTransferObjects\Admin\Users\Edit\User;
+use app\Entity\Permission;
+use app\Entity\Role;
+use app\Exceptions\User\UserNotFoundException;
+use app\Repository\Permission\PermissionRepository;
+use app\Repository\Role\RoleRepository;
+use app\Repository\User\UserRepository;
+use app\Services\Auth\Activator;
+use app\Services\Auth\Auth;
+use app\Services\Auth\BanManager;
+use app\Services\Auth\Permissions;
+use app\Services\DateTime\Formatting\JavaScriptFormatter;
+use app\Services\Media\Character\Cloak\Image as CloakImage;
+use app\Services\Media\Character\Skin\Image as SkinImage;
 
 class RenderHandler
 {

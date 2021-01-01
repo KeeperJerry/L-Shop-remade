@@ -1,17 +1,17 @@
 <?php
 declare(strict_types = 1);
 
-namespace App\Http\Controllers\Frontend\Shop;
+namespace app\Http\Controllers\Frontend\Shop;
 
-use App\Exceptions\Payer\InvalidPaymentDataException;
-use App\Exceptions\Payer\PayerNotFoundException;
-use App\Exceptions\Purchase\AlreadyCompletedException;
-use App\Exceptions\Purchase\PurchaseNotFoundException;
-use App\Handlers\Frontend\Shop\Payment\ResultHandler;
-use App\Http\Controllers\Controller;
-use App\Services\Notification\Notifications\Info;
-use App\Services\Notification\Notifications\Success;
-use App\Services\Notification\Notificator;
+use app\Exceptions\Payer\InvalidPaymentDataException;
+use app\Exceptions\Payer\PayerNotFoundException;
+use app\Exceptions\Purchase\AlreadyCompletedException;
+use app\Exceptions\Purchase\PurchaseNotFoundException;
+use app\Handlers\Frontend\Shop\Payment\ResultHandler;
+use app\Http\Controllers\Controller;
+use app\Services\Notification\Notifications\Info;
+use app\Services\Notification\Notifications\Success;
+use app\Services\Notification\Notificator;
 use Illuminate\Contracts\Config\Repository;
 use Illuminate\Http\RedirectResponse;
 use Illuminate\Http\Request;

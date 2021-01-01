@@ -1,10 +1,10 @@
 <?php
 declare(strict_types = 1);
 
-namespace App\Handlers\Admin\News;
+namespace app\Handlers\Admin\News;
 
-use App\Exceptions\News\NewsNotFoundException;
-use App\Repository\News\NewsRepository;
+use app\Exceptions\News\NewsNotFoundException;
+use app\Repository\News\NewsRepository;
 
 class DeleteHandler
 {

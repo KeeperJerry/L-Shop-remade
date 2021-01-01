@@ -1,12 +1,12 @@
 <?php
 declare(strict_types = 1);
 
-namespace App\Providers;
+namespace app\Providers;
 
-use App\Services\Game\Colorizers\Colorizer;
-use App\Services\Game\Colorizers\HtmlColorizer;
-use App\Services\Game\Permissions\LuckPerms\Storage as LuckPermsStorage;
-use App\Services\Game\Permissions\Storage;
+use app\Services\Game\Colorizers\Colorizer;
+use app\Services\Game\Colorizers\HtmlColorizer;
+use app\Services\Game\Permissions\LuckPerms\Storage as LuckPermsStorage;
+use app\Services\Game\Permissions\Storage;
 use Illuminate\Support\ServiceProvider;
 
 class GameServiceProvider extends ServiceProvider

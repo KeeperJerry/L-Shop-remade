@@ -1,10 +1,10 @@
 <?php
 declare(strict_types = 1);
 
-namespace App\Handlers\Admin\Users\Edit;
+namespace app\Handlers\Admin\Users\Edit;
 
-use App\Exceptions\Ban\BanNotFoundException;
-use App\Repository\Ban\BanRepository;
+use app\Exceptions\Ban\BanNotFoundException;
+use app\Repository\Ban\BanRepository;
 
 class DeleteBanHandler
 {

@@ -3,10 +3,10 @@ declare(strict_types = 1);
 
 namespace Tests\Feature\Frontend\Auth;
 
-use App\Repository\User\UserRepository;
-use App\Services\Auth\Checkpoint\Pool;
-use App\Services\Auth\Reminder;
-use App\Services\Response\Status;
+use app\Repository\User\UserRepository;
+use app\Services\Auth\Checkpoint\Pool;
+use app\Services\Auth\Reminder;
+use app\Services\Response\Status;
 use Tests\TestCase;
 
 class ResetPasswordTest extends TestCase

@@ -1,7 +1,7 @@
 <?php
 declare(strict_types=1);
 
-namespace App\DataTransferObjects\Admin\Items\Add;
+namespace app\DataTransferObjects\Admin\Items\Add;
 
 use Illuminate\Http\UploadedFile;
 

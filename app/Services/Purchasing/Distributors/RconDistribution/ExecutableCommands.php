@@ -1,7 +1,7 @@
 <?php
 declare(strict_types = 1);
 
-namespace App\Services\Purchasing\Distributors\RconDistribution;
+namespace app\Services\Purchasing\Distributors\RconDistribution;
 
 class ExecutableCommands
 {

@@ -1,7 +1,7 @@
 <?php
 declare(strict_typesr = 1);
 
-namespace App\Repository\PurchaseItem;
+namespace app\Repository\PurchaseItem;
 
 interface PurchaseItemRepository
 {

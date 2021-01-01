@@ -1,13 +1,13 @@
 <?php
 declare(strict_types = 1);
 
-namespace App\Handlers\Api\Auth;
+namespace app\Handlers\Api\Auth;
 
-use App\Exceptions\Api\InvalidIpAddressException;
-use App\Exceptions\ForbiddenException;
-use App\Services\Auth\Auth;
-use App\Services\Settings\DataType;
-use App\Services\Settings\Settings;
+use app\Exceptions\Api\InvalidIpAddressException;
+use app\Exceptions\ForbiddenException;
+use app\Services\Auth\Auth;
+use app\Services\Settings\DataType;
+use app\Services\Settings\Settings;
 use Psr\Log\LoggerInterface;
 
 class Sashok724sV3Handler

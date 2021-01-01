@@ -1,9 +1,9 @@
 <?php
 declare(strict_types = 1);
 
-namespace App\DataTransferObjects\Admin\Control\Api;
+namespace app\DataTransferObjects\Admin\Control\Api;
 
-use App\Services\Response\JsonRespondent;
+use app\Services\Response\JsonRespondent;
 
 class VisitResult implements JsonRespondent
 {

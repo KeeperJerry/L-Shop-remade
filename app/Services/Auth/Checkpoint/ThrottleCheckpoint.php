@@ -1,12 +1,12 @@
 <?php
 declare(strict_types = 1);
 
-namespace App\Services\Auth\Checkpoint;
+namespace app\Services\Auth\Checkpoint;
 
-use App\Entity\User;
-use App\Repository\Throttle\ThrottleRepository;
-use App\Services\Auth\Exceptions\ThrottlingException;
-use App\Services\Auth\ThrottlingManager;
+use app\Entity\User;
+use app\Repository\Throttle\ThrottleRepository;
+use app\Services\Auth\Exceptions\ThrottlingException;
+use app\Services\Auth\ThrottlingManager;
 
 class ThrottleCheckpoint implements Checkpoint
 {

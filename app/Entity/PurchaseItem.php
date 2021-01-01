@@ -1,7 +1,7 @@
 <?php
 declare(strict_types = 1);
 
-namespace App\Entity;
+namespace app\Entity;
 
 use Doctrine\ORM\Mapping as ORM;
 
@@ -19,7 +19,7 @@ class PurchaseItem
     private $id;
 
     /**
-     * @ORM\ManyToOne(targetEntity="App\Entity\Product")
+     * @ORM\ManyToOne(targetEntity="app\Entity\Product")
      * @ORM\JoinColumn(name="product_id", referencedColumnName="id", onDelete="CASCADE")
      */
     private $product;
@@ -30,7 +30,7 @@ class PurchaseItem
     private $amount;
 
     /**
-     * @ORM\ManyToOne(targetEntity="App\Entity\Purchase", inversedBy="items")
+     * @ORM\ManyToOne(targetEntity="app\Entity\Purchase", inversedBy="items")
      * @ORM\JoinColumn(name="purchase_id", referencedColumnName="id", onDelete="CASCADE")
      */
     private $purchase;

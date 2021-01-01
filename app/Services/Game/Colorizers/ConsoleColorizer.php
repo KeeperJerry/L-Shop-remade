@@ -1,9 +1,9 @@
 <?php
 declare(strict_types = 1);
 
-namespace App\Services\Game\Colorizers;
+namespace app\Services\Game\Colorizers;
 
-use App\Services\Support\AnsiColors;
+use app\Services\Support\AnsiColors;
 
 /**
  * Class ConsoleColorizer

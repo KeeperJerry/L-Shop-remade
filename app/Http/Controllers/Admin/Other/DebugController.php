@@ -1,17 +1,17 @@
 <?php
 declare(strict_types = 1);
 
-namespace App\Http\Controllers\Admin\Other;
+namespace app\Http\Controllers\Admin\Other;
 
-use App\Handlers\Admin\Other\SendTestEmailHandler;
-use App\Http\Controllers\Controller;
-use App\Http\Requests\Admin\Other\SendTestEmailRequest;
-use App\Services\Auth\Permissions;
-use App\Services\Response\JsonResponse;
-use App\Services\Response\Status;
+use app\Handlers\Admin\Other\SendTestEmailHandler;
+use app\Http\Controllers\Controller;
+use app\Http\Requests\Admin\Other\SendTestEmailRequest;
+use app\Services\Auth\Permissions;
+use app\Services\Response\JsonResponse;
+use app\Services\Response\Status;
 use Illuminate\Http\Response;
 use Psr\Log\LoggerInterface;
-use function App\permission_middleware;
+use function app\permission_middleware;
 
 class DebugController extends Controller
 {

@@ -1,7 +1,7 @@
 <?php
 declare(strict_types = 1);
 
-namespace App\Services\Game\Permissions\LuckPerms\Entity;
+namespace app\Services\Game\Permissions\LuckPerms\Entity;
 
 use Doctrine\ORM\Mapping as ORM;
 use Ramsey\Uuid\Uuid;

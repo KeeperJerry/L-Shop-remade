@@ -1,10 +1,10 @@
 <?php
 declare(strict_types=1);
 
-namespace App\Services\Purchasing\Payments\Interkassa;
+namespace app\Services\Purchasing\Payments\Interkassa;
 
-use App\Exceptions\RuntimeException;
-use App\Exceptions\UnexpectedValueException;
+use app\Exceptions\RuntimeException;
+use app\Exceptions\UnexpectedValueException;
 
 class Checkout
 {

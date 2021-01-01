@@ -1,10 +1,10 @@
 <?php
 declare(strict_types = 1);
 
-namespace App\Handlers\Consoe\User;
+namespace app\Handlers\Consoe\User;
 
-use App\Exceptions\User\UserNotFoundException;
-use App\Repository\User\UserRepository;
+use app\Exceptions\User\UserNotFoundException;
+use app\Repository\User\UserRepository;
 
 class DeleteHandler
 {

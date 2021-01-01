@@ -1,9 +1,9 @@
 <?php
 declare(strict_types = 1);
 
-namespace App\Repository\User;
+namespace app\Repository\User;
 
-use App\Entity\User;
+use app\Entity\User;
 use Doctrine\ORM\Internal\Hydration\IterableResult;
 use Illuminate\Contracts\Pagination\LengthAwarePaginator;
 

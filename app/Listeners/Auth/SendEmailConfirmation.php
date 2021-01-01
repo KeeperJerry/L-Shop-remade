@@ -1,12 +1,12 @@
 <?php
 declare(strict_types = 1);
 
-namespace App\Listeners\Auth;
+namespace app\Listeners\Auth;
 
-use App\Events\Auth\RegistrationSuccessfulEvent;
-use App\Mail\Auth\Confirmation;
-use App\Services\Auth\Activator;
-use App\Services\Auth\Checkpoint\Pool;
+use app\Events\Auth\RegistrationSuccessfulEvent;
+use app\Mail\Auth\Confirmation;
+use app\Services\Auth\Activator;
+use app\Services\Auth\Checkpoint\Pool;
 use Illuminate\Contracts\Mail\Mailer;
 
 class SendEmailConfirmation

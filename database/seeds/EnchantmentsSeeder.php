@@ -1,9 +1,9 @@
 <?php
 declare(strict_types = 1);
 
-use App\Entity\Enchantment;
-use App\Repository\Enchantment\EnchantmentRepository;
-use App\Services\Item\Enchantment\Enchantments;
+use app\Entity\Enchantment;
+use app\Repository\Enchantment\EnchantmentRepository;
+use app\Services\Item\Enchantment\Enchantments;
 use Illuminate\Database\Seeder;
 
 class EnchantmentsSeeder extends Seeder

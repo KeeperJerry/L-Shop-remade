@@ -1,19 +1,19 @@
 <?php
 declare(strict_types = 1);
 
-namespace App\Http\Controllers\Frontend\Shop;
+namespace app\Http\Controllers\Frontend\Shop;
 
-use App\Handlers\Frontend\Shop\ReplenishmentHandler;
-use App\Http\Controllers\Controller;
-use App\Http\Middleware\Captcha as CaptchaMiddleware;
-use App\Http\Requests\Frontend\Shop\BalanceReplenishmentRequest;
-use App\Services\Auth\AccessMode;
-use App\Services\Response\JsonResponse;
-use App\Services\Response\Status;
-use App\Services\Security\Captcha\Captcha;
-use App\Services\Settings\DataType;
-use App\Services\Settings\Settings;
-use function App\auth_middleware;
+use app\Handlers\Frontend\Shop\ReplenishmentHandler;
+use app\Http\Controllers\Controller;
+use app\Http\Middleware\Captcha as CaptchaMiddleware;
+use app\Http\Requests\Frontend\Shop\BalanceReplenishmentRequest;
+use app\Services\Auth\AccessMode;
+use app\Services\Response\JsonResponse;
+use app\Services\Response\Status;
+use app\Services\Security\Captcha\Captcha;
+use app\Services\Settings\DataType;
+use app\Services\Settings\Settings;
+use function app\auth_middleware;
 
 class ReplenishmentController extends Controller
 {

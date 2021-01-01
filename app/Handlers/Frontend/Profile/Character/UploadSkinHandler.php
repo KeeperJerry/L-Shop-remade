@@ -1,16 +1,16 @@
 <?php
 declare(strict_types = 1);
 
-namespace App\Handlers\Frontend\Profile\Character;
+namespace app\Handlers\Frontend\Profile\Character;
 
-use App\Exceptions\ForbiddenException;
-use App\Exceptions\Media\Character\InvalidRatioException;
-use App\Exceptions\Media\Character\InvalidResolutionException;
-use App\Services\Auth\Auth;
-use App\Services\Media\Character\Skin\Accessor;
-use App\Services\Media\Character\Skin\Image as SkinImage;
-use App\Services\Media\Character\Skin\Resolution;
-use App\Services\Validation\SkinValidator;
+use app\Exceptions\ForbiddenException;
+use app\Exceptions\Media\Character\InvalidRatioException;
+use app\Exceptions\Media\Character\InvalidResolutionException;
+use app\Services\Auth\Auth;
+use app\Services\Media\Character\Skin\Accessor;
+use app\Services\Media\Character\Skin\Image as SkinImage;
+use app\Services\Media\Character\Skin\Resolution;
+use app\Services\Validation\SkinValidator;
 use Illuminate\Http\UploadedFile;
 use Intervention\Image\Image;
 use Intervention\Image\ImageManager;

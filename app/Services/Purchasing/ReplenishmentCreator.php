@@ -1,13 +1,13 @@
 <?php
 declare(strict_types = 1);
 
-namespace App\Services\Purchasing;
+namespace app\Services\Purchasing;
 
-use App\Entity\Purchase;
-use App\Entity\User;
-use App\Events\Purchase\PurchaseCreatedEvent;
-use App\Repository\Purchase\PurchaseRepository;
-use App\Services\User\Balance\Transactor;
+use app\Entity\Purchase;
+use app\Entity\User;
+use app\Events\Purchase\PurchaseCreatedEvent;
+use app\Repository\Purchase\PurchaseRepository;
+use app\Services\User\Balance\Transactor;
 use Illuminate\Events\Dispatcher;
 
 class ReplenishmentCreator

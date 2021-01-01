@@ -1,9 +1,9 @@
 <?php
 declare(strict_types = 1);
 
-namespace App\Handlers\Admin\Control\Optimization;
+namespace app\Handlers\Admin\Control\Optimization;
 
-use App\Services\Caching\ClearsCache;
+use app\Services\Caching\ClearsCache;
 use Doctrine\ORM\EntityManagerInterface;
 use Illuminate\Contracts\Console\Kernel;
 

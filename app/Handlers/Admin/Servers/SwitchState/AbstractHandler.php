@@ -1,10 +1,10 @@
 <?php
 declare(strict_types = 1);
 
-namespace App\Handlers\Admin\Servers\SwitchState;
+namespace app\Handlers\Admin\Servers\SwitchState;
 
-use App\Exceptions\Server\ServerNotFoundException;
-use App\Repository\Server\ServerRepository;
+use app\Exceptions\Server\ServerNotFoundException;
+use app\Repository\Server\ServerRepository;
 
 abstract class AbstractHandler
 {

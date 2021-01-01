@@ -1,14 +1,14 @@
 <?php
 declare(strict_types = 1);
 
-namespace App\Http\Controllers\Frontend\Shop;
+namespace app\Http\Controllers\Frontend\Shop;
 
-use App\Exceptions\ForbiddenException;
-use App\Exceptions\Purchase\PurchaseNotFoundException;
-use App\Handlers\Frontend\Shop\Payment\VisitHandler;
-use App\Http\Controllers\Controller;
-use App\Services\Response\JsonResponse;
-use App\Services\Response\Status;
+use app\Exceptions\ForbiddenException;
+use app\Exceptions\Purchase\PurchaseNotFoundException;
+use app\Handlers\Frontend\Shop\Payment\VisitHandler;
+use app\Http\Controllers\Controller;
+use app\Services\Response\JsonResponse;
+use app\Services\Response\Status;
 use Illuminate\Http\Request;
 use Illuminate\Http\Response;
 

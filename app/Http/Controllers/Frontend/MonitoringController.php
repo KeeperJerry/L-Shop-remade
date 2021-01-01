@@ -1,12 +1,12 @@
 <?php
 declare(strict_types = 1);
 
-namespace App\Http\Controllers\Frontend;
+namespace app\Http\Controllers\Frontend;
 
-use App\Handlers\Api\MonitoringHandler;
-use App\Http\Controllers\Controller;
-use App\Services\Response\JsonResponse;
-use App\Services\Response\Status;
+use app\Handlers\Api\MonitoringHandler;
+use app\Http\Controllers\Controller;
+use app\Services\Response\JsonResponse;
+use app\Services\Response\Status;
 
 /**
  * Class MonitoringController

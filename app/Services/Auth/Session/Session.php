@@ -1,9 +1,9 @@
 <?php
 declare(strict_types = 1);
 
-namespace App\Services\Auth\Session;
+namespace app\Services\Auth\Session;
 
-use App\Entity\User;
+use app\Entity\User;
 
 /**
  * Class Session

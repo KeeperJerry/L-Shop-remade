@@ -1,9 +1,9 @@
 <?php
 declare(strict_types = 1);
 
-namespace App\Services\Settings;
+namespace app\Services\Settings;
 
-use App\Services\Settings\Repository\Repository;
+use app\Services\Settings\Repository\Repository;
 
 class Driver
 {

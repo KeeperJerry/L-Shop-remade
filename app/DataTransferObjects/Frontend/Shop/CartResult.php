@@ -1,12 +1,12 @@
 <?php
 declare(strict_types = 1);
 
-namespace App\DataTransferObjects\Frontend\Shop;
+namespace app\DataTransferObjects\Frontend\Shop;
 
-use App\DataTransferObjects\Frontend\Shop\Catalog\Enchantment;
-use App\Services\Cart\Item;
-use App\Services\Item\Image\Image;
-use App\Services\Item\Type;
+use app\DataTransferObjects\Frontend\Shop\Catalog\Enchantment;
+use app\Services\Cart\Item;
+use app\Services\Item\Image\Image;
+use app\Services\Item\Type;
 
 class CartResult implements \JsonSerializable
 {

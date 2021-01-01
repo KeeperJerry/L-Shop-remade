@@ -1,6 +1,6 @@
 <?php
 
-namespace App\DataTransferObjects\Admin\Servers\Edit;
+namespace app\DataTransferObjects\Admin\Servers\Edit;
 
 class Edit
 {

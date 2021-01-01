@@ -1,11 +1,11 @@
 <?php
 declare(strict_types = 1);
 
-namespace App\DataTransferObjects\Admin\Users;
+namespace app\DataTransferObjects\Admin\Users;
 
-use App\Services\Auth\Activator;
-use App\Services\Auth\BanManager;
-use App\Services\Response\JsonRespondent;
+use app\Services\Auth\Activator;
+use app\Services\Auth\BanManager;
+use app\Services\Response\JsonRespondent;
 use Illuminate\Contracts\Pagination\LengthAwarePaginator;
 
 class ListResult implements JsonRespondent

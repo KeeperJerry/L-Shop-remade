@@ -1,9 +1,9 @@
 <?php
 declare(strict_types = 1);
 
-namespace App\Services\Game\Permissions\LuckPerms\Entity;
+namespace app\Services\Game\Permissions\LuckPerms\Entity;
 
-use App\Entity\User;
+use app\Entity\User;
 use Doctrine\Common\Collections\ArrayCollection;
 use Doctrine\Common\Collections\Collection;
 use Doctrine\ORM\Mapping as ORM;
@@ -27,7 +27,7 @@ class Player
     private $username;
 
     /**
-     * @ORM\ManyToOne(targetEntity="App\Services\Game\Permissions\LuckPerms\Entity\Group")
+     * @ORM\ManyToOne(targetEntity="app\Services\Game\Permissions\LuckPerms\Entity\Group")
      * @ORM\JoinColumns({
      *   @ORM\JoinColumn(name="primary_group", referencedColumnName="name")
      * })
@@ -35,7 +35,7 @@ class Player
     private $primaryGroup;
 
     /**
-     * @ORM\OneToMany(targetEntity="App\Services\Game\Permissions\LuckPerms\Entity\PlayerPermission", mappedBy="player", cascade={"persist"}, orphanRemoval=true)
+     * @ORM\OneToMany(targetEntity="app\Services\Game\Permissions\LuckPerms\Entity\PlayerPermission", mappedBy="player", cascade={"persist"}, orphanRemoval=true)
      * @ORM\JoinColumns({
      *   @ORM\JoinColumn(name="uuid", referencedColumnName="uuid")
      * })

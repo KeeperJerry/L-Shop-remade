@@ -1,7 +1,7 @@
 <?php
 declare(strict_types = 1);
 
-namespace App\Services\Auth\Acl;
+namespace app\Services\Auth\Acl;
 
 use Doctrine\Common\Collections\Collection;
 

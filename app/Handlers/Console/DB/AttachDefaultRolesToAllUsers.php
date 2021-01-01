@@ -1,11 +1,11 @@
 <?php
 declare(strict_types = 1);
 
-namespace App\Handlers\Console\DB;
+namespace app\Handlers\Console\DB;
 
-use App\Repository\User\UserRepository;
-use App\Services\Database\GarbageCollection\GarbageCollector;
-use App\Services\User\RolesInitializer;
+use app\Repository\User\UserRepository;
+use app\Services\Database\GarbageCollection\GarbageCollector;
+use app\Services\User\RolesInitializer;
 
 class AttachDefaultRolesToAllUsers
 {

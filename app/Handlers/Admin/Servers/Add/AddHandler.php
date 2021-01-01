@@ -1,14 +1,14 @@
 <?php
 declare(strict_types = 1);
 
-namespace App\Handlers\Admin\Servers\Add;
+namespace app\Handlers\Admin\Servers\Add;
 
-use App\DataTransferObjects\Admin\Servers\Add\Add;
-use App\Entity\Category;
-use App\Entity\Server;
-use App\Events\Server\ServerCreatedEvent;
-use App\Exceptions\Distributor\DistributorNotFoundException;
-use App\Repository\Server\ServerRepository;
+use app\DataTransferObjects\Admin\Servers\Add\Add;
+use app\Entity\Category;
+use app\Entity\Server;
+use app\Events\Server\ServerCreatedEvent;
+use app\Exceptions\Distributor\DistributorNotFoundException;
+use app\Repository\Server\ServerRepository;
 use Illuminate\Contracts\Config\Repository;
 use Illuminate\Contracts\Events\Dispatcher;
 

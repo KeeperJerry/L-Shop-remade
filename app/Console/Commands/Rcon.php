@@ -1,11 +1,11 @@
 <?php
 declare(strict_types = 1);
 
-namespace App\Console\Commands;
+namespace app\Console\Commands;
 
-use App\Console\Command;
-use App\Entity\Server;
-use App\Repository\Server\ServerRepository;
+use app\Console\Command;
+use app\Entity\Server;
+use app\Repository\Server\ServerRepository;
 use D3lph1\MinecraftRconManager\Connector;
 use D3lph1\MinecraftRconManager\Exceptions\RuntimeException;
 

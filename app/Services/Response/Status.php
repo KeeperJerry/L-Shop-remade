@@ -1,12 +1,12 @@
 <?php
 declare(strict_types = 1);
 
-namespace App\Services\Response;
+namespace app\Services\Response;
 
 /**
  * Class Status
  * The class contains constants that should be used as the response status for the
- * {@see \App\Services\Infrastructure\Response\JsonResponse} class. It is
+ * {@see \app\Services\Infrastructure\Response\JsonResponse} class. It is
  * recommended that, together with the status of the text, use http
  * response statuses.
  */

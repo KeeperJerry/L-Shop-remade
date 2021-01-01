@@ -1,11 +1,11 @@
 <?php
 declare(strict_types = 1);
 
-namespace App\Http\Requests\Admin\Users\Edit;
+namespace app\Http\Requests\Admin\Users\Edit;
 
-use App\Handlers\Admin\Users\Edit\AddBanHandler;
-use App\Services\Validation\Rule;
-use App\Services\Validation\RulesBuilder;
+use app\Handlers\Admin\Users\Edit\AddBanHandler;
+use app\Services\Validation\Rule;
+use app\Services\Validation\RulesBuilder;
 use Illuminate\Foundation\Http\FormRequest;
 
 class AddBanRequest extends FormRequest

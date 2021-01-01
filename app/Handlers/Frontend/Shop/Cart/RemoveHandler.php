@@ -1,15 +1,15 @@
 <?php
 declare(strict_types = 1);
 
-namespace App\Handlers\Frontend\Shop\Cart;
+namespace app\Handlers\Frontend\Shop\Cart;
 
-use App\Exceptions\ForbiddenException;
-use App\Exceptions\Product\ProductNotFoundException;
-use App\Repository\Product\ProductRepository;
-use App\Services\Auth\Auth;
-use App\Services\Cart\Cart;
-use App\Services\Cart\Item;
-use App\Services\Server\ServerAccess;
+use app\Exceptions\ForbiddenException;
+use app\Exceptions\Product\ProductNotFoundException;
+use app\Repository\Product\ProductRepository;
+use app\Services\Auth\Auth;
+use app\Services\Cart\Cart;
+use app\Services\Cart\Item;
+use app\Services\Server\ServerAccess;
 
 class RemoveHandler
 {

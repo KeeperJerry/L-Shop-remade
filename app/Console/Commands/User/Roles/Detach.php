@@ -1,12 +1,12 @@
 <?php
 declare(strict_types = 1);
 
-namespace App\Console\Commands\User\Roles;
+namespace app\Console\Commands\User\Roles;
 
-use App\Console\Command;
-use App\Exceptions\Role\PermissionNotFoundException;
-use App\Exceptions\User\UserNotFoundException;
-use App\Handlers\Consoe\User\Roles\DetachHandler;
+use app\Console\Command;
+use app\Exceptions\Role\PermissionNotFoundException;
+use app\Exceptions\User\UserNotFoundException;
+use app\Handlers\Consoe\User\Roles\DetachHandler;
 
 class Detach extends Command
 {

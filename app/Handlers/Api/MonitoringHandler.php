@@ -1,12 +1,12 @@
 <?php
 declare(strict_types = 1);
 
-namespace App\Handlers\Api;
+namespace app\Handlers\Api;
 
-use App\DataTransferObjects\Api\Monitoring as DTO;
-use App\Services\Monitoring\Monitoring;
-use App\Services\Settings\DataType;
-use App\Services\Settings\Settings;
+use app\DataTransferObjects\Api\Monitoring as DTO;
+use app\Services\Monitoring\Monitoring;
+use app\Services\Settings\DataType;
+use app\Services\Settings\Settings;
 
 class MonitoringHandler
 {

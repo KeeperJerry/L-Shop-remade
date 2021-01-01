@@ -1,7 +1,7 @@
 <?php
 declare(strict_types = 1);
 
-namespace App\DataTransferObjects\Admin\Products\Add;
+namespace app\DataTransferObjects\Admin\Products\Add;
 
 class Add
 {

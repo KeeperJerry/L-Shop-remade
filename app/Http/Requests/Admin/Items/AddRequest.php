@@ -1,9 +1,9 @@
 <?php
 declare(strict_types = 1);
 
-namespace App\Http\Requests\Admin\Items;
+namespace app\Http\Requests\Admin\Items;
 
-use App\Services\Item\Type;
+use app\Services\Item\Type;
 use Illuminate\Foundation\Http\FormRequest;
 
 class AddRequest extends FormRequest

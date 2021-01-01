@@ -1,10 +1,10 @@
 <?php
 declare(strict_types = 1);
 
-namespace App\DataTransferObjects\Admin\Items\Edit;
+namespace app\DataTransferObjects\Admin\Items\Edit;
 
-use App\DataTransferObjects\Admin\Items\Add\Image;
-use App\Services\Response\JsonRespondent;
+use app\DataTransferObjects\Admin\Items\Add\Image;
+use app\Services\Response\JsonRespondent;
 
 class Result implements JsonRespondent
 {

@@ -1,21 +1,21 @@
 <?php
 declare(strict_types = 1);
 
-namespace App\Http\Controllers\Frontend\Profile;
+namespace app\Http\Controllers\Frontend\Profile;
 
-use App\Exceptions\Distributor\DistributionException;
-use App\Exceptions\Distributor\DistributionNotFoundException;
-use App\Handlers\Frontend\Profile\Cart\DistributionHandler;
-use App\Handlers\Frontend\Profile\Cart\PaginationHandler;
-use App\Http\Controllers\Controller;
-use App\Services\Auth\Permissions;
-use App\Services\Notification\Notifications\Info;
-use App\Services\Notification\Notifications\Warning;
-use App\Services\Response\JsonResponse;
-use App\Services\Response\Status;
+use app\Exceptions\Distributor\DistributionException;
+use app\Exceptions\Distributor\DistributionNotFoundException;
+use app\Handlers\Frontend\Profile\Cart\DistributionHandler;
+use app\Handlers\Frontend\Profile\Cart\PaginationHandler;
+use app\Http\Controllers\Controller;
+use app\Services\Auth\Permissions;
+use app\Services\Notification\Notifications\Info;
+use app\Services\Notification\Notifications\Warning;
+use app\Services\Response\JsonResponse;
+use app\Services\Response\Status;
 use Illuminate\Http\Request;
 use Illuminate\Http\Response;
-use function App\permission_middleware;
+use function app\permission_middleware;
 
 /**
  * Class CartController

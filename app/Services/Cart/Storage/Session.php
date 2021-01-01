@@ -1,7 +1,7 @@
 <?php
 declare(strict_types = 1);
 
-namespace App\Services\Cart\Storage;
+namespace app\Services\Cart\Storage;
 
 use Illuminate\Session\Store;
 

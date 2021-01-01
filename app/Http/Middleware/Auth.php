@@ -1,16 +1,16 @@
 <?php
 declare(strict_types=1);
 
-namespace App\Http\Middleware;
+namespace app\Http\Middleware;
 
-use App\Exceptions\InvalidArgumentException;
-use App\Services\Auth\AccessMode;
-use App\Services\Auth\Auth as AuthService;
-use App\Services\Notification\Notification;
-use App\Services\Notification\Notifications\Warning;
-use App\Services\Response\JsonResponse;
-use App\Services\Response\Status;
-use App\Services\Settings\Settings;
+use app\Exceptions\InvalidArgumentException;
+use app\Services\Auth\AccessMode;
+use app\Services\Auth\Auth as AuthService;
+use app\Services\Notification\Notification;
+use app\Services\Notification\Notifications\Warning;
+use app\Services\Response\JsonResponse;
+use app\Services\Response\Status;
+use app\Services\Settings\Settings;
 use Illuminate\Http\Request;
 use Illuminate\Http\Response;
 use Illuminate\Routing\Router;

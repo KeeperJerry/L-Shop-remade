@@ -1,10 +1,10 @@
 <?php
 declare(strict_types = 1);
 
-namespace App\DataTransferObjects\Frontend\News;
+namespace app\DataTransferObjects\Frontend\News;
 
-use App\Entity\News as Entity;
-use App\Services\DateTime\Formatting\JavaScriptFormatter;
+use app\Entity\News as Entity;
+use app\Services\DateTime\Formatting\JavaScriptFormatter;
 
 class News implements \JsonSerializable
 {

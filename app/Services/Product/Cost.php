@@ -1,10 +1,10 @@
 <?php
 declare(strict_types = 1);
 
-namespace App\Services\Product;
+namespace app\Services\Product;
 
-use App\Entity\Product;
-use App\Services\Item\Type;
+use app\Entity\Product;
+use app\Services\Item\Type;
 
 /**
  * Class Cost

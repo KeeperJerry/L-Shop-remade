@@ -1,9 +1,9 @@
 <?php
 declare(strict_types = 1);
 
-namespace App\DataTransferObjects\Admin\Users\Roles;
+namespace app\DataTransferObjects\Admin\Users\Roles;
 
-use App\Entity\Role as Entity;
+use app\Entity\Role as Entity;
 
 class Role implements \JsonSerializable
 {

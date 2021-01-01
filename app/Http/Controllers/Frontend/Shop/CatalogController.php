@@ -1,36 +1,36 @@
 <?php
 declare(strict_types = 1);
 
-namespace App\Http\Controllers\Frontend\Shop;
+namespace app\Http\Controllers\Frontend\Shop;
 
-use App\DataTransferObjects\Frontend\Shop\Server;
-use App\Exceptions\Category\CategoryNotFoundException as CategoryDoesNotExistException;
-use App\Exceptions\Distributor\DistributionException;
-use App\Exceptions\ForbiddenException;
-use App\Exceptions\Product\ProductNotFoundException;
-use App\Exceptions\Purchase\InvalidAmountException;
-use App\Exceptions\Server\ServerNotFoundException as ServerDoesNotExistException;
-use App\Handlers\Frontend\Shop\Catalog\PurchaseHandler;
-use App\Handlers\Frontend\Shop\Catalog\RenderHandler;
-use App\Http\Controllers\Controller;
-use App\Http\Middleware\Auth as AuthMiddleware;
-use App\Http\Middleware\Captcha as CaptchaMiddleware;
-use App\Http\Requests\Frontend\Shop\Catalog\PurchaseRequest;
-use App\Services\Auth\Auth;
-use App\Services\Auth\Permissions;
-use App\Services\Cart\Cart;
-use App\Services\Notification\Notifications\Error;
-use App\Services\Notification\Notifications\Success;
-use App\Services\Notification\Notifications\Warning;
-use App\Services\Response\JsonResponse;
-use App\Services\Response\Status;
-use App\Services\Security\Captcha\Captcha;
-use App\Services\Server\Persistence\Persistence;
-use App\Services\Server\ServerAccess;
-use App\Services\Settings\Settings;
+use app\DataTransferObjects\Frontend\Shop\Server;
+use app\Exceptions\Category\CategoryNotFoundException as CategoryDoesNotExistException;
+use app\Exceptions\Distributor\DistributionException;
+use app\Exceptions\ForbiddenException;
+use app\Exceptions\Product\ProductNotFoundException;
+use app\Exceptions\Purchase\InvalidAmountException;
+use app\Exceptions\Server\ServerNotFoundException as ServerDoesNotExistException;
+use app\Handlers\Frontend\Shop\Catalog\PurchaseHandler;
+use app\Handlers\Frontend\Shop\Catalog\RenderHandler;
+use app\Http\Controllers\Controller;
+use app\Http\Middleware\Auth as AuthMiddleware;
+use app\Http\Middleware\Captcha as CaptchaMiddleware;
+use app\Http\Requests\Frontend\Shop\Catalog\PurchaseRequest;
+use app\Services\Auth\Auth;
+use app\Services\Auth\Permissions;
+use app\Services\Cart\Cart;
+use app\Services\Notification\Notifications\Error;
+use app\Services\Notification\Notifications\Success;
+use app\Services\Notification\Notifications\Warning;
+use app\Services\Response\JsonResponse;
+use app\Services\Response\Status;
+use app\Services\Security\Captcha\Captcha;
+use app\Services\Server\Persistence\Persistence;
+use app\Services\Server\ServerAccess;
+use app\Services\Settings\Settings;
 use Illuminate\Http\Request;
 use Illuminate\Http\Response;
-use function App\auth_middleware;
+use function app\auth_middleware;
 
 /**
  * Class CatalogController

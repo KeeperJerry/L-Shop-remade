@@ -1,9 +1,9 @@
 <?php
 declare(strict_types = 1);
 
-namespace App\Repository\Category;
+namespace app\Repository\Category;
 
-use App\Entity\Category;
+use app\Entity\Category;
 
 interface CategoryRepository
 {

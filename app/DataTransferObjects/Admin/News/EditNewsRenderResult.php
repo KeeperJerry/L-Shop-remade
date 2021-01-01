@@ -1,10 +1,10 @@
 <?php
 declare(strict_types = 1);
 
-namespace App\DataTransferObjects\Admin\News;
+namespace app\DataTransferObjects\Admin\News;
 
-use App\Entity\News;
-use App\Services\Response\JsonRespondent;
+use app\Entity\News;
+use app\Services\Response\JsonRespondent;
 
 class EditNewsRenderResult implements JsonRespondent
 {

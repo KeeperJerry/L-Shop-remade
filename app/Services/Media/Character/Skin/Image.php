@@ -1,7 +1,7 @@
 <?php
 declare(strict_types=1);
 
-namespace App\Services\Media\Character\Skin;
+namespace app\Services\Media\Character\Skin;
 
 /**
  * Class Image

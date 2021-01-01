@@ -1,23 +1,23 @@
 <?php
 declare(strict_types = 1);
 
-namespace App\Http\Controllers\Admin\Items;
+namespace app\Http\Controllers\Admin\Items;
 
-use App\DataTransferObjects\Admin\Items\Add\EnchantmentFromFrontend;
-use App\DataTransferObjects\Admin\Items\Edit\Edit;
-use App\Exceptions\Item\ItemNotFoundException;
-use App\Handlers\Admin\Items\Edit\EditHandler;
-use App\Handlers\Admin\Items\Edit\RenderHandler;
-use App\Http\Controllers\Controller;
-use App\Http\Requests\Admin\Items\EditRequest;
-use App\Services\Auth\Permissions;
-use App\Services\Notification\Notifications\Error;
-use App\Services\Notification\Notifications\Success;
-use App\Services\Response\JsonResponse;
-use App\Services\Response\Status;
+use app\DataTransferObjects\Admin\Items\Add\EnchantmentFromFrontend;
+use app\DataTransferObjects\Admin\Items\Edit\Edit;
+use app\Exceptions\Item\ItemNotFoundException;
+use app\Handlers\Admin\Items\Edit\EditHandler;
+use app\Handlers\Admin\Items\Edit\RenderHandler;
+use app\Http\Controllers\Controller;
+use app\Http\Requests\Admin\Items\EditRequest;
+use app\Services\Auth\Permissions;
+use app\Services\Notification\Notifications\Error;
+use app\Services\Notification\Notifications\Success;
+use app\Services\Response\JsonResponse;
+use app\Services\Response\Status;
 use Illuminate\Http\Request;
 use Illuminate\Http\Response;
-use function App\permission_middleware;
+use function app\permission_middleware;
 
 class EditController extends Controller
 {

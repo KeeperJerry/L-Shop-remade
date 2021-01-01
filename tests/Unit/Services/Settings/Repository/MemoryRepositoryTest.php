@@ -3,8 +3,8 @@ declare(strict_types = 1);
 
 namespace Tests\Unit\Services\Settings\Repository;
 
-use App\Services\Settings\Repository\MemoryRepository;
-use App\Services\Settings\Setting;
+use app\Services\Settings\Repository\MemoryRepository;
+use app\Services\Settings\Setting;
 use Tests\TestCase;
 
 class MemoryRepositoryTest extends TestCase

@@ -1,12 +1,12 @@
 <?php
 declare(strict_types = 1);
 
-namespace App\Services\Media\Character\Skin;
+namespace app\Services\Media\Character\Skin;
 
-use App\Entity\User;
-use App\Services\Auth\Permissions;
-use App\Services\Settings\DataType;
-use App\Services\Settings\Settings;
+use app\Entity\User;
+use app\Services\Auth\Permissions;
+use app\Services\Settings\DataType;
+use app\Services\Settings\Settings;
 
 /**
  * Class Accessor

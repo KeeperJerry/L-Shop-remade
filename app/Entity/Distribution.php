@@ -1,7 +1,7 @@
 <?php
 declare(strict_types = 1);
 
-namespace App\Entity;
+namespace app\Entity;
 
 use Doctrine\ORM\Mapping as ORM;
 
@@ -19,7 +19,7 @@ class Distribution
     private $id;
 
     /**
-     * @ORM\OneToOne(targetEntity="App\Entity\PurchaseItem")
+     * @ORM\OneToOne(targetEntity="app\Entity\PurchaseItem")
      */
     private $purchaseItem;
 

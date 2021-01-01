@@ -1,12 +1,12 @@
 <?php
 declare(strict_types = 1);
 
-namespace App\Console\Commands\User\Roles;
+namespace app\Console\Commands\User\Roles;
 
-use App\Console\Command;
-use App\Exceptions\User\RoleAlreadyAttachedException;
-use App\Exceptions\User\UserNotFoundException;
-use App\Handlers\Consoe\User\Roles\AttachHandler;
+use app\Console\Command;
+use app\Exceptions\User\RoleAlreadyAttachedException;
+use app\Exceptions\User\UserNotFoundException;
+use app\Handlers\Consoe\User\Roles\AttachHandler;
 
 class Attach extends Command
 {
@@ -54,7 +54,7 @@ class Attach extends Command
             $this->error(__('commands.user.roles.attach.user_not_found', ['username' => $this->argument('user')]));
 
             return 1;
-        } catch (\App\Exceptions\Permission\PermissionNotFoundException $e) {
+        } catch (\app\Exceptions\Permission\PermissionNotFoundException $e) {
             $this->error(__('commands.user.roles.attach.role_not_found', ['name' => $e->getCause()]));
 
             return 1;

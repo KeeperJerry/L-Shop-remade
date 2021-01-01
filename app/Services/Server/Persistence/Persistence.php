@@ -1,11 +1,11 @@
 <?php
 declare(strict_types=1);
 
-namespace App\Services\Server\Persistence;
+namespace app\Services\Server\Persistence;
 
-use App\Entity\Server;
-use App\Repository\Server\ServerRepository;
-use App\Services\Server\Persistence\Storage\Storage;
+use app\Entity\Server;
+use app\Repository\Server\ServerRepository;
+use app\Services\Server\Persistence\Storage\Storage;
 
 class Persistence
 {

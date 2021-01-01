@@ -1,10 +1,10 @@
 <?php
 declare(strict_types=1);
 
-namespace App\DataTransferObjects\Commands\User\Roles;
+namespace app\DataTransferObjects\Commands\User\Roles;
 
-use App\Entity\Role;
-use App\Entity\User;
+use app\Entity\Role;
+use app\Entity\User;
 
 class RolesList
 {

@@ -1,9 +1,9 @@
 <?php
 declare(strict_types = 1);
 
-namespace App\Exceptions\Enchantment;
+namespace app\Exceptions\Enchantment;
 
-use App\Exceptions\DomainException;
+use app\Exceptions\DomainException;
 
 class EnchantmentNotFoundException extends DomainException
 {

@@ -1,11 +1,11 @@
 <?php
 declare(strict_types = 1);
 
-namespace App\Handlers\Admin\News\Edit;
+namespace app\Handlers\Admin\News\Edit;
 
-use App\DataTransferObjects\Admin\News\EditNewsRenderResult;
-use App\Exceptions\News\NewsNotFoundException;
-use App\Repository\News\NewsRepository;
+use app\DataTransferObjects\Admin\News\EditNewsRenderResult;
+use app\Exceptions\News\NewsNotFoundException;
+use app\Repository\News\NewsRepository;
 
 class RenderHandler
 {

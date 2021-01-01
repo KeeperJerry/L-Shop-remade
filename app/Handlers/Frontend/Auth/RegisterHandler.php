@@ -1,13 +1,13 @@
 <?php
 declare(strict_types = 1);
 
-namespace App\Handlers\Frontend\Auth;
+namespace app\Handlers\Frontend\Auth;
 
-use App\DataTransferObjects\Frontend\Auth\RegisterResult;
-use App\Entity\User;
-use App\Services\Auth\Auth;
-use App\Services\Settings\DataType;
-use App\Services\Settings\Settings;
+use app\DataTransferObjects\Frontend\Auth\RegisterResult;
+use app\Entity\User;
+use app\Services\Auth\Auth;
+use app\Services\Settings\DataType;
+use app\Services\Settings\Settings;
 
 class RegisterHandler
 {

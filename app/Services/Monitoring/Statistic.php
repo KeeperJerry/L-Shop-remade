@@ -1,9 +1,9 @@
 <?php
 declare(strict_types = 1);
 
-namespace App\Services\Monitoring;
+namespace app\Services\Monitoring;
 
-use App\Entity\Server;
+use app\Entity\Server;
 
 class Statistic
 {

@@ -1,13 +1,13 @@
 <?php
 declare(strict_types = 1);
 
-namespace App\Handlers\Api\User;
+namespace app\Handlers\Api\User;
 
-use App\Repository\User\UserRepository;
-use App\Services\Auth\Exceptions\UserDoesNotExistException;
-use App\Services\Media\Character\Cloak\Applicators\Applicator;
-use App\Services\Media\Character\Cloak\Builder;
-use App\Services\Media\Character\Cloak\Image as CloakImage;
+use app\Repository\User\UserRepository;
+use app\Services\Auth\Exceptions\UserDoesNotExistException;
+use app\Services\Media\Character\Cloak\Applicators\Applicator;
+use app\Services\Media\Character\Cloak\Builder;
+use app\Services\Media\Character\Cloak\Image as CloakImage;
 use Intervention\Image\Image;
 use Intervention\Image\ImageManager;
 

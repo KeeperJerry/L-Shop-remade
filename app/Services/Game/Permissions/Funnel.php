@@ -1,10 +1,10 @@
 <?php
 declare(strict_types = 1);
 
-namespace App\Services\Game\Permissions;
+namespace app\Services\Game\Permissions;
 
-use App\Services\Game\Permissions\Predicates\PermissionPredicate;
-use App\Services\Game\Permissions\Predicates\Regex;
+use app\Services\Game\Permissions\Predicates\PermissionPredicate;
+use app\Services\Game\Permissions\Predicates\Regex;
 use Doctrine\Common\Collections\ArrayCollection;
 use Doctrine\Common\Collections\Collection;
 

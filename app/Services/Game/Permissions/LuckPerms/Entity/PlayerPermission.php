@@ -1,7 +1,7 @@
 <?php
 declare(strict_types = 1);
 
-namespace App\Services\Game\Permissions\LuckPerms\Entity;
+namespace app\Services\Game\Permissions\LuckPerms\Entity;
 
 use Doctrine\ORM\Mapping as ORM;
 
@@ -14,7 +14,7 @@ use Doctrine\ORM\Mapping as ORM;
 class PlayerPermission extends Permission
 {
     /**
-     * @ORM\ManyToOne(targetEntity="App\Services\Game\Permissions\LuckPerms\Entity\Player")
+     * @ORM\ManyToOne(targetEntity="app\Services\Game\Permissions\LuckPerms\Entity\Player")
      * @ORM\JoinColumns({
      *   @ORM\JoinColumn(name="uuid", referencedColumnName="uuid")
      * })

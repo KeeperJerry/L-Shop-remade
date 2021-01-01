@@ -1,14 +1,14 @@
 <?php
 declare(strict_types = 1);
 
-namespace App\Handlers\Frontend\Profile\Cart;
+namespace app\Handlers\Frontend\Profile\Cart;
 
-use App\Exceptions\Distributor\DistributionNotFoundException;
-use App\Exceptions\Distributor\DistributorNotFoundException;
-use App\Exceptions\Distributor\NotAttemptedException;
-use App\Repository\Distribution\DistributionRepository;
-use App\Services\Purchasing\Distributors\Attempting;
-use App\Services\Purchasing\Distributors\Pool;
+use app\Exceptions\Distributor\DistributionNotFoundException;
+use app\Exceptions\Distributor\DistributorNotFoundException;
+use app\Exceptions\Distributor\NotAttemptedException;
+use app\Repository\Distribution\DistributionRepository;
+use app\Services\Purchasing\Distributors\Attempting;
+use app\Services\Purchasing\Distributors\Pool;
 
 /**
  * Class DistributionHandler

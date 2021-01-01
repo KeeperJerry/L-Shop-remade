@@ -1,10 +1,10 @@
 <?php
 declare(strict_types = 1);
 
-namespace App\Exceptions\Purchase;
+namespace app\Exceptions\Purchase;
 
-use App\Entity\Product;
-use App\Exceptions\DomainException;
+use app\Entity\Product;
+use app\Exceptions\DomainException;
 use Throwable;
 
 class InvalidAmountException extends DomainException

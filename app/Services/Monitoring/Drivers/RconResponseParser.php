@@ -1,9 +1,9 @@
 <?php
 declare(strict_types = 1);
 
-namespace App\Services\Monitoring\Drivers;
+namespace app\Services\Monitoring\Drivers;
 
-use App\Services\Game\Colorizers\StripColorizer;
+use app\Services\Game\Colorizers\StripColorizer;
 
 /**
  * Class RconResponseParser

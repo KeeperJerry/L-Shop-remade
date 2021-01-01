@@ -1,7 +1,7 @@
 <?php
 declare(strict_types = 1);
 
-namespace App\Handlers\Admin\Servers\SwitchState;
+namespace app\Handlers\Admin\Servers\SwitchState;
 
 class DisableHandler extends AbstractHandler
 {

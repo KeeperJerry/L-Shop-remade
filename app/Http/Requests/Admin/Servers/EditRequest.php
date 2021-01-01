@@ -1,7 +1,7 @@
 <?php
 declare(strict_types = 1);
 
-namespace App\Http\Requests\Admin\Servers;
+namespace app\Http\Requests\Admin\Servers;
 
 use Illuminate\Foundation\Http\FormRequest;
 

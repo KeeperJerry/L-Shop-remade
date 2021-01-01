@@ -3,21 +3,21 @@ declare(strict_types = 1);
 
 namespace Tests\Integrated\Services\Game\Permissions\LuckPerms;
 
-use App\Entity\User;
-use App\Services\Auth\Auth;
-use App\Services\DateTime\DateTimeUtil;
-use App\Services\Game\Permissions\Funnel;
-use App\Services\Game\Permissions\LuckPerms\Entity\Group;
-use App\Services\Game\Permissions\LuckPerms\Entity\GroupPermission;
-use App\Services\Game\Permissions\LuckPerms\Entity\Player;
-use App\Services\Game\Permissions\LuckPerms\Entity\PlayerPermission;
-use App\Services\Game\Permissions\LuckPerms\Repository\Group\GroupRepository;
-use App\Services\Game\Permissions\LuckPerms\Repository\Player\PlayerRepository;
-use App\Services\Game\Permissions\LuckPerms\Repository\PlayerPermission\PlayerPermissionRepository;
-use App\Services\Game\Permissions\LuckPerms\Storage;
-use App\Services\Game\Permissions\Permission;
-use App\Services\Game\Permissions\Predicates\PermissionPredicate;
-use App\Services\Game\Permissions\Predicates\Regex;
+use app\Entity\User;
+use app\Services\Auth\Auth;
+use app\Services\DateTime\DateTimeUtil;
+use app\Services\Game\Permissions\Funnel;
+use app\Services\Game\Permissions\LuckPerms\Entity\Group;
+use app\Services\Game\Permissions\LuckPerms\Entity\GroupPermission;
+use app\Services\Game\Permissions\LuckPerms\Entity\Player;
+use app\Services\Game\Permissions\LuckPerms\Entity\PlayerPermission;
+use app\Services\Game\Permissions\LuckPerms\Repository\Group\GroupRepository;
+use app\Services\Game\Permissions\LuckPerms\Repository\Player\PlayerRepository;
+use app\Services\Game\Permissions\LuckPerms\Repository\PlayerPermission\PlayerPermissionRepository;
+use app\Services\Game\Permissions\LuckPerms\Storage;
+use app\Services\Game\Permissions\Permission;
+use app\Services\Game\Permissions\Predicates\PermissionPredicate;
+use app\Services\Game\Permissions\Predicates\Regex;
 use Tests\TestCase;
 
 class FunnelTest extends TestCase

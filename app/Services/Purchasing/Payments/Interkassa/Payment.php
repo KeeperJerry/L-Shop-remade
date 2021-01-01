@@ -1,7 +1,7 @@
 <?php
 declare(strict_types=1);
 
-namespace App\Services\Purchasing\Payments\Interkassa;
+namespace app\Services\Purchasing\Payments\Interkassa;
 
 class Payment
 {

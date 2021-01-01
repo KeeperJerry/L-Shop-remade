@@ -1,7 +1,7 @@
 <?php
 declare(strict_types = 1);
 
-namespace App\Services\Auth\Generators;
+namespace app\Services\Auth\Generators;
 
 /**
  * Class DefaultCodeGenerator

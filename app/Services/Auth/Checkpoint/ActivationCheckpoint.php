@@ -1,12 +1,12 @@
 <?php
 declare(strict_types = 1);
 
-namespace App\Services\Auth\Checkpoint;
+namespace app\Services\Auth\Checkpoint;
 
-use App\Entity\Activation;
-use App\Entity\User;
-use App\Repository\Activation\ActivationRepository;
-use App\Services\Auth\Exceptions\NotActivatedException;
+use app\Entity\Activation;
+use app\Entity\User;
+use app\Repository\Activation\ActivationRepository;
+use app\Services\Auth\Exceptions\NotActivatedException;
 
 /**
  * Class ActivationCheckpoint

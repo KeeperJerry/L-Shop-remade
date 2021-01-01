@@ -1,17 +1,17 @@
 <?php
 declare(strict_types = 1);
 
-namespace App\Http\Controllers\Admin\News;
+namespace app\Http\Controllers\Admin\News;
 
-use App\DataTransferObjects\Admin\News\Add;
-use App\Handlers\Admin\News\AddHandler;
-use App\Http\Controllers\Controller;
-use App\Http\Requests\Admin\News\AddEditRequest;
-use function App\permission_middleware;
-use App\Services\Auth\Permissions;
-use App\Services\Notification\Notifications\Success;
-use App\Services\Response\JsonResponse;
-use App\Services\Response\Status;
+use app\DataTransferObjects\Admin\News\Add;
+use app\Handlers\Admin\News\AddHandler;
+use app\Http\Controllers\Controller;
+use app\Http\Requests\Admin\News\AddEditRequest;
+use function app\permission_middleware;
+use app\Services\Auth\Permissions;
+use app\Services\Notification\Notifications\Success;
+use app\Services\Response\JsonResponse;
+use app\Services\Response\Status;
 
 class AddController extends Controller
 {

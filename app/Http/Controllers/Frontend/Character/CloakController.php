@@ -1,11 +1,11 @@
 <?php
 declare(strict_types = 1);
 
-namespace App\Http\Controllers\Frontend\Character;
+namespace app\Http\Controllers\Frontend\Character;
 
-use App\Handlers\Api\User\CloakHandler;
-use App\Http\Controllers\Controller;
-use App\Services\Auth\Exceptions\UserDoesNotExistException;
+use app\Handlers\Api\User\CloakHandler;
+use app\Http\Controllers\Controller;
+use app\Services\Auth\Exceptions\UserDoesNotExistException;
 use Illuminate\Http\Request;
 use Illuminate\Http\Response;
 

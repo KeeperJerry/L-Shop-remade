@@ -3,11 +3,11 @@ declare(strict_types = 1);
 
 namespace Tests\Integrated\Services\Auth;
 
-use App\Entity\Persistence;
-use App\Entity\User;
-use App\Repository\Persistence\PersistenceRepository;
-use App\Repository\User\UserRepository;
-use App\Services\Auth\Auth;
+use app\Entity\Persistence;
+use app\Entity\User;
+use app\Repository\Persistence\PersistenceRepository;
+use app\Repository\User\UserRepository;
+use app\Services\Auth\Auth;
 use Tests\TestCase;
 
 class AuthTest extends TestCase

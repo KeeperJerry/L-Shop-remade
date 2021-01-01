@@ -8,14 +8,14 @@ return [
     |--------------------------------------------------------------------------
     |
     | The array contains the full names of the classes of payers. All classes listed here
-    | in the mandatory order must implement the interface App\Services\Purchasing\Payers\Payer.
+    | in the mandatory order must implement the interface app\Services\Purchasing\Payers\Payer.
     |
     */
 
     'payers' => [
         // Builtin payers...
-        \App\Services\Purchasing\Payers\RobokassaPayer::class,
-        \App\Services\Purchasing\Payers\InterkassaPayer::class,
+        \app\Services\Purchasing\Payers\RobokassaPayer::class,
+        \app\Services\Purchasing\Payers\InterkassaPayer::class,
 
         // Custom payers...
     ],
@@ -27,14 +27,14 @@ return [
         |--------------------------------------------------------------------------
         |
         | The array contains the full names of the classes of distributors. All classes listed here
-        | in the mandatory order must implement the interface App\Services\Purchasing\Distributors\Distributor.
+        | in the mandatory order must implement the interface app\Services\Purchasing\Distributors\Distributor.
         |
         */
 
         'distributors' => [
             // Builtin distributors...
-            \App\Services\Purchasing\Distributors\ShoppingCartDistributor::class,
-            \App\Services\Purchasing\Distributors\RconDistributor::class,
+            \app\Services\Purchasing\Distributors\ShoppingCartDistributor::class,
+            \app\Services\Purchasing\Distributors\RconDistributor::class,
 
             // Custom distributors...
         ],

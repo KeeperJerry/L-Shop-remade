@@ -3,8 +3,8 @@ declare(strict_types = 1);
 
 namespace Tests\Feature\Frontend\Shop;
 
-use App\Entity\Distribution;
-use App\Services\Purchasing\Distributors\Distributor;
+use app\Entity\Distribution;
+use app\Services\Purchasing\Distributors\Distributor;
 
 class MockDistributor implements Distributor
 {

@@ -1,13 +1,13 @@
 <?php
 declare(strict_types = 1);
 
-namespace App\Composers\Constructors;
+namespace app\Composers\Constructors;
 
-use App\Exceptions\UnexpectedValueException;
-use App\Services\Auth\Auth;
-use App\Services\Auth\Permissions;
-use App\Services\Meta\System;
-use App\Services\Security\Accessors\Accessor;
+use app\Exceptions\UnexpectedValueException;
+use app\Services\Auth\Auth;
+use app\Services\Auth\Permissions;
+use app\Services\Meta\System;
+use app\Services\Security\Accessors\Accessor;
 use Illuminate\Contracts\Container\Container;
 
 class AdminBlockConstructor
@@ -253,7 +253,7 @@ class AdminBlockConstructor
                 }
                 if (!($instance instanceof Accessor)) {
                     throw new UnexpectedValueException(
-                        "Accessor {$accessor} must be implements interface App\Services\Security\Accessors\Accessor"
+                        "Accessor {$accessor} must be implements interface app\Services\Security\Accessors\Accessor"
                     );
                 }
 

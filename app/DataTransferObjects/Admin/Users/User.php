@@ -1,9 +1,9 @@
 <?php
 declare(strict_types = 1);
 
-namespace App\DataTransferObjects\Admin\Users;
+namespace app\DataTransferObjects\Admin\Users;
 
-use App\Entity\User as Entity;
+use app\Entity\User as Entity;
 
 class User implements \JsonSerializable
 {

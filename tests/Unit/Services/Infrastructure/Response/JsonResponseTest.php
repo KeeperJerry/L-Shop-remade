@@ -3,10 +3,10 @@ declare(strict_types = 1);
 
 namespace Tests\Unit\Services\Infrastructure\Response;
 
-use App\Services\Notification\Notifications\Error;
-use App\Services\Notification\Notifications\Success;
-use App\Services\Notification\Notifications\Warning;
-use App\Services\Response\JsonResponse;
+use app\Services\Notification\Notifications\Error;
+use app\Services\Notification\Notifications\Success;
+use app\Services\Notification\Notifications\Warning;
+use app\Services\Response\JsonResponse;
 use Tests\TestCase;
 
 class JsonResponseTest extends TestCase

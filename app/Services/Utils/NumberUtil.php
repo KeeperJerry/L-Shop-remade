@@ -1,9 +1,9 @@
 <?php
 declare(strict_types=1);
 
-namespace App\Services\Utils;
+namespace app\Services\Utils;
 
-use App\Exceptions\InvalidArgumentException;
+use app\Exceptions\InvalidArgumentException;
 
 class NumberUtil
 {

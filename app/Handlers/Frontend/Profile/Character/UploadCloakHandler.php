@@ -1,16 +1,16 @@
 <?php
 declare(strict_types = 1);
 
-namespace App\Handlers\Frontend\Profile\Character;
+namespace app\Handlers\Frontend\Profile\Character;
 
-use App\Exceptions\ForbiddenException;
-use App\Exceptions\Media\Character\InvalidRatioException;
-use App\Exceptions\Media\Character\InvalidResolutionException;
-use App\Services\Auth\Auth;
-use App\Services\Media\Character\Cloak\Accessor;
-use App\Services\Media\Character\Cloak\Image as CloakImage;
-use App\Services\Media\Character\Cloak\Resolution;
-use App\Services\Validation\CloakValidator;
+use app\Exceptions\ForbiddenException;
+use app\Exceptions\Media\Character\InvalidRatioException;
+use app\Exceptions\Media\Character\InvalidResolutionException;
+use app\Services\Auth\Auth;
+use app\Services\Media\Character\Cloak\Accessor;
+use app\Services\Media\Character\Cloak\Image as CloakImage;
+use app\Services\Media\Character\Cloak\Resolution;
+use app\Services\Validation\CloakValidator;
 use Illuminate\Http\UploadedFile;
 use Intervention\Image\Image;
 use Intervention\Image\ImageManager;

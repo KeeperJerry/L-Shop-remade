@@ -1,15 +1,15 @@
 <?php
 declare(strict_types = 1);
 
-namespace App\Handlers\Admin\Servers\Edit;
+namespace app\Handlers\Admin\Servers\Edit;
 
-use App\DataTransferObjects\Admin\Servers\Edit\Edit;
-use App\Entity\Category;
-use App\Exceptions\Category\CategoryNotFoundException;
-use App\Exceptions\Distributor\DistributorNotFoundException;
-use App\Exceptions\Server\ServerNotFoundException;
-use App\Repository\Category\CategoryRepository;
-use App\Repository\Server\ServerRepository;
+use app\DataTransferObjects\Admin\Servers\Edit\Edit;
+use app\Entity\Category;
+use app\Exceptions\Category\CategoryNotFoundException;
+use app\Exceptions\Distributor\DistributorNotFoundException;
+use app\Exceptions\Server\ServerNotFoundException;
+use app\Repository\Category\CategoryRepository;
+use app\Repository\Server\ServerRepository;
 use Illuminate\Contracts\Config\Repository;
 
 class EditHandler

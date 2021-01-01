@@ -1,9 +1,9 @@
 <?php
 declare(strict_types = 1);
 
-namespace App\Services\Game\Permissions\LuckPerms\Repository\Player;
+namespace app\Services\Game\Permissions\LuckPerms\Repository\Player;
 
-use App\Services\Game\Permissions\LuckPerms\Entity\Player;
+use app\Services\Game\Permissions\LuckPerms\Entity\Player;
 use Doctrine\ORM\EntityManagerInterface;
 use Doctrine\ORM\EntityRepository;
 use Ramsey\Uuid\UuidInterface;

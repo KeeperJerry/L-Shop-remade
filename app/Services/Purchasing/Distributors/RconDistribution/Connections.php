@@ -1,9 +1,9 @@
 <?php
 declare(strict_types = 1);
 
-namespace App\Services\Purchasing\Distributors\RconDistribution;
+namespace app\Services\Purchasing\Distributors\RconDistribution;
 
-use App\Entity\Server;
+use app\Entity\Server;
 use D3lph1\MinecraftRconManager\Connection;
 use D3lph1\MinecraftRconManager\Connector;
 

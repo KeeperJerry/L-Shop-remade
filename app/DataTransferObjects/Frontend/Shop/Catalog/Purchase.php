@@ -1,7 +1,7 @@
 <?php
 declare(strict_types = 1);
 
-namespace App\DataTransferObjects\Frontend\Shop\Catalog;
+namespace app\DataTransferObjects\Frontend\Shop\Catalog;
 
 class Purchase
 {

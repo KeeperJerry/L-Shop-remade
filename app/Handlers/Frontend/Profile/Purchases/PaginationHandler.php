@@ -1,13 +1,13 @@
 <?php
 declare(strict_types=1);
 
-namespace App\Handlers\Frontend\Profile\Purchases;
+namespace app\Handlers\Frontend\Profile\Purchases;
 
-use App\DataTransferObjects\Frontend\Profile\Purchases\ListResult;
-use App\Exceptions\InvalidArgumentException;
-use App\Repository\Purchase\PurchaseRepository;
-use App\Services\Auth\Auth;
-use App\Services\Auth\Permissions;
+use app\DataTransferObjects\Frontend\Profile\Purchases\ListResult;
+use app\Exceptions\InvalidArgumentException;
+use app\Repository\Purchase\PurchaseRepository;
+use app\Services\Auth\Auth;
+use app\Services\Auth\Permissions;
 
 class PaginationHandler
 {

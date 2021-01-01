@@ -1,7 +1,7 @@
 <?php
 declare(strict_types = 1);
 
-namespace App\Services\Purchasing\Payers;
+namespace app\Services\Purchasing\Payers;
 
 /**
  * Class Pool

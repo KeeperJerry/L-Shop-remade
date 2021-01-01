@@ -1,20 +1,20 @@
 <?php
 declare(strict_types=1);
 
-namespace App\Handlers\Admin\Items\Add;
+namespace app\Handlers\Admin\Items\Add;
 
-use App\DataTransferObjects\Admin\Items\Add\Add;
-use App\Entity\EnchantmentItem;
-use App\Entity\Item;
-use App\Events\Item\ItemCreatedEvent;
-use App\Exceptions\Enchantment\EnchantmentNotFoundException;
-use App\Exceptions\InvalidArgumentTypeException;
-use App\Exceptions\UnexpectedValueException;
-use App\Repository\Enchantment\EnchantmentRepository;
-use App\Repository\Item\ItemRepository;
-use App\Services\Item\Image\Hashing\Hasher;
-use App\Services\Item\Image\Image;
-use App\Services\Item\Type;
+use app\DataTransferObjects\Admin\Items\Add\Add;
+use app\Entity\EnchantmentItem;
+use app\Entity\Item;
+use app\Events\Item\ItemCreatedEvent;
+use app\Exceptions\Enchantment\EnchantmentNotFoundException;
+use app\Exceptions\InvalidArgumentTypeException;
+use app\Exceptions\UnexpectedValueException;
+use app\Repository\Enchantment\EnchantmentRepository;
+use app\Repository\Item\ItemRepository;
+use app\Services\Item\Image\Hashing\Hasher;
+use app\Services\Item\Image\Image;
+use app\Services\Item\Type;
 use Illuminate\Contracts\Events\Dispatcher;
 use Illuminate\Http\UploadedFile;
 

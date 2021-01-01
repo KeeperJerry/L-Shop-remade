@@ -1,14 +1,14 @@
 <?php
 declare(strict_types = 1);
 
-namespace App\Http\Middleware;
+namespace app\Http\Middleware;
 
-use App\Services\Auth\Auth;
-use App\Services\Auth\Exceptions\BannedException;
-use App\Services\Notification\Notifications\Error;
-use App\Services\Notification\Notificator;
-use App\Services\Response\JsonResponse;
-use App\Services\Support\Lang\Ban\BanMessage;
+use app\Services\Auth\Auth;
+use app\Services\Auth\Exceptions\BannedException;
+use app\Services\Notification\Notifications\Error;
+use app\Services\Notification\Notificator;
+use app\Services\Response\JsonResponse;
+use app\Services\Support\Lang\Ban\BanMessage;
 use Illuminate\Http\Request;
 use Illuminate\Http\Response;
 

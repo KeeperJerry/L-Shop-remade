@@ -1,7 +1,7 @@
 <?php
 declare(strict_types = 1);
 
-namespace App\Services\Database\Transfer;
+namespace app\Services\Database\Transfer;
 
 class Pool
 {

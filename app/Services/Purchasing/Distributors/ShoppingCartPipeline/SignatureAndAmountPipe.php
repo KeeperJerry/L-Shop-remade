@@ -1,14 +1,14 @@
 <?php
 declare(strict_types = 1);
 
-namespace App\Services\Purchasing\Distributors\ShoppingCartPipeline;
+namespace app\Services\Purchasing\Distributors\ShoppingCartPipeline;
 
-use App\Entity\EnchantmentItem;
-use App\Entity\Product;
-use App\Entity\PurchaseItem;
-use App\Entity\ShoppingCart;
-use App\Services\DateTime\DateTimeUtil;
-use App\Services\Product\Stack;
+use app\Entity\EnchantmentItem;
+use app\Entity\Product;
+use app\Entity\PurchaseItem;
+use app\Entity\ShoppingCart;
+use app\Services\DateTime\DateTimeUtil;
+use app\Services\Product\Stack;
 
 class SignatureAndAmountPipe
 {

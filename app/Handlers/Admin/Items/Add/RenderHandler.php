@@ -1,12 +1,12 @@
 <?php
 declare(strict_types = 1);
 
-namespace App\Handlers\Admin\Items\Add;
+namespace app\Handlers\Admin\Items\Add;
 
-use App\DataTransferObjects\Admin\Items\Add\Enchantment;
-use App\DataTransferObjects\Admin\Items\Add\Image;
-use App\DataTransferObjects\Admin\Items\Add\Result;
-use App\Repository\Enchantment\EnchantmentRepository;
+use app\DataTransferObjects\Admin\Items\Add\Enchantment;
+use app\DataTransferObjects\Admin\Items\Add\Image;
+use app\DataTransferObjects\Admin\Items\Add\Result;
+use app\Repository\Enchantment\EnchantmentRepository;
 use Illuminate\Filesystem\Filesystem;
 
 class RenderHandler
@@ -30,7 +30,7 @@ class RenderHandler
     public function handle(): Result
     {
         $images = [];
-        foreach ($this->filesystem->allFiles(\App\Services\Item\Image\Image::absolutePath()) as $item) {
+        foreach ($this->filesystem->allFiles(\app\Services\Item\Image\Image::absolutePath()) as $item) {
             $images[] = new Image($item);
         }
 

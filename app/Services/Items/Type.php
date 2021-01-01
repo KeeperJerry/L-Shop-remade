@@ -1,14 +1,14 @@
 <?php
 declare(strict_types = 1);
 
-namespace App\Services\Items;
+namespace app\Services\Items;
 
 /**
  * Class Type
  * Defines the available item types.
  *
  * @author D3lph1 <d3lph1.contact@gmail.com>
- * @package App\Services\Items
+ * @package app\Services\Items
  */
 final class Type
 {

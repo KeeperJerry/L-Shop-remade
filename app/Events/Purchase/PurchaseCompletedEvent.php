@@ -1,9 +1,9 @@
 <?php
 declare(strict_types = 1);
 
-namespace App\Events\Purchase;
+namespace app\Events\Purchase;
 
-use App\Entity\Purchase;
+use app\Entity\Purchase;
 
 class PurchaseCompletedEvent
 {

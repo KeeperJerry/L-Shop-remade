@@ -78,7 +78,7 @@ return [
         ]
     ],
     'auth' => [
-        'access_mode' => \App\Services\Auth\AccessMode::ANY,
+        'access_mode' => \app\Services\Auth\AccessMode::ANY,
         'register' => [
             'enabled' => true,
             'send_activation' => true,
@@ -104,7 +104,7 @@ return [
                 'validation_password' => '',
                 'algorithm' => 'sha512',
                 'test' => true,
-                'culture' => \App\Services\Purchasing\Payments\Robokassa\Checkout::CULTURE_RU
+                'culture' => \app\Services\Purchasing\Payments\Robokassa\Checkout::CULTURE_RU
             ],
             'interkassa' => [
                 'enabled' => false,

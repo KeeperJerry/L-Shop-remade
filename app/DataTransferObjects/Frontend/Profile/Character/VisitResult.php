@@ -1,7 +1,7 @@
 <?php
 declare(strict_types = 1);
 
-namespace App\DataTransferObjects\Frontend\Profile\Character;
+namespace app\DataTransferObjects\Frontend\Profile\Character;
 
 class VisitResult
 {

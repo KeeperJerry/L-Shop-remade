@@ -1,9 +1,9 @@
 <?php
 declare(strict_types = 1);
 
-namespace App\Repository\Server;
+namespace app\Repository\Server;
 
-use App\Entity\Server;
+use app\Entity\Server;
 
 interface ServerRepository
 {

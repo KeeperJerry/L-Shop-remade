@@ -1,11 +1,11 @@
 <?php
 declare(strict_types = 1);
 
-namespace App\Services\Purchasing\Distributors\ShoppingCartPipeline;
+namespace app\Services\Purchasing\Distributors\ShoppingCartPipeline;
 
-use App\Entity\ShoppingCart;
-use App\Exceptions\NotImplementedException;
-use App\Services\Item\Type;
+use app\Entity\ShoppingCart;
+use app\Exceptions\NotImplementedException;
+use app\Services\Item\Type;
 
 class TypePipe
 {

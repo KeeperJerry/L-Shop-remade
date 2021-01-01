@@ -1,11 +1,11 @@
 <?php
 declare(strict_types = 1);
 
-namespace App\Handlers\Admin\Users\Permissions;
+namespace app\Handlers\Admin\Users\Permissions;
 
-use App\Entity\Permission;
-use App\Exceptions\Permission\PermissionAlreadyExistsException;
-use App\Repository\Permission\PermissionRepository;
+use app\Entity\Permission;
+use app\Exceptions\Permission\PermissionAlreadyExistsException;
+use app\Repository\Permission\PermissionRepository;
 
 class CreateHandler
 {

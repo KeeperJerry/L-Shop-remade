@@ -1,17 +1,17 @@
 <?php
 declare(strict_types = 1);
 
-namespace App\Http\Controllers\Api\Auth;
+namespace app\Http\Controllers\Api\Auth;
 
-use App\Exceptions\ForbiddenException;
-use App\Exceptions\User\UserNotFoundException;
-use App\Handlers\Api\Auth\LoginHandler;
-use App\Http\Controllers\Controller;
+use app\Exceptions\ForbiddenException;
+use app\Exceptions\User\UserNotFoundException;
+use app\Handlers\Api\Auth\LoginHandler;
+use app\Http\Controllers\Controller;
 use Illuminate\Contracts\Config\Repository;
 use Illuminate\Http\RedirectResponse;
 use Illuminate\Http\Request;
 use Symfony\Component\HttpFoundation\Response;
-use function App\signed_middleware;
+use function app\signed_middleware;
 
 class LoginController extends Controller
 {

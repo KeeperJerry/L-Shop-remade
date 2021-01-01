@@ -1,7 +1,7 @@
 <?php
 declare(strict_types = 1);
 
-namespace App\Services\Item;
+namespace app\Services\Item;
 
 /**
  * Class Type

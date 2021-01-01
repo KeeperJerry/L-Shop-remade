@@ -1,9 +1,9 @@
 <?php
 declare(strict_types = 1);
 
-namespace App\Handlers\Admin\Other;
+namespace app\Handlers\Admin\Other;
 
-use App\Mail\Test;
+use app\Mail\Test;
 use Illuminate\Contracts\Mail\Mailer;
 
 class SendTestEmailHandler

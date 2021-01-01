@@ -1,14 +1,14 @@
 <?php
 declare(strict_types = 1);
 
-namespace App\Handlers\Frontend\Auth;
+namespace app\Handlers\Frontend\Auth;
 
-use App\DataTransferObjects\Frontend\Auth\LoginResult;
-use App\Exceptions\ForbiddenException;
-use App\Services\Auth\AccessMode;
-use App\Services\Auth\Auth;
-use App\Services\Auth\Permissions;
-use App\Services\Settings\Settings;
+use app\DataTransferObjects\Frontend\Auth\LoginResult;
+use app\Exceptions\ForbiddenException;
+use app\Services\Auth\AccessMode;
+use app\Services\Auth\Auth;
+use app\Services\Auth\Permissions;
+use app\Services\Settings\Settings;
 
 class LoginHandler
 {

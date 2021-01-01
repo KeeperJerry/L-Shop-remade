@@ -1,14 +1,14 @@
 <?php
 declare(strict_types = 1);
 
-namespace App\Handlers\Admin\Users\Edit;
+namespace app\Handlers\Admin\Users\Edit;
 
-use App\Entity\User;
-use App\Exceptions\Media\Character\InvalidRatioException;
-use App\Exceptions\User\UserNotFoundException;
-use App\Repository\User\UserRepository;
-use App\Services\Media\Character\Skin\Image as SkinImage;
-use App\Services\Validation\SkinValidator;
+use app\Entity\User;
+use app\Exceptions\Media\Character\InvalidRatioException;
+use app\Exceptions\User\UserNotFoundException;
+use app\Repository\User\UserRepository;
+use app\Services\Media\Character\Skin\Image as SkinImage;
+use app\Services\Validation\SkinValidator;
 use Illuminate\Http\UploadedFile;
 use Intervention\Image\Image;
 use Intervention\Image\ImageManager;

@@ -1,11 +1,11 @@
 <?php
 declare(strict_types = 1);
 
-namespace App\Handlers\Frontend\News;
+namespace app\Handlers\Frontend\News;
 
-use App\DataTransferObjects\Frontend\News\News as DTO;
-use App\Exceptions\News\NewsNotFoundException;
-use App\Repository\News\NewsRepository;
+use app\DataTransferObjects\Frontend\News\News as DTO;
+use app\Exceptions\News\NewsNotFoundException;
+use app\Repository\News\NewsRepository;
 
 class VisitHandler
 {

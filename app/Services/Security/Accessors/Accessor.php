@@ -1,7 +1,7 @@
 <?php
 declare(strict_types = 1);
 
-namespace App\Services\Security\Accessors;
+namespace app\Services\Security\Accessors;
 
 /**
  * Interface Accessor

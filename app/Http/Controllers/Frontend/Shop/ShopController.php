@@ -1,23 +1,23 @@
 <?php
 declare(strict_types = 1);
 
-namespace App\Http\Controllers\Frontend\Shop;
+namespace app\Http\Controllers\Frontend\Shop;
 
-use App\Composers\Constructors\AdminBlockConstructor;
-use App\DataTransferObjects\Frontend\Shop\Server;
-use App\Handlers\Frontend\News\LoadHandler;
-use App\Http\Controllers\Controller;
-use App\Services\Auth\AccessMode;
-use App\Services\Auth\Auth;
-use App\Services\Cart\Cart;
-use App\Services\Media\Character\Cloak\Accessor as CloakAccessor;
-use App\Services\Media\Character\Skin\Accessor as SkinAccessor;
-use App\Services\Meta\System;
-use App\Services\Response\JsonResponse;
-use App\Services\Response\Status;
-use App\Services\Server\Persistence\Persistence;
-use App\Services\Settings\DataType;
-use App\Services\Settings\Settings;
+use app\Composers\Constructors\AdminBlockConstructor;
+use app\DataTransferObjects\Frontend\Shop\Server;
+use app\Handlers\Frontend\News\LoadHandler;
+use app\Http\Controllers\Controller;
+use app\Services\Auth\AccessMode;
+use app\Services\Auth\Auth;
+use app\Services\Cart\Cart;
+use app\Services\Media\Character\Cloak\Accessor as CloakAccessor;
+use app\Services\Media\Character\Skin\Accessor as SkinAccessor;
+use app\Services\Meta\System;
+use app\Services\Response\JsonResponse;
+use app\Services\Response\Status;
+use app\Services\Server\Persistence\Persistence;
+use app\Services\Settings\DataType;
+use app\Services\Settings\Settings;
 
 /**
  * Class ShopController

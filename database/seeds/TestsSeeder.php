@@ -1,16 +1,16 @@
 <?php
 declare(strict_types=1);
 
-use App\Entity\User;
-use App\Repository\Activation\ActivationRepository;
-use App\Repository\News\NewsRepository;
-use App\Repository\Persistence\PersistenceRepository;
-use App\Repository\Reminder\ReminderRepository;
-use App\Repository\Role\RoleRepository;
-use App\Repository\User\UserRepository;
-use App\Services\Auth\Activator;
-use App\Services\Auth\Auth;
-use App\Services\Auth\Roles;
+use app\Entity\User;
+use app\Repository\Activation\ActivationRepository;
+use app\Repository\News\NewsRepository;
+use app\Repository\Persistence\PersistenceRepository;
+use app\Repository\Reminder\ReminderRepository;
+use app\Repository\Role\RoleRepository;
+use app\Repository\User\UserRepository;
+use app\Services\Auth\Activator;
+use app\Services\Auth\Auth;
+use app\Services\Auth\Roles;
 use Illuminate\Database\Seeder;
 
 class TestsSeeder extends Seeder

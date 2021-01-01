@@ -1,20 +1,20 @@
 <?php
 declare(strict_types = 1);
 
-namespace App\Http\Controllers\Admin\Pages;
+namespace app\Http\Controllers\Admin\Pages;
 
-use App\DataTransferObjects\Admin\Pages\Add;
-use App\Exceptions\Page\AlreadyExistException;
-use App\Handlers\Admin\Pages\AddHandler;
-use App\Http\Controllers\Controller;
-use App\Http\Requests\Admin\Pages\AddEditRequest;
-use App\Services\Auth\Permissions;
-use App\Services\Notification\Notifications\Success;
-use App\Services\Notification\Notifications\Warning;
-use App\Services\Response\JsonResponse;
-use App\Services\Response\Status;
+use app\DataTransferObjects\Admin\Pages\Add;
+use app\Exceptions\Page\AlreadyExistException;
+use app\Handlers\Admin\Pages\AddHandler;
+use app\Http\Controllers\Controller;
+use app\Http\Requests\Admin\Pages\AddEditRequest;
+use app\Services\Auth\Permissions;
+use app\Services\Notification\Notifications\Success;
+use app\Services\Notification\Notifications\Warning;
+use app\Services\Response\JsonResponse;
+use app\Services\Response\Status;
 use Illuminate\Http\Response;
-use function App\permission_middleware;
+use function app\permission_middleware;
 
 class AddController extends Controller
 {

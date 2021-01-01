@@ -1,9 +1,9 @@
 <?php
 declare(strict_types = 1);
 
-namespace App\Exceptions\Role;
+namespace app\Exceptions\Role;
 
-use App\Exceptions\LogicException;
+use app\Exceptions\LogicException;
 
 class RoleAlreadyExistsException extends LogicException
 {

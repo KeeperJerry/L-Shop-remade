@@ -1,10 +1,10 @@
 <?php
 declare(strict_types = 1);
 
-namespace App\DataTransferObjects\Frontend;
+namespace app\DataTransferObjects\Frontend;
 
-use App\Entity\Page as Entity;
-use App\Services\Response\JsonRespondent;
+use app\Entity\Page as Entity;
+use app\Services\Response\JsonRespondent;
 
 /**
  * Class Page

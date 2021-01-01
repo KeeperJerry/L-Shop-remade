@@ -1,7 +1,7 @@
 <?php
 declare(strict_types = 1);
 
-use App\Services\Settings\Settings;
+use app\Services\Settings\Settings;
 use Illuminate\Contracts\Config\Repository;
 use Illuminate\Database\Seeder;
 

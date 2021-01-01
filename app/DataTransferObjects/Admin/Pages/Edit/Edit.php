@@ -1,7 +1,7 @@
 <?php
 declare(strict_types = 1);
 
-namespace App\DataTransferObjects\Admin\Pages\Edit;
+namespace app\DataTransferObjects\Admin\Pages\Edit;
 
 class Edit
 {

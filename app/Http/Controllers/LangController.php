@@ -1,9 +1,9 @@
 <?php
 declare(strict_types = 1);
 
-namespace App\Http\Controllers;
+namespace app\Http\Controllers;
 
-use App\Handlers\LangHandler;
+use app\Handlers\LangHandler;
 use Illuminate\Http\Response;
 
 /**

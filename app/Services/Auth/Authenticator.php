@@ -1,10 +1,10 @@
 <?php
 declare(strict_types = 1);
 
-namespace App\Services\Auth;
+namespace app\Services\Auth;
 
-use App\Entity\User;
-use App\Services\Auth\Session\Session;
+use app\Entity\User;
+use app\Services\Auth\Session\Session;
 
 interface Authenticator
 {

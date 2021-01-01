@@ -1,11 +1,11 @@
 <?php
 declare(strict_types = 1);
 
-namespace App\Services\Support\Lang\Ban;
+namespace app\Services\Support\Lang\Ban;
 
-use App\Entity\Ban;
-use App\Services\Auth\BanManager;
-use App\Services\DateTime\Formatting\Formatter;
+use app\Entity\Ban;
+use app\Services\Auth\BanManager;
+use app\Services\DateTime\Formatting\Formatter;
 
 /**
  * Class BanMessage

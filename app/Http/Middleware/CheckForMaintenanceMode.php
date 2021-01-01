@@ -1,10 +1,10 @@
 <?php
 declare(strict_types  = 1);
 
-namespace App\Http\Middleware;
+namespace app\Http\Middleware;
 
-use App\Services\Auth\Auth;
-use App\Services\Auth\Permissions;
+use app\Services\Auth\Auth;
+use app\Services\Auth\Permissions;
 use Illuminate\Contracts\Foundation\Application;
 use Illuminate\Foundation\Http\Exceptions\MaintenanceModeException;
 use Illuminate\Foundation\Http\Middleware\CheckForMaintenanceMode as BaseCheckForMaintenanceMode;

@@ -1,7 +1,7 @@
 <?php
 declare(strict_types = 1);
 
-namespace App\Entity;
+namespace app\Entity;
 
 use Doctrine\ORM\Mapping as ORM;
 
@@ -34,7 +34,7 @@ class News
     private $content;
 
     /**
-     * @ORM\ManyToOne(targetEntity="App\Entity\User")
+     * @ORM\ManyToOne(targetEntity="app\Entity\User")
      * @ORM\JoinColumn(name="user_id", referencedColumnName="id", onDelete="CASCADE")
      */
     private $user;
@@ -145,7 +145,7 @@ class News
     /**
      * Creates string representation of object.
      * <p>For example:</p>
-     * <p>App\Entity\News(id=7, title="Example title")</p>
+     * <p>app\Entity\News(id=7, title="Example title")</p>
      *
      * @return string
      */

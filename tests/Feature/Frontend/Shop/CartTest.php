@@ -3,17 +3,17 @@ declare(strict_types=1);
 
 namespace Tests\Feature\Frontend\Shop;
 
-use App\Entity\Category;
-use App\Entity\Item;
-use App\Entity\Product;
-use App\Entity\Server;
-use App\Repository\Item\ItemRepository;
-use App\Repository\Product\ProductRepository;
-use App\Repository\Server\ServerRepository;
-use App\Repository\User\UserRepository;
-use App\Services\Item\Type;
-use App\Services\Purchasing\Distributors\Pool;
-use App\Services\Response\Status;
+use app\Entity\Category;
+use app\Entity\Item;
+use app\Entity\Product;
+use app\Entity\Server;
+use app\Repository\Item\ItemRepository;
+use app\Repository\Product\ProductRepository;
+use app\Repository\Server\ServerRepository;
+use app\Repository\User\UserRepository;
+use app\Services\Item\Type;
+use app\Services\Purchasing\Distributors\Pool;
+use app\Services\Response\Status;
 use Illuminate\Http\Response;
 use Tests\TestCase;
 

@@ -1,7 +1,7 @@
 <?php
 declare(strict_types = 1);
 
-namespace App\Services\Media\Character\Cloak;
+namespace app\Services\Media\Character\Cloak;
 
 /**
  * Class Image

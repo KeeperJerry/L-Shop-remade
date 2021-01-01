@@ -1,9 +1,9 @@
 <?php
 declare(strict_types = 1);
 
-namespace App\DataTransferObjects\Admin\Items\Edit;
+namespace app\DataTransferObjects\Admin\Items\Edit;
 
-use App\DataTransferObjects\Admin\Items\Add\EnchantmentFromFrontend;
+use app\DataTransferObjects\Admin\Items\Add\EnchantmentFromFrontend;
 use Illuminate\Http\UploadedFile;
 
 class Edit

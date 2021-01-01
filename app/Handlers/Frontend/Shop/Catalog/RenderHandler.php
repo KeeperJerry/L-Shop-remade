@@ -1,28 +1,28 @@
 <?php
 declare(strict_types=1);
 
-namespace App\Handlers\Frontend\Shop\Catalog;
+namespace app\Handlers\Frontend\Shop\Catalog;
 
-use App\DataTransferObjects\Frontend\Shop\Catalog\Category as CategoryDTO;
-use App\DataTransferObjects\Frontend\Shop\Catalog\Product;
-use App\DataTransferObjects\Frontend\Shop\Catalog\Result;
-use App\DataTransferObjects\Frontend\Shop\Catalog\Server as ServerDTO;
-use App\Entity\Category;
-use App\Entity\Server;
-use App\Exceptions\Category\CategoryNotFoundException;
-use App\Exceptions\Category\CategoryNotFoundException as CategoryDoesNotExistException;
-use App\Exceptions\Server\ServerNotFoundException;
-use App\Exceptions\UnexpectedValueException;
-use App\Repository\Product\ProductRepository;
-use App\Repository\Server\ServerRepository;
-use App\Services\Auth\Auth;
-use App\Services\Auth\Permissions;
-use App\Services\Cart\Cart;
-use App\Services\Cart\Item;
-use App\Services\Product\Order;
-use App\Services\Server\Persistence\Persistence;
-use App\Services\Settings\DataType;
-use App\Services\Settings\Settings;
+use app\DataTransferObjects\Frontend\Shop\Catalog\Category as CategoryDTO;
+use app\DataTransferObjects\Frontend\Shop\Catalog\Product;
+use app\DataTransferObjects\Frontend\Shop\Catalog\Result;
+use app\DataTransferObjects\Frontend\Shop\Catalog\Server as ServerDTO;
+use app\Entity\Category;
+use app\Entity\Server;
+use app\Exceptions\Category\CategoryNotFoundException;
+use app\Exceptions\Category\CategoryNotFoundException as CategoryDoesNotExistException;
+use app\Exceptions\Server\ServerNotFoundException;
+use app\Exceptions\UnexpectedValueException;
+use app\Repository\Product\ProductRepository;
+use app\Repository\Server\ServerRepository;
+use app\Services\Auth\Auth;
+use app\Services\Auth\Permissions;
+use app\Services\Cart\Cart;
+use app\Services\Cart\Item;
+use app\Services\Product\Order;
+use app\Services\Server\Persistence\Persistence;
+use app\Services\Settings\DataType;
+use app\Services\Settings\Settings;
 use Illuminate\Contracts\Pagination\LengthAwarePaginator;
 
 class RenderHandler

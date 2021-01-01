@@ -1,11 +1,11 @@
 <?php
 declare(strict_types = 1);
 
-namespace App\Repository\Distribution;
+namespace app\Repository\Distribution;
 
-use App\Entity\Distribution;
-use App\Entity\Server;
-use App\Entity\User;
+use app\Entity\Distribution;
+use app\Entity\Server;
+use app\Entity\User;
 use Doctrine\ORM\EntityManagerInterface;
 use Doctrine\ORM\EntityRepository;
 use Illuminate\Contracts\Pagination\LengthAwarePaginator;

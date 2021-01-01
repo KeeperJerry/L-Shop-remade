@@ -1,14 +1,14 @@
 <?php
 declare(strict_types = 1);
 
-namespace App\Http\Controllers\Admin\Information;
+namespace app\Http\Controllers\Admin\Information;
 
-use App\Http\Controllers\Controller;
-use App\Services\Auth\Permissions;
-use App\Services\Meta\System;
-use App\Services\Response\JsonResponse;
-use App\Services\Response\Status;
-use function App\permission_middleware;
+use app\Http\Controllers\Controller;
+use app\Services\Auth\Permissions;
+use app\Services\Meta\System;
+use app\Services\Response\JsonResponse;
+use app\Services\Response\Status;
+use function app\permission_middleware;
 
 class AboutController extends Controller
 {

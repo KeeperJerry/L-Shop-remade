@@ -1,10 +1,10 @@
 <?php
 declare(strict_types = 1);
 
-namespace App\Exceptions\Purchase;
+namespace app\Exceptions\Purchase;
 
-use App\Entity\Purchase;
-use App\Exceptions\LogicException;
+use app\Entity\Purchase;
+use app\Exceptions\LogicException;
 use Throwable;
 
 class AlreadyCompletedException extends LogicException

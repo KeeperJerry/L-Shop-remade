@@ -1,9 +1,9 @@
 <?php
 declare(strict_types=1);
 
-namespace App\Services\Notification\Drivers;
+namespace app\Services\Notification\Drivers;
 
-use App\Services\Notification\Notification;
+use app\Services\Notification\Notification;
 use Illuminate\Session\Store;
 
 class Session implements Driver

@@ -1,11 +1,11 @@
 <?php
 declare(strict_types = 1);
 
-namespace App\Http\Requests\Admin\Control;
+namespace app\Http\Requests\Admin\Control;
 
-use App\Services\Auth\AccessMode;
-use App\Services\Validation\Rule;
-use App\Services\Validation\RulesBuilder;
+use app\Services\Auth\AccessMode;
+use app\Services\Validation\Rule;
+use app\Services\Validation\RulesBuilder;
 use Illuminate\Foundation\Http\FormRequest;
 
 class SaveBasicSettingsRequest extends FormRequest

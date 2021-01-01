@@ -1,37 +1,37 @@
 <?php
 declare(strict_types = 1);
 
-namespace App\Http\Controllers\Frontend\Shop;
+namespace app\Http\Controllers\Frontend\Shop;
 
-use App\DataTransferObjects\Frontend\Shop\Cart\Purchase;
-use App\DataTransferObjects\Frontend\Shop\Server;
-use App\Exceptions\Distributor\DistributionException;
-use App\Exceptions\ForbiddenException;
-use App\Exceptions\Product\ProductNotFoundException;
-use App\Exceptions\Server\ServerNotFoundException;
-use App\Handlers\Frontend\Shop\Cart\PurchaseHandler;
-use App\Handlers\Frontend\Shop\Cart\PutHandler;
-use App\Handlers\Frontend\Shop\Cart\RemoveHandler;
-use App\Handlers\Frontend\Shop\Cart\RenderHandler;
-use App\Http\Controllers\Controller;
-use App\Http\Middleware\Auth as AuthMiddleware;
-use App\Http\Middleware\Captcha as CaptchaMiddleware;
-use App\Http\Requests\Frontend\Shop\Cart\PurchaseRequest;
-use App\Http\Requests\Frontend\Shop\Cart\PutRequest;
-use App\Http\Requests\Frontend\Shop\Cart\RemoveRequest;
-use App\Services\Notification\Notifications\Error;
-use App\Services\Notification\Notifications\Info;
-use App\Services\Notification\Notifications\Success;
-use App\Services\Notification\Notifications\Warning;
-use App\Services\Response\JsonResponse;
-use App\Services\Response\Status;
-use App\Services\Security\Captcha\Captcha;
-use App\Services\Server\Persistence\Persistence;
-use App\Services\Settings\DataType;
-use App\Services\Settings\Settings;
+use app\DataTransferObjects\Frontend\Shop\Cart\Purchase;
+use app\DataTransferObjects\Frontend\Shop\Server;
+use app\Exceptions\Distributor\DistributionException;
+use app\Exceptions\ForbiddenException;
+use app\Exceptions\Product\ProductNotFoundException;
+use app\Exceptions\Server\ServerNotFoundException;
+use app\Handlers\Frontend\Shop\Cart\PurchaseHandler;
+use app\Handlers\Frontend\Shop\Cart\PutHandler;
+use app\Handlers\Frontend\Shop\Cart\RemoveHandler;
+use app\Handlers\Frontend\Shop\Cart\RenderHandler;
+use app\Http\Controllers\Controller;
+use app\Http\Middleware\Auth as AuthMiddleware;
+use app\Http\Middleware\Captcha as CaptchaMiddleware;
+use app\Http\Requests\Frontend\Shop\Cart\PurchaseRequest;
+use app\Http\Requests\Frontend\Shop\Cart\PutRequest;
+use app\Http\Requests\Frontend\Shop\Cart\RemoveRequest;
+use app\Services\Notification\Notifications\Error;
+use app\Services\Notification\Notifications\Info;
+use app\Services\Notification\Notifications\Success;
+use app\Services\Notification\Notifications\Warning;
+use app\Services\Response\JsonResponse;
+use app\Services\Response\Status;
+use app\Services\Security\Captcha\Captcha;
+use app\Services\Server\Persistence\Persistence;
+use app\Services\Settings\DataType;
+use app\Services\Settings\Settings;
 use Illuminate\Http\Request;
 use Illuminate\Http\Response;
-use function App\auth_middleware;
+use function app\auth_middleware;
 
 /**
  * Class CartController

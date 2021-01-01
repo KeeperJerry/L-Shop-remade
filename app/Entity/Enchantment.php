@@ -1,15 +1,15 @@
 <?php
 declare(strict_types = 1);
 
-namespace App\Entity;
+namespace app\Entity;
 
 use Doctrine\Common\Collections\ArrayCollection;
 use Doctrine\Common\Collections\Collection;
 use Doctrine\ORM\Mapping as ORM;
 
 /**
- * Represents enchanting in the game. The {@see \App\Entity\Item} can be enchanted if
- * {@see \App\Entity\Item::type} = {@see \App\Services\Item\Type::ITEM}.
+ * Represents enchanting in the game. The {@see \app\Entity\Item} can be enchanted if
+ * {@see \app\Entity\Item::type} = {@see \app\Services\Item\Type::ITEM}.
  *
  * @ORM\Entity
  * @ORM\Table(name="enchantments")
@@ -45,17 +45,17 @@ class Enchantment
      *
      * <p>If it is null, then the enchantment does not have a group and can be cast along with
      * enchantments from other groups. An example of a enchantment without a group is
-     * {@see \App\Services\Item\Enchantment\Enchantments::UNBREAKING}, since it is
+     * {@see \app\Services\Item\Enchantment\Enchantments::UNBREAKING}, since it is
      * possible to make absolutely any enchanting target durable.</p>
      *
-     * @see \App\Services\Item\Enchantment\Enchantments
+     * @see \app\Services\Item\Enchantment\Enchantments
      *
      * @ORM\Column(name="`group`", type="string", length=32, nullable=true)
      */
     private $group;
 
     /**
-     * @ORM\OneToMany(targetEntity="App\Entity\EnchantmentItem", mappedBy="item")
+     * @ORM\OneToMany(targetEntity="app\Entity\EnchantmentItem", mappedBy="item")
      */
     private $enchantmentItems;
 

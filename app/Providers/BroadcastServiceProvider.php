@@ -1,7 +1,7 @@
 <?php
 declare(strict_types = 1);
 
-namespace App\Providers;
+namespace app\Providers;
 
 use Illuminate\Support\Facades\Broadcast;
 use Illuminate\Support\ServiceProvider;
@@ -10,7 +10,7 @@ use Illuminate\Support\ServiceProvider;
  * Class BroadcastServiceProvider
  *
  * @author  D3lph1 <d3lph1.contact@gmail.com>
- * @package App\Providers
+ * @package app\Providers
  */
 class BroadcastServiceProvider extends ServiceProvider
 {

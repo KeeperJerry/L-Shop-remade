@@ -1,11 +1,11 @@
 <?php
 declare(strict_types = 1);
 
-namespace App\Services\Cart;
+namespace app\Services\Cart;
 
-use App\Entity\Server;
-use App\Repository\Product\ProductRepository;
-use App\Services\Cart\Storage\Storage;
+use app\Entity\Server;
+use app\Repository\Product\ProductRepository;
+use app\Services\Cart\Storage\Storage;
 
 /**
  * Class Cart

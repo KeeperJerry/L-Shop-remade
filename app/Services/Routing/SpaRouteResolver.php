@@ -1,7 +1,7 @@
 <?php
 declare(strict_types = 1);
 
-namespace App\Services\Routing;
+namespace app\Services\Routing;
 
 use Illuminate\Contracts\Config\Repository;
 

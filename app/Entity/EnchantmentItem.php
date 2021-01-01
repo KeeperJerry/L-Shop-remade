@@ -1,12 +1,12 @@
 <?php
 declare(strict_types = 1);
 
-namespace App\Entity;
+namespace app\Entity;
 
 use Doctrine\ORM\Mapping as ORM;
 
 /**
- * This entity is the link between {@see \App\Entity\Enchantment} and the {@see \App\Entity\Item}.
+ * This entity is the link between {@see \app\Entity\Enchantment} and the {@see \app\Entity\Item}.
  *
  * @ORM\Entity
  * @ORM\Table(name="enchantment_items")
@@ -23,17 +23,17 @@ class EnchantmentItem
     private $id;
 
     /**
-     * The level at which the {@see \App\Entity\Item} is enchanted. There can not be greater than
-     * {@see \App\Entity\Enchantment::maxLevel}.
+     * The level at which the {@see \app\Entity\Item} is enchanted. There can not be greater than
+     * {@see \app\Entity\Enchantment::maxLevel}.
      *
      * @ORM\Column(name="level", type="integer")
      */
     private $level;
 
     /**
-     * Enchantment that overlaps an {@see \App\Entity\EnchantmentItem::item}.
+     * Enchantment that overlaps an {@see \app\Entity\EnchantmentItem::item}.
      *
-     * @ORM\ManyToOne(targetEntity="App\Entity\Enchantment", inversedBy="enchantmentItems")
+     * @ORM\ManyToOne(targetEntity="app\Entity\Enchantment", inversedBy="enchantmentItems")
      * @ORM\JoinColumn(name="enchantment_id", referencedColumnName="id", onDelete="CASCADE")
      */
     private $enchantment;
@@ -41,7 +41,7 @@ class EnchantmentItem
     /**
      * Enchanted item.
      *
-     * @ORM\ManyToOne(targetEntity="App\Entity\Item")
+     * @ORM\ManyToOne(targetEntity="app\Entity\Item")
      */
     private $item;
 

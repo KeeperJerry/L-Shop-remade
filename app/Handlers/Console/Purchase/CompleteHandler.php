@@ -1,12 +1,12 @@
 <?php
 declare(strict_types = 1);
 
-namespace App\Handlers\Console\Purchase;
+namespace app\Handlers\Console\Purchase;
 
-use App\Exceptions\Purchase\PurchaseNotFoundException;
-use App\Repository\Purchase\PurchaseRepository;
-use App\Services\Purchasing\PurchaseCompleter;
-use App\Services\Purchasing\ViaContext;
+use app\Exceptions\Purchase\PurchaseNotFoundException;
+use app\Repository\Purchase\PurchaseRepository;
+use app\Services\Purchasing\PurchaseCompleter;
+use app\Services\Purchasing\ViaContext;
 
 class CompleteHandler
 {

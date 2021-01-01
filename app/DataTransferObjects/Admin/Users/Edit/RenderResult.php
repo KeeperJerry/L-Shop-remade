@@ -1,12 +1,12 @@
 <?php
 declare(strict_types = 1);
 
-namespace App\DataTransferObjects\Admin\Users\Edit;
+namespace app\DataTransferObjects\Admin\Users\Edit;
 
-use App\DataTransferObjects\Admin\Users\Edit\User as UserDTO;
-use App\Entity\Permission;
-use App\Entity\Role;
-use App\Services\Response\JsonRespondent;
+use app\DataTransferObjects\Admin\Users\Edit\User as UserDTO;
+use app\Entity\Permission;
+use app\Entity\Role;
+use app\Services\Response\JsonRespondent;
 
 class RenderResult implements JsonRespondent
 {

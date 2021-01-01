@@ -1,12 +1,12 @@
 <?php
 declare(strict_types = 1);
 
-namespace App\DataTransferObjects\Admin\Users\Edit;
+namespace app\DataTransferObjects\Admin\Users\Edit;
 
-use App\Entity\Permission;
-use App\Entity\Role;
-use App\Entity\User as Entity;
-use App\Services\Auth\BanManager;
+use app\Entity\Permission;
+use app\Entity\Role;
+use app\Entity\User as Entity;
+use app\Services\Auth\BanManager;
 
 class User implements \JsonSerializable
 {
@@ -139,7 +139,7 @@ class User implements \JsonSerializable
         }
 
         $bans = [];
-        /** @var \App\Entity\Ban $ban */
+        /** @var \app\Entity\Ban $ban */
         foreach ($this->user->getBans() as $ban) {
             $bans[] = new Ban($ban, $this->banManager->isExpired($ban));
         }

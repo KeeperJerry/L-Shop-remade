@@ -1,9 +1,9 @@
 <?php
 declare(strict_types = 1);
 
-namespace App\Services\DateTime;
+namespace app\Services\DateTime;
 
-use App\Exceptions\InvalidArgumentException;
+use app\Exceptions\InvalidArgumentException;
 
 class DateTimeUtil
 {

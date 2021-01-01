@@ -1,17 +1,17 @@
 <?php
 declare(strict_types = 1);
 
-namespace App\Providers;
+namespace app\Providers;
 
-use App\Composers\GlobalLayoutComposer;
-use App\Composers\ShopLayoutComposer;
+use app\Composers\GlobalLayoutComposer;
+use app\Composers\ShopLayoutComposer;
 use Illuminate\Support\ServiceProvider;
 
 /**
  * Class ComposerServiceProvider
  *
  * @author  D3lph1 <d3lph1.contact@gmail.com>
- * @package App\Providers
+ * @package app\Providers
  */
 class ComposerServiceProvider extends ServiceProvider
 {

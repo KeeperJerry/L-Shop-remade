@@ -1,9 +1,9 @@
 <?php
 declare(strict_types = 1);
 
-namespace App\Entity;
+namespace app\Entity;
 
-use App\Services\Auth\Acl\PermissionInterface;
+use app\Services\Auth\Acl\PermissionInterface;
 use Doctrine\Common\Collections\ArrayCollection;
 use Doctrine\Common\Collections\Collection;
 use Doctrine\ORM\Mapping as ORM;
@@ -27,12 +27,12 @@ class Permission implements PermissionInterface
     private $name;
 
     /**
-     * @ORM\ManyToMany(targetEntity="App\Entity\User", inversedBy="permissions")
+     * @ORM\ManyToMany(targetEntity="app\Entity\User", inversedBy="permissions")
      */
     private $users;
 
     /**
-     * @ORM\ManyToMany(targetEntity="App\Entity\Role", inversedBy="permissions", cascade={"persist"})
+     * @ORM\ManyToMany(targetEntity="app\Entity\Role", inversedBy="permissions", cascade={"persist"})
      */
     private $roles;
 

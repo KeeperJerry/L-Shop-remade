@@ -1,11 +1,11 @@
 <?php
 declare(strict_types = 1);
 
-namespace App\Handlers\Admin\Control\Basic;
+namespace app\Handlers\Admin\Control\Basic;
 
-use App\DataTransferObjects\Admin\Control\Basic\VisitResult;
-use App\Services\Settings\DataType;
-use App\Services\Settings\Settings;
+use app\DataTransferObjects\Admin\Control\Basic\VisitResult;
+use app\Services\Settings\DataType;
+use app\Services\Settings\Settings;
 use Illuminate\Contracts\Foundation\Application;
 
 class VisitHandler

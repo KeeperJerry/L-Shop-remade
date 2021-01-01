@@ -1,9 +1,9 @@
 <?php
 declare(strict_types = 1);
 
-namespace App\Repository\Ban;
+namespace app\Repository\Ban;
 
-use App\Entity\Ban;
+use app\Entity\Ban;
 
 interface BanRepository
 {

@@ -1,7 +1,7 @@
 <?php
 declare(strict_types = 1);
 
-namespace App\Entity;
+namespace app\Entity;
 
 use Doctrine\Common\Collections\ArrayCollection;
 use Doctrine\Common\Collections\Collection;
@@ -27,7 +27,7 @@ class Purchase
     private $cost;
 
     /**
-     * @ORM\ManyToOne(targetEntity="App\Entity\User")
+     * @ORM\ManyToOne(targetEntity="app\Entity\User")
      * @ORM\JoinColumn(name="user_id", referencedColumnName="id", onDelete="CASCADE")
      */
     private $user;
@@ -38,7 +38,7 @@ class Purchase
     private $player;
 
     /**
-     * @ORM\OneToMany(targetEntity="App\Entity\PurchaseItem", mappedBy="purchase", cascade={"persist"})
+     * @ORM\OneToMany(targetEntity="app\Entity\PurchaseItem", mappedBy="purchase", cascade={"persist"})
      */
     private $items;
 

@@ -1,9 +1,9 @@
 <?php
 declare(strict_types = 1);
 
-namespace App\Events\Server;
+namespace app\Events\Server;
 
-use App\Entity\Server;
+use app\Entity\Server;
 
 class ServerWillBeDeletedEvent
 {

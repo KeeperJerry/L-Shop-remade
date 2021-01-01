@@ -1,9 +1,9 @@
 <?php
 declare(strict_types = 1);
 
-namespace App\Services\Database\Transfer;
+namespace app\Services\Database\Transfer;
 
-use App\Services\Database\Transfer\Queries\Version050a\Query;
+use app\Services\Database\Transfer\Queries\Version050a\Query;
 use Doctrine\ORM\EntityManagerInterface;
 
 class Version050ATransfer implements Transfer

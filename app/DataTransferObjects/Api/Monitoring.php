@@ -1,9 +1,9 @@
 <?php
 declare(strict_types = 1);
 
-namespace App\DataTransferObjects\Api;
+namespace app\DataTransferObjects\Api;
 
-use App\Services\Monitoring\Statistic;
+use app\Services\Monitoring\Statistic;
 
 class Monitoring implements \JsonSerializable
 {

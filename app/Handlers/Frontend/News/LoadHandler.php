@@ -1,13 +1,13 @@
 <?php
 declare(strict_types = 1);
 
-namespace App\Handlers\Frontend\News;
+namespace app\Handlers\Frontend\News;
 
-use App\DataTransferObjects\Frontend\Shop\News\Container;
-use App\DataTransferObjects\Frontend\Shop\News\Item;
-use App\Repository\News\NewsRepository;
-use App\Services\Settings\DataType;
-use App\Services\Settings\Settings;
+use app\DataTransferObjects\Frontend\Shop\News\Container;
+use app\DataTransferObjects\Frontend\Shop\News\Item;
+use app\Repository\News\NewsRepository;
+use app\Services\Settings\DataType;
+use app\Services\Settings\Settings;
 
 class LoadHandler
 {

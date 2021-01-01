@@ -1,9 +1,9 @@
 <?php
 declare(strict_types = 1);
 
-namespace App\Events\Item;
+namespace app\Events\Item;
 
-use App\Entity\Item;
+use app\Entity\Item;
 
 class ItemCreatedEvent
 {

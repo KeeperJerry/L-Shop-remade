@@ -1,10 +1,10 @@
 <?php
 declare(strict_types = 1);
 
-namespace App\Repository\Category;
+namespace app\Repository\Category;
 
-use App\Entity\Category;
-use App\Services\Caching\ClearsCache;
+use app\Entity\Category;
+use app\Services\Caching\ClearsCache;
 use Doctrine\ORM\EntityManagerInterface;
 use Doctrine\ORM\EntityRepository;
 

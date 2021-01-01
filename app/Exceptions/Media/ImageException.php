@@ -1,9 +1,9 @@
 <?php
 declare(strict_types = 1);
 
-namespace App\Exceptions\Media;
+namespace app\Exceptions\Media;
 
-use App\Exceptions\DomainException;
+use app\Exceptions\DomainException;
 
 class ImageException extends DomainException
 {

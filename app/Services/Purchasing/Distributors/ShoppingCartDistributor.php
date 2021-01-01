@@ -1,16 +1,16 @@
 <?php
 declare(strict_types = 1);
 
-namespace App\Services\Purchasing\Distributors;
+namespace app\Services\Purchasing\Distributors;
 
-use App\Entity\Distribution;
-use App\Entity\ShoppingCart;
-use App\Repository\Distribution\DistributionRepository;
-use App\Repository\ShoppingCart\ShoppingCartRepository;
-use App\Services\Purchasing\Distributors\ShoppingCartPipeline\OtherPipe;
-use App\Services\Purchasing\Distributors\ShoppingCartPipeline\PlayerPipe;
-use App\Services\Purchasing\Distributors\ShoppingCartPipeline\SignatureAndAmountPipe;
-use App\Services\Purchasing\Distributors\ShoppingCartPipeline\TypePipe;
+use app\Entity\Distribution;
+use app\Entity\ShoppingCart;
+use app\Repository\Distribution\DistributionRepository;
+use app\Repository\ShoppingCart\ShoppingCartRepository;
+use app\Services\Purchasing\Distributors\ShoppingCartPipeline\OtherPipe;
+use app\Services\Purchasing\Distributors\ShoppingCartPipeline\PlayerPipe;
+use app\Services\Purchasing\Distributors\ShoppingCartPipeline\SignatureAndAmountPipe;
+use app\Services\Purchasing\Distributors\ShoppingCartPipeline\TypePipe;
 use Illuminate\Pipeline\Pipeline;
 
 /**

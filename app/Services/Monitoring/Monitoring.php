@@ -1,13 +1,13 @@
 <?php
 declare(strict_types = 1);
 
-namespace App\Services\Monitoring;
+namespace app\Services\Monitoring;
 
-use App\Entity\Server;
-use App\Repository\Server\ServerRepository;
-use App\Services\Caching\CachingRepository;
-use App\Services\Monitoring\Drivers\Driver;
-use App\Services\Monitoring\Drivers\DTO;
+use app\Entity\Server;
+use app\Repository\Server\ServerRepository;
+use app\Services\Caching\CachingRepository;
+use app\Services\Monitoring\Drivers\Driver;
+use app\Services\Monitoring\Drivers\DTO;
 use Psr\Log\LoggerInterface;
 
 /**

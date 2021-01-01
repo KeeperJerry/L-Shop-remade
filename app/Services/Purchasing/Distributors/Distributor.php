@@ -1,10 +1,10 @@
 <?php
 declare(strict_types = 1);
 
-namespace App\Services\Purchasing\Distributors;
+namespace app\Services\Purchasing\Distributors;
 
-use App\Entity\Distribution;
-use App\Exceptions\Distributor\DistributionException;
+use app\Entity\Distribution;
+use app\Exceptions\Distributor\DistributionException;
 
 /**
  * Interface Distributor

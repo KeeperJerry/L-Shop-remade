@@ -1,16 +1,16 @@
 <?php
 declare(strict_types = 1);
 
-namespace App\Handlers\Consoe\User;
+namespace app\Handlers\Consoe\User;
 
-use App\Entity\User;
-use App\Exceptions\InvalidArgumentException;
-use App\Repository\User\UserRepository;
-use App\Services\Auth\Auth;
-use App\Services\Auth\Exceptions\EmailAlreadyExistsException;
-use App\Services\Auth\Exceptions\UsernameAlreadyExistsException;
-use App\Services\Validation\Rule;
-use App\Services\Validation\RulesBuilder;
+use app\Entity\User;
+use app\Exceptions\InvalidArgumentException;
+use app\Repository\User\UserRepository;
+use app\Services\Auth\Auth;
+use app\Services\Auth\Exceptions\EmailAlreadyExistsException;
+use app\Services\Auth\Exceptions\UsernameAlreadyExistsException;
+use app\Services\Validation\Rule;
+use app\Services\Validation\RulesBuilder;
 use Illuminate\Contracts\Config\Repository;
 use Illuminate\Validation\Factory;
 use Illuminate\Validation\ValidationException;

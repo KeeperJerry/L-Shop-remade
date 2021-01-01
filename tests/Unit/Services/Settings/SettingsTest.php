@@ -3,9 +3,9 @@ declare(strict_types = 1);
 
 namespace Tests\Unit\Services\Settings;
 
-use App\Services\Settings\DefaultSettings;
-use App\Services\Settings\Driver;
-use App\Services\Settings\Repository\MemoryRepository;
+use app\Services\Settings\DefaultSettings;
+use app\Services\Settings\Driver;
+use app\Services\Settings\Repository\MemoryRepository;
 use Tests\TestCase;
 
 class SettingsTest extends TestCase

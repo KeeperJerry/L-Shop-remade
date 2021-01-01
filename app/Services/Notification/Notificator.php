@@ -1,9 +1,9 @@
 <?php
 declare(strict_types = 1);
 
-namespace App\Services\Notification;
+namespace app\Services\Notification;
 
-use App\Services\Notification\Drivers\Driver;
+use app\Services\Notification\Drivers\Driver;
 
 class Notificator
 {

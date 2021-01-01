@@ -1,7 +1,7 @@
 <?php
 declare(strict_types = 1);
 
-namespace App\Services\Database\Transaction;
+namespace app\Services\Database\Transaction;
 
 interface Transactor
 {

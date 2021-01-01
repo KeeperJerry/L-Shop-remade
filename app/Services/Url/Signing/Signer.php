@@ -1,7 +1,7 @@
 <?php
 declare(strict_types = 1);
 
-namespace App\Services\Url\Signing;
+namespace app\Services\Url\Signing;
 
 class Signer
 {

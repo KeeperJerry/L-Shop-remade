@@ -1,10 +1,10 @@
 <?php
 declare(strict_types = 1);
 
-namespace App\Repository\Reminder;
+namespace app\Repository\Reminder;
 
-use App\Entity\Reminder;
-use App\Entity\User;
+use app\Entity\Reminder;
+use app\Entity\User;
 
 interface ReminderRepository
 {

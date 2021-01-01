@@ -1,10 +1,10 @@
 <?php
 declare(strict_types = 1);
 
-namespace App\DataTransferObjects\Frontend\Shop\News;
+namespace app\DataTransferObjects\Frontend\Shop\News;
 
-use App\Entity\News;
-use App\Services\DateTime\Formatting\JavaScriptFormatter;
+use app\Entity\News;
+use app\Services\DateTime\Formatting\JavaScriptFormatter;
 use Illuminate\Support\Str;
 
 /**

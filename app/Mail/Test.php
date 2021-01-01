@@ -1,7 +1,7 @@
 <?php
 declare(strict_types = 1);
 
-namespace App\Mail;
+namespace app\Mail;
 
 use Illuminate\Bus\Queueable;
 use Illuminate\Contracts\Config\Repository;

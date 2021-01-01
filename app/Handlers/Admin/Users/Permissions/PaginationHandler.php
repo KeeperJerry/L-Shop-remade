@@ -1,12 +1,12 @@
 <?php
 declare(strict_types = 1);
 
-namespace App\Handlers\Admin\Users\Permissions;
+namespace app\Handlers\Admin\Users\Permissions;
 
-use App\DataTransferObjects\Admin\Users\Permissions\ListResult;
-use App\DataTransferObjects\PaginationList;
-use App\Exceptions\InvalidArgumentException;
-use App\Repository\Permission\PermissionRepository;
+use app\DataTransferObjects\Admin\Users\Permissions\ListResult;
+use app\DataTransferObjects\PaginationList;
+use app\Exceptions\InvalidArgumentException;
+use app\Repository\Permission\PermissionRepository;
 
 class PaginationHandler
 {

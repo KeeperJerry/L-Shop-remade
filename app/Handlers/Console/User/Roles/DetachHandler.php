@@ -1,13 +1,13 @@
 <?php
 declare(strict_types=1);
 
-namespace App\Handlers\Consoe\User\Roles;
+namespace app\Handlers\Consoe\User\Roles;
 
-use App\Entity\Role;
-use App\Exceptions\Role\PermissionNotFoundException;
-use App\Exceptions\User\UserNotFoundException;
-use App\Repository\Role\RoleRepository;
-use App\Repository\User\UserRepository;
+use app\Entity\Role;
+use app\Exceptions\Role\PermissionNotFoundException;
+use app\Exceptions\User\UserNotFoundException;
+use app\Repository\Role\RoleRepository;
+use app\Repository\User\UserRepository;
 
 class DetachHandler
 {

@@ -1,9 +1,9 @@
 <?php
 declare(strict_types = 1);
 
-namespace App\Exceptions\Payer;
+namespace app\Exceptions\Payer;
 
-use App\Exceptions\DomainException;
+use app\Exceptions\DomainException;
 
 class PayerNotFoundException extends DomainException
 {

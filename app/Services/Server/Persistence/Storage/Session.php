@@ -1,7 +1,7 @@
 <?php
 declare(strict_types = 1);
 
-namespace App\Services\Server\Persistence\Storage;
+namespace app\Services\Server\Persistence\Storage;
 
 use Illuminate\Contracts\Session\Session as Store;
 

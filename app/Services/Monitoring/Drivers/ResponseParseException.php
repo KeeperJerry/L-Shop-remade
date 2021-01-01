@@ -1,9 +1,9 @@
 <?php
 declare(strict_types = 1);
 
-namespace App\Services\Monitoring\Drivers;
+namespace app\Services\Monitoring\Drivers;
 
-use App\Services\Monitoring\ResponseException;
+use app\Services\Monitoring\ResponseException;
 
 /**
  * Class ResponseParseException

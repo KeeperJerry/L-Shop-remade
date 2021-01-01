@@ -1,13 +1,13 @@
 <?php
 declare(strict_types = 1);
 
-namespace App\Jobs\Purchasing\Distribution;
+namespace app\Jobs\Purchasing\Distribution;
 
-use App\Entity\Distribution;
-use App\Exceptions\Distributor\DistributionException;
-use App\Repository\Distribution\DistributionRepository;
-use App\Services\Purchasing\Distributors\RconDistribution\Connections;
-use App\Services\Purchasing\Distributors\RconDistribution\ExecutableCommands;
+use app\Entity\Distribution;
+use app\Exceptions\Distributor\DistributionException;
+use app\Repository\Distribution\DistributionRepository;
+use app\Services\Purchasing\Distributors\RconDistribution\Connections;
+use app\Services\Purchasing\Distributors\RconDistribution\ExecutableCommands;
 use D3lph1\MinecraftRconManager\Connection;
 use D3lph1\MinecraftRconManager\Exceptions\RuntimeException;
 use Illuminate\Bus\Queueable;

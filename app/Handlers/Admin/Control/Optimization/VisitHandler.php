@@ -1,11 +1,11 @@
 <?php
 declare(strict_types = 1);
 
-namespace App\Handlers\Admin\Control\Optimization;
+namespace app\Handlers\Admin\Control\Optimization;
 
-use App\DataTransferObjects\Admin\Control\Optimization\VisitResult;
-use App\Services\Settings\DataType;
-use App\Services\Settings\Settings;
+use app\DataTransferObjects\Admin\Control\Optimization\VisitResult;
+use app\Services\Settings\DataType;
+use app\Services\Settings\Settings;
 
 class VisitHandler
 {

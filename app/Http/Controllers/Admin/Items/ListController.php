@@ -1,22 +1,22 @@
 <?php
 declare(strict_types = 1);
 
-namespace App\Http\Controllers\Admin\Items;
+namespace app\Http\Controllers\Admin\Items;
 
-use App\DataTransferObjects\PaginationList;
-use App\Exceptions\Item\ItemNotFoundException;
-use App\Handlers\Admin\Items\DeleteHandler;
-use App\Handlers\Admin\Items\ListHandler;
-use App\Http\Controllers\Controller;
-use App\Services\Auth\Permissions;
-use App\Services\Notification\Notifications\Info;
-use App\Services\Notification\Notifications\Warning;
-use App\Services\Notification\Notificator;
-use App\Services\Response\JsonResponse;
-use App\Services\Response\Status;
+use app\DataTransferObjects\PaginationList;
+use app\Exceptions\Item\ItemNotFoundException;
+use app\Handlers\Admin\Items\DeleteHandler;
+use app\Handlers\Admin\Items\ListHandler;
+use app\Http\Controllers\Controller;
+use app\Services\Auth\Permissions;
+use app\Services\Notification\Notifications\Info;
+use app\Services\Notification\Notifications\Warning;
+use app\Services\Notification\Notificator;
+use app\Services\Response\JsonResponse;
+use app\Services\Response\Status;
 use Illuminate\Http\Request;
 use Illuminate\Http\Response;
-use function App\permission_middleware;
+use function app\permission_middleware;
 
 class ListController extends Controller
 {

@@ -3,15 +3,15 @@ declare(strict_types = 1);
 
 namespace Tests\Integrated\Services\Game\Permissions\LuckPerms;
 
-use App\Entity\User;
-use App\Services\Auth\Auth;
-use App\Services\Game\Permissions\LuckPerms\Entity\Group;
-use App\Services\Game\Permissions\LuckPerms\Entity\GroupPermission;
-use App\Services\Game\Permissions\LuckPerms\Entity\Player;
-use App\Services\Game\Permissions\LuckPerms\Entity\PlayerPermission;
-use App\Services\Game\Permissions\LuckPerms\Repository\Group\GroupRepository;
-use App\Services\Game\Permissions\LuckPerms\Repository\Player\PlayerRepository;
-use App\Services\Game\Permissions\LuckPerms\Storage;
+use app\Entity\User;
+use app\Services\Auth\Auth;
+use app\Services\Game\Permissions\LuckPerms\Entity\Group;
+use app\Services\Game\Permissions\LuckPerms\Entity\GroupPermission;
+use app\Services\Game\Permissions\LuckPerms\Entity\Player;
+use app\Services\Game\Permissions\LuckPerms\Entity\PlayerPermission;
+use app\Services\Game\Permissions\LuckPerms\Repository\Group\GroupRepository;
+use app\Services\Game\Permissions\LuckPerms\Repository\Player\PlayerRepository;
+use app\Services\Game\Permissions\LuckPerms\Storage;
 use Tests\TestCase;
 
 class StorageTest extends TestCase

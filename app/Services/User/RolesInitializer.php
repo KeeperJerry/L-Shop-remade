@@ -1,13 +1,13 @@
 <?php
 declare(strict_types = 1);
 
-namespace App\Services\User;
+namespace app\Services\User;
 
-use App\Entity\Role;
-use App\Entity\User;
-use App\Exceptions\Role\PermissionNotFoundException;
-use App\Repository\Role\RoleRepository;
-use App\Services\Database\GarbageCollection\DoctrineGarbageCollector;
+use app\Entity\Role;
+use app\Entity\User;
+use app\Exceptions\Role\PermissionNotFoundException;
+use app\Repository\Role\RoleRepository;
+use app\Services\Database\GarbageCollection\DoctrineGarbageCollector;
 use Illuminate\Contracts\Config\Repository;
 
 class RolesInitializer

@@ -3,8 +3,8 @@ declare(strict_types = 1);
 
 namespace Tests\Feature\Frontend\Auth;
 
-use App\Services\Response\Status;
-use App\Services\Settings\Settings;
+use app\Services\Response\Status;
+use app\Services\Settings\Settings;
 use Illuminate\Validation\ValidationException;
 use Tests\TestCase;
 

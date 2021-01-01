@@ -1,11 +1,11 @@
 <?php
 declare(strict_types = 1);
 
-namespace App\Services\Purchasing\Distributors;
+namespace app\Services\Purchasing\Distributors;
 
-use App\Entity\Distribution;
-use App\Jobs\Purchasing\Distribution\DistributeByRcon;
-use App\Services\Purchasing\Distributors\RconDistribution\CommandBuilder;
+use app\Entity\Distribution;
+use app\Jobs\Purchasing\Distribution\DistributeByRcon;
+use app\Services\Purchasing\Distributors\RconDistribution\CommandBuilder;
 use Illuminate\Contracts\Bus\Dispatcher;
 
 /**

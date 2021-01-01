@@ -1,9 +1,9 @@
 <?php
 declare(strict_types = 1);
 
-namespace App\Mail\Auth;
+namespace app\Mail\Auth;
 
-use App\Services\Routing\SpaRouteResolver;
+use app\Services\Routing\SpaRouteResolver;
 use Illuminate\Contracts\Config\Repository;
 use Illuminate\Contracts\Translation\Translator;
 use Illuminate\Mail\Mailable;
@@ -16,7 +16,7 @@ class Reminder extends Mailable
     public $subject;
 
     /**
-     * @var \App\Entity\Reminder
+     * @var \app\Entity\Reminder
      */
     private $reminder;
 
@@ -25,7 +25,7 @@ class Reminder extends Mailable
      */
     private $ip;
 
-    public function __construct(\App\Entity\Reminder $reminder, string $ip)
+    public function __construct(\app\Entity\Reminder $reminder, string $ip)
     {
         $this->reminder = $reminder;
         $this->ip = $ip;

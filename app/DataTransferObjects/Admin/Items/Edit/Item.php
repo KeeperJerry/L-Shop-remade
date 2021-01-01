@@ -1,10 +1,10 @@
 <?php
 declare(strict_types = 1);
 
-namespace App\DataTransferObjects\Admin\Items\Edit;
+namespace app\DataTransferObjects\Admin\Items\Edit;
 
-use App\Entity\Item as Entity;
-use App\Services\Item\Image\Image;
+use app\Entity\Item as Entity;
+use app\Services\Item\Image\Image;
 
 class Item implements \JsonSerializable
 {

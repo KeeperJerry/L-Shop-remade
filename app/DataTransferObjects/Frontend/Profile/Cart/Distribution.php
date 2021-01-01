@@ -1,12 +1,12 @@
 <?php
 declare(strict_types = 1);
 
-namespace App\DataTransferObjects\Frontend\Profile\Cart;
+namespace app\DataTransferObjects\Frontend\Profile\Cart;
 
-use App\Entity\Distribution as Entity;
-use App\Services\Item\Image\Image;
-use App\Services\Product\Stack;
-use App\Services\Purchasing\Distributors\Attempting;
+use app\Entity\Distribution as Entity;
+use app\Services\Item\Image\Image;
+use app\Services\Product\Stack;
+use app\Services\Purchasing\Distributors\Attempting;
 
 class Distribution implements \JsonSerializable
 {

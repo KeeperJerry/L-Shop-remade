@@ -1,10 +1,10 @@
 <?php
 declare(strict_types = 1);
 
-namespace App\DataTransferObjects\Frontend\Shop\Catalog;
+namespace app\DataTransferObjects\Frontend\Shop\Catalog;
 
-use App\Entity\EnchantmentItem;
-use App\Services\Utils\NumberUtil;
+use app\Entity\EnchantmentItem;
+use app\Services\Utils\NumberUtil;
 
 class Enchantment implements \JsonSerializable
 {

@@ -1,12 +1,12 @@
 <?php
 declare(strict_types = 1);
 
-namespace App\Handlers\Admin\News;
+namespace app\Handlers\Admin\News;
 
-use App\DataTransferObjects\Admin\News\Add;
-use App\Entity\News;
-use App\Repository\News\NewsRepository;
-use App\Services\Auth\Auth;
+use app\DataTransferObjects\Admin\News\Add;
+use app\Entity\News;
+use app\Repository\News\NewsRepository;
+use app\Services\Auth\Auth;
 
 class AddHandler
 {

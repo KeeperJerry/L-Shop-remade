@@ -1,9 +1,9 @@
 <?php
 
-namespace App\DataTransferObjects\Admin\Users\Edit;
+namespace app\DataTransferObjects\Admin\Users\Edit;
 
-use App\DataTransferObjects\Frontend\Profile\Cart\Distribution;
-use App\Services\Response\JsonRespondent;
+use app\DataTransferObjects\Frontend\Profile\Cart\Distribution;
+use app\Services\Response\JsonRespondent;
 use Illuminate\Contracts\Pagination\LengthAwarePaginator;
 
 class CartResult implements JsonRespondent

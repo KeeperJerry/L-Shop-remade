@@ -1,9 +1,9 @@
 <?php
 declare(strict_types = 1);
 
-namespace App\Services\Auth\Checkpoint;
+namespace app\Services\Auth\Checkpoint;
 
-use App\Entity\User;
+use app\Entity\User;
 
 /**
  * Class Pool

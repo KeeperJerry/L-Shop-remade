@@ -1,20 +1,20 @@
 <?php
 declare(strict_types = 1);
 
-namespace App\Http\Controllers\Admin\Items;
+namespace app\Http\Controllers\Admin\Items;
 
-use App\DataTransferObjects\Admin\Items\Add\Add;
-use App\DataTransferObjects\Admin\Items\Add\EnchantmentFromFrontend;
-use App\Handlers\Admin\Items\Add\AddHandler;
-use App\Handlers\Admin\Items\Add\RenderHandler;
-use App\Http\Controllers\Controller;
-use App\Http\Requests\Admin\Items\AddRequest;
-use function App\permission_middleware;
-use App\Services\Auth\Permissions;
-use App\Services\Notification\Notifications\Success;
-use App\Services\Notification\Notificator;
-use App\Services\Response\JsonResponse;
-use App\Services\Response\Status;
+use app\DataTransferObjects\Admin\Items\Add\Add;
+use app\DataTransferObjects\Admin\Items\Add\EnchantmentFromFrontend;
+use app\Handlers\Admin\Items\Add\AddHandler;
+use app\Handlers\Admin\Items\Add\RenderHandler;
+use app\Http\Controllers\Controller;
+use app\Http\Requests\Admin\Items\AddRequest;
+use function app\permission_middleware;
+use app\Services\Auth\Permissions;
+use app\Services\Notification\Notifications\Success;
+use app\Services\Notification\Notificator;
+use app\Services\Response\JsonResponse;
+use app\Services\Response\Status;
 
 class AddController extends Controller
 {

@@ -1,9 +1,9 @@
 <?php
 declare(strict_types = 1);
 
-namespace App\Exceptions\Server;
+namespace app\Exceptions\Server;
 
-use App\Exceptions\DomainException;
+use app\Exceptions\DomainException;
 
 class ServerNotFoundException extends DomainException
 {

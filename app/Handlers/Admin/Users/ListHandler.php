@@ -1,14 +1,14 @@
 <?php
 declare(strict_types = 1);
 
-namespace App\Handlers\Admin\Users;
+namespace app\Handlers\Admin\Users;
 
-use App\DataTransferObjects\Admin\Users\ListResult;
-use App\DataTransferObjects\PaginationList;
-use App\Exceptions\InvalidArgumentException;
-use App\Repository\User\UserRepository;
-use App\Services\Auth\Activator;
-use App\Services\Auth\BanManager;
+use app\DataTransferObjects\Admin\Users\ListResult;
+use app\DataTransferObjects\PaginationList;
+use app\Exceptions\InvalidArgumentException;
+use app\Repository\User\UserRepository;
+use app\Services\Auth\Activator;
+use app\Services\Auth\BanManager;
 
 class ListHandler
 {

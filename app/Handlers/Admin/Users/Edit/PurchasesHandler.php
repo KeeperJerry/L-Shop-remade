@@ -1,13 +1,13 @@
 <?php
 declare(strict_types = 1);
 
-namespace App\Handlers\Admin\Users\Edit;
+namespace app\Handlers\Admin\Users\Edit;
 
-use App\DataTransferObjects\Admin\Users\Edit\PaginationList;
-use App\DataTransferObjects\Admin\Users\Edit\PurchasesResult;
-use App\Exceptions\InvalidArgumentException;
-use App\Repository\Purchase\PurchaseRepository;
-use App\Services\Auth\Auth;
+use app\DataTransferObjects\Admin\Users\Edit\PaginationList;
+use app\DataTransferObjects\Admin\Users\Edit\PurchasesResult;
+use app\Exceptions\InvalidArgumentException;
+use app\Repository\Purchase\PurchaseRepository;
+use app\Services\Auth\Auth;
 
 class PurchasesHandler
 {

@@ -1,16 +1,16 @@
 <?php
 declare(strict_types = 1);
 
-namespace App\Http\Controllers\Admin\News;
+namespace app\Http\Controllers\Admin\News;
 
-use App\DataTransferObjects\PaginationList;
-use App\Handlers\Admin\News\ListHandler;
-use App\Http\Controllers\Controller;
-use App\Services\Auth\Permissions;
-use App\Services\Response\JsonResponse;
-use App\Services\Response\Status;
+use app\DataTransferObjects\PaginationList;
+use app\Handlers\Admin\News\ListHandler;
+use app\Http\Controllers\Controller;
+use app\Services\Auth\Permissions;
+use app\Services\Response\JsonResponse;
+use app\Services\Response\Status;
 use Illuminate\Http\Request;
-use function App\permission_middleware;
+use function app\permission_middleware;
 
 class ListController extends Controller
 {

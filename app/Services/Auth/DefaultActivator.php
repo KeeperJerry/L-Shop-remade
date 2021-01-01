@@ -1,13 +1,13 @@
 <?php
 declare(strict_types=1);
 
-namespace App\Services\Auth;
+namespace app\Services\Auth;
 
-use App\Entity\Activation;
-use App\Entity\User;
-use App\Repository\Activation\ActivationRepository;
-use App\Services\Auth\Generators\CodeGenerator;
-use App\Services\DateTime\DateTimeUtil;
+use app\Entity\Activation;
+use app\Entity\User;
+use app\Repository\Activation\ActivationRepository;
+use app\Services\Auth\Generators\CodeGenerator;
+use app\Services\DateTime\DateTimeUtil;
 use Illuminate\Contracts\Config\Repository;
 
 class DefaultActivator implements Activator

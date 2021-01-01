@@ -3,7 +3,7 @@ declare(strict_types = 1);
 
 namespace Tests\Unit\Services\DateTime;
 
-use App\Services\DateTime\DateTimeUtil;
+use app\Services\DateTime\DateTimeUtil;
 use Tests\TestCase;
 
 class DateTimeUtilTest extends TestCase

@@ -1,9 +1,9 @@
 <?php
 declare(strict_types = 1);
 
-namespace App\Handlers\Admin\Statistic\Show;
+namespace app\Handlers\Admin\Statistic\Show;
 
-use App\Repository\User\UserRepository;
+use app\Repository\User\UserRepository;
 
 class RegisteredForMonthHandler
 {

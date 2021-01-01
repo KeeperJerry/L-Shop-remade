@@ -1,7 +1,7 @@
 <?php
 declare(strict_types = 1);
 
-namespace App\Entity;
+namespace app\Entity;
 
 use Doctrine\Common\Collections\ArrayCollection;
 use Doctrine\Common\Collections\Collection;
@@ -10,7 +10,7 @@ use Doctrine\ORM\Mapping as ORM;
 /**
  * The item is a sold entity. Items include all sorts of blocks, in-game items, permissions,
  * in-game currency, regions and so on. Since the item represents an in-game essence it can
- * not be sold independently, it must be tied to a certain {@see \App\Entity\Product}.
+ * not be sold independently, it must be tied to a certain {@see \app\Entity\Product}.
  *
  * <p>You can create 1 item, for example, diamond, specify for him in-game identification
  * data and then, bind to several products. Each product will be sold on a separate
@@ -20,11 +20,11 @@ use Doctrine\ORM\Mapping as ORM;
  *
  * <p>The type of the object determines what it is in the game. As I said above, there
  * are such types of objects as a common block / common object (type is predefined in
- * a constant {@see \App\Services\Item\Type::ITEM}), a group of privileges (type is
- * predefined in a constant {@see \App\Services\Item\Type::PERMGROUP}).</p>
+ * a constant {@see \app\Services\Item\Type::ITEM}), a group of privileges (type is
+ * predefined in a constant {@see \app\Services\Item\Type::PERMGROUP}).</p>
  *
- * <p>If the item being sold has a type {@see \App\Services\Item\Type::ITEM}, then this
- * item can be enchanted. Read more in {@see \App\Entity\Enchantment}.</p>
+ * <p>If the item being sold has a type {@see \app\Services\Item\Type::ITEM}, then this
+ * item can be enchanted. Read more in {@see \app\Entity\Enchantment}.</p>
  *
  * Visual presentation:
  *
@@ -37,13 +37,13 @@ use Doctrine\ORM\Mapping as ORM;
  *                                 |        '.'        |
  *                                 +-------------------+
  *
- * <p>Diamond is {@see \App\Entity\Item}. Package is {@see \App\Entity\Product}.
+ * <p>Diamond is {@see \app\Entity\Item}. Package is {@see \app\Entity\Product}.
  * Just like in the store, we can not sell the jewelry without packaging, so the item can not
  * be sold without binding it to the product.</p>
  *
- * @see \App\Entity\Product
- * @see \App\Entity\Enchantment
- * @see \App\Entity\EnchantmentItem
+ * @see \app\Entity\Product
+ * @see \app\Entity\Enchantment
+ * @see \app\Entity\EnchantmentItem
  *
  * @ORM\Entity
  * @ORM\Table(name="items")
@@ -76,11 +76,11 @@ class Item
 
     /**
      * Represents an in-game type of an item. Available Values: common item / block
-     * ({@see \App\Services\Item\Type::ITEM}), permission group ({@see \App\Services\Item\Type::PERMGROUP}),
-     * in-game currency ({@see \App\Services\Item\Type::CURRENCY}), region owner (({@see \App\Services\Item\Type::REGION_OWNER})),
-     * region member ({@see \App\Services\Item\Type::REGION_MEMBER}) and executable command ({@see \App\Services\Item\Type::COMMAND}).
+     * ({@see \app\Services\Item\Type::ITEM}), permission group ({@see \app\Services\Item\Type::PERMGROUP}),
+     * in-game currency ({@see \app\Services\Item\Type::CURRENCY}), region owner (({@see \app\Services\Item\Type::REGION_OWNER})),
+     * region member ({@see \app\Services\Item\Type::REGION_MEMBER}) and executable command ({@see \app\Services\Item\Type::COMMAND}).
      *
-     * @see \App\Services\Item\Type
+     * @see \app\Services\Item\Type
      *
      * @ORM\Column(name="type", type="string", length=32, nullable=false)
      */
@@ -95,17 +95,17 @@ class Item
     private $image;
 
     /**
-     * For {@see \App\Entity\Item::type} = {@see \App\Services\Item\Type::ITEM} this field must be an in-game item
+     * For {@see \app\Entity\Item::type} = {@see \app\Services\Item\Type::ITEM} this field must be an in-game item
      * identifier is used to issue purchased products to the user in the game. It can contain, as data in the form
      * ID, ID:DATA, material id or any other data that uniquely identifies the item.
      *
-     * For {@see \App\Entity\Item::type} = {@see \App\Services\Item\Type::PERMGROUP} this field must be contains
+     * For {@see \app\Entity\Item::type} = {@see \app\Services\Item\Type::PERMGROUP} this field must be contains
      * in-game permission group identifier.
      *
-     * For {@see \App\Entity\Item::type} = {@see \App\Services\Item\Type::REGION_OWNER} || {@see \App\Services\Item\Type::REGION_MEMBER}
+     * For {@see \app\Entity\Item::type} = {@see \app\Services\Item\Type::REGION_OWNER} || {@see \app\Services\Item\Type::REGION_MEMBER}
      * this field must contains in-game region identifier.
      *
-     * For {@see \App\Entity\Item::type} = {@see \App\Services\Item\Type::CURRENCY} this field
+     * For {@see \app\Entity\Item::type} = {@see \app\Services\Item\Type::CURRENCY} this field
      * must be a nullable.
      *
      * @ORM\Column(name="signature", type="string", length=255, nullable=true)
@@ -125,15 +125,15 @@ class Item
     /**
      * Products to which this item is attached.
      *
-     * @ORM\OneToMany(targetEntity="App\Entity\Product", mappedBy="item", cascade={"remove"})
+     * @ORM\OneToMany(targetEntity="app\Entity\Product", mappedBy="item", cascade={"remove"})
      */
     private $products;
 
     /**
      * Enchantments that are superimposed on this item.
-     * <p>Available only if {@see \App\Entity\Item::type} = {@see \App\Services\Item\Type::ITEM}.</p>
+     * <p>Available only if {@see \app\Entity\Item::type} = {@see \app\Services\Item\Type::ITEM}.</p>
      *
-     * @ORM\OneToMany(targetEntity="App\Entity\EnchantmentItem", mappedBy="item", cascade={"persist", "remove"})
+     * @ORM\OneToMany(targetEntity="app\Entity\EnchantmentItem", mappedBy="item", cascade={"persist", "remove"})
      */
     private $enchantmentItems;
 
@@ -300,7 +300,7 @@ class Item
     /**
      * Creates string representation of object.
      * <p>For example:</p>
-     * <p>App\Entity\Item(id=1, name="Diamond", type="item", signature="264")</p>
+     * <p>app\Entity\Item(id=1, name="Diamond", type="item", signature="264")</p>
      *
      * @return string
      */

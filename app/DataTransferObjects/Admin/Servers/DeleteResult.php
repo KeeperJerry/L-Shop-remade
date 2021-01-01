@@ -1,9 +1,9 @@
 <?php
 declare(strict_types = 1);
 
-namespace App\DataTransferObjects\Admin\Servers;
+namespace app\DataTransferObjects\Admin\Servers;
 
-use App\Services\Response\JsonRespondent;
+use app\Services\Response\JsonRespondent;
 
 class DeleteResult implements JsonRespondent
 {

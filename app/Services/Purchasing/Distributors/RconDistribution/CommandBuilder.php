@@ -1,9 +1,9 @@
 <?php
 declare(strict_types = 1);
 
-namespace App\Services\Purchasing\Distributors\RconDistribution;
+namespace app\Services\Purchasing\Distributors\RconDistribution;
 
-use App\Entity\PurchaseItem;
+use app\Entity\PurchaseItem;
 
 interface CommandBuilder
 {

@@ -1,15 +1,15 @@
 <?php
 declare(strict_types=1);
 
-namespace App\Services\Auth\Session;
+namespace app\Services\Auth\Session;
 
-use App\Entity\Persistence;
-use App\Entity\User;
-use App\Repository\Persistence\PersistenceRepository;
-use App\Repository\User\UserRepository;
-use App\Services\Auth\Checkpoint\Pool;
-use App\Services\Auth\Generators\CodeGenerator;
-use App\Services\Auth\Session\Driver\Driver;
+use app\Entity\Persistence;
+use app\Entity\User;
+use app\Repository\Persistence\PersistenceRepository;
+use app\Repository\User\UserRepository;
+use app\Services\Auth\Checkpoint\Pool;
+use app\Services\Auth\Generators\CodeGenerator;
+use app\Services\Auth\Session\Driver\Driver;
 
 /**
  * Class SessionPersistence

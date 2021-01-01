@@ -1,9 +1,9 @@
 <?php
 declare(strict_types = 1);
 
-namespace App\DataTransferObjects\Admin\Pages;
+namespace app\DataTransferObjects\Admin\Pages;
 
-use App\Entity\Page as Entity;
+use app\Entity\Page as Entity;
 
 class Page implements \JsonSerializable
 {

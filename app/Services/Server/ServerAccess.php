@@ -1,11 +1,11 @@
 <?php
 declare(strict_types = 1);
 
-namespace App\Services\Server;
+namespace app\Services\Server;
 
-use App\Entity\Server;
-use App\Entity\User;
-use App\Services\Auth\Permissions;
+use app\Entity\Server;
+use app\Entity\User;
+use app\Services\Auth\Permissions;
 
 class ServerAccess
 {

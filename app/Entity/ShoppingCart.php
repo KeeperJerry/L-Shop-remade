@@ -1,7 +1,7 @@
 <?php
 declare(strict_types = 1);
 
-namespace App\Entity;
+namespace app\Entity;
 
 use Doctrine\ORM\Mapping as ORM;
 
@@ -31,7 +31,7 @@ class ShoppingCart
     private $id;
 
     /**
-     * @ORM\ManyToOne(targetEntity="App\Entity\Server")
+     * @ORM\ManyToOne(targetEntity="app\Entity\Server")
      * @ORM\JoinColumn(name="server", onDelete="CASCADE")
      */
     private $server;
@@ -62,7 +62,7 @@ class ShoppingCart
     private $extra;
 
     /**
-     * @ORM\OneToOne(targetEntity="App\Entity\Distribution")
+     * @ORM\OneToOne(targetEntity="app\Entity\Distribution")
      * @ORM\JoinColumns({
      *     @ORM\JoinColumn(name="distribution_id", referencedColumnName="id", onDelete="CASCADE")
      * })

@@ -1,13 +1,13 @@
 <?php
 declare(strict_types = 1);
 
-namespace App\Exceptions\Item;
+namespace app\Exceptions\Item;
 
-use App\Exceptions\LogicException;
+use app\Exceptions\LogicException;
 
 /**
  * Class InvalidTypeException
- * It is thrown out if the item is not of the {@see \App\Entity\Item::type} expected.
+ * It is thrown out if the item is not of the {@see \app\Entity\Item::type} expected.
  */
 class InvalidTypeException extends LogicException
 {

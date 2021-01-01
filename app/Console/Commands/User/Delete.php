@@ -1,11 +1,11 @@
 <?php
 declare(strict_types = 1);
 
-namespace App\Console\Commands\User;
+namespace app\Console\Commands\User;
 
-use App\Console\Command;
-use App\Exceptions\User\UserNotFoundException;
-use App\Handlers\Consoe\User\DeleteHandler;
+use app\Console\Command;
+use app\Exceptions\User\UserNotFoundException;
+use app\Handlers\Consoe\User\DeleteHandler;
 
 class Delete extends Command
 {

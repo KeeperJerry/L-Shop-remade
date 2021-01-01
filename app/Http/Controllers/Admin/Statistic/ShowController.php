@@ -1,15 +1,15 @@
 <?php
 declare(strict_types = 1);
 
-namespace App\Http\Controllers\Admin\Statistic;
+namespace app\Http\Controllers\Admin\Statistic;
 
-use App\Handlers\Admin\Statistic\Show\ProfitForMonthHandler;
-use App\Handlers\Admin\Statistic\Show\PurchasesForMonthHandler;
-use App\Handlers\Admin\Statistic\Show\RegisteredForMonthHandler;
-use App\Handlers\Admin\Statistic\Show\VisitHandler;
-use App\Http\Controllers\Controller;
-use App\Services\Response\JsonResponse;
-use App\Services\Response\Status;
+use app\Handlers\Admin\Statistic\Show\ProfitForMonthHandler;
+use app\Handlers\Admin\Statistic\Show\PurchasesForMonthHandler;
+use app\Handlers\Admin\Statistic\Show\RegisteredForMonthHandler;
+use app\Handlers\Admin\Statistic\Show\VisitHandler;
+use app\Http\Controllers\Controller;
+use app\Services\Response\JsonResponse;
+use app\Services\Response\Status;
 use Illuminate\Http\Request;
 
 class ShowController extends Controller

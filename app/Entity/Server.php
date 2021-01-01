@@ -1,7 +1,7 @@
 <?php
 declare(strict_types = 1);
 
-namespace App\Entity;
+namespace app\Entity;
 
 use Doctrine\Common\Collections\ArrayCollection;
 use Doctrine\Common\Collections\Collection;
@@ -15,29 +15,29 @@ use Doctrine\ORM\Mapping as ORM;
  *                                                             Tree of structure
  *
  *                                                      +---------------------------+
- *                                                      | {@see \App\Entity\Server} |
+ *                                                      | {@see \app\Entity\Server} |
  *                                                      +-------------+-------------+
  *                                                          ( Has many categories)
  *                                                                    |
  *                                 +----------------------------------+----------------------------------+
  *                                 |                                                                     |
  *                  +--------------+--------------+                                       +--------------+--------------+
- *                  | {@see \App\Entity\Category} |                                       | {@see \App\Entity\Category} |
+ *                  | {@see \app\Entity\Category} |                                       | {@see \app\Entity\Category} |
  *                  +--------------+--------------+                                       +--------------+--------------+
  *                       ( Has many products )                                                   (Has many products)
  *                                 |                                                                     |
  *                +----------------+-----------------+                                  +----------------+-----------------+
  *                |                                  |                                  |                                  |
  * +--------------+-------------+     +--------------+-------------+     +--------------+-------------+     +--------------+-------------+
- * | {@see \App\Entity\Product} |     | {@see \App\Entity\Product} |     | {@see \App\Entity\Product} |     | {@see \App\Entity\Product} |
+ * | {@see \app\Entity\Product} |     | {@see \app\Entity\Product} |     | {@see \app\Entity\Product} |     | {@see \app\Entity\Product} |
  * +--------------+-------------+     +--------------+-------------+     +--------------+-------------+     +--------------+-------------+
  *         ( Has one item )                   ( Has one item )                   ( Has one item )                   ( Has one item )
  *                |                                  |                                  |                                  |
  *   +------------+------------+        +------------+------------+        +------------+------------+        +------------+------------+
- *   | {@see \App\Entity\Item} |        | {@see \App\Entity\Item} |        | {@see \App\Entity\Item} |        | {@see \App\Entity\Item} |
+ *   | {@see \app\Entity\Item} |        | {@see \app\Entity\Item} |        | {@see \app\Entity\Item} |        | {@see \app\Entity\Item} |
  *   +-------------------------+        +-------------------------+        +-------------------------+        +-------------------------+
  *
- * @see \App\Entity\Category
+ * @see \app\Entity\Category
  *
  * @ORM\Entity
  * @ORM\Table(name="servers")
@@ -85,7 +85,7 @@ class Server
      * The full name of the distributor class (together with the name of the distributor), which
      * will be used to issue the goods to the player.
      *
-     * @see \App\Services\Purchasing\Distributors\Distributor
+     * @see \app\Services\Purchasing\Distributors\Distributor
      *
      * @ORM\Column(name="distributor", type="string", length=255, nullable=false)
      */
@@ -108,7 +108,7 @@ class Server
     /**
      * Categories that belong to this server.
      *
-     * @ORM\OneToMany(targetEntity="App\Entity\Category", mappedBy="server", cascade={"persist"})
+     * @ORM\OneToMany(targetEntity="app\Entity\Category", mappedBy="server", cascade={"persist"})
      */
     private $categories;
 
@@ -284,7 +284,7 @@ class Server
     /**
      * Creates string representation of object.
      * <p>For example:</p>
-     * <p>App\Entity\Server(id=2, name="MMO")</p>
+     * <p>app\Entity\Server(id=2, name="MMO")</p>
      *
      * @return string
      */

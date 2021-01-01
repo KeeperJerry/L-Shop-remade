@@ -1,30 +1,30 @@
 <?php
 declare(strict_types = 1);
 
-namespace App\Http\Controllers\Admin\Users;
+namespace app\Http\Controllers\Admin\Users;
 
-use App\DataTransferObjects\PaginationList;
-use App\Exceptions\Permission\PermissionNotFoundException;
-use App\Exceptions\Role\RoleAlreadyExistsException;
-use App\Exceptions\Role\RoleNotFoundException;
-use App\Handlers\Admin\Users\Roles\CreateHandler;
-use App\Handlers\Admin\Users\Roles\DeleteHandler;
-use App\Handlers\Admin\Users\Roles\PaginationHandler;
-use App\Handlers\Admin\Users\Roles\RolePermissionsHandler;
-use App\Handlers\Admin\Users\Roles\UpdateNameHandler;
-use App\Handlers\Admin\Users\Roles\UpdatePermissionsHandler;
-use App\Http\Controllers\Controller;
-use App\Http\Requests\Admin\Users\Roles\CreateUpdateRequest;
-use App\Http\Requests\Admin\Users\Roles\UpdateNameRequest;
-use App\Services\Auth\Permissions;
-use App\Services\Notification\Notifications\Error;
-use App\Services\Notification\Notifications\Info;
-use App\Services\Notification\Notifications\Success;
-use App\Services\Response\JsonResponse;
-use App\Services\Response\Status;
+use app\DataTransferObjects\PaginationList;
+use app\Exceptions\Permission\PermissionNotFoundException;
+use app\Exceptions\Role\RoleAlreadyExistsException;
+use app\Exceptions\Role\RoleNotFoundException;
+use app\Handlers\Admin\Users\Roles\CreateHandler;
+use app\Handlers\Admin\Users\Roles\DeleteHandler;
+use app\Handlers\Admin\Users\Roles\PaginationHandler;
+use app\Handlers\Admin\Users\Roles\RolePermissionsHandler;
+use app\Handlers\Admin\Users\Roles\UpdateNameHandler;
+use app\Handlers\Admin\Users\Roles\UpdatePermissionsHandler;
+use app\Http\Controllers\Controller;
+use app\Http\Requests\Admin\Users\Roles\CreateUpdateRequest;
+use app\Http\Requests\Admin\Users\Roles\UpdateNameRequest;
+use app\Services\Auth\Permissions;
+use app\Services\Notification\Notifications\Error;
+use app\Services\Notification\Notifications\Info;
+use app\Services\Notification\Notifications\Success;
+use app\Services\Response\JsonResponse;
+use app\Services\Response\Status;
 use Illuminate\Http\Request;
 use Illuminate\Http\Response;
-use function App\permission_middleware;
+use function app\permission_middleware;
 
 class RolesController extends Controller
 {

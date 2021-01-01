@@ -1,11 +1,11 @@
 <?php
 declare(strict_types = 1);
 
-namespace App\Handlers\Admin\Users\Edit;
+namespace app\Handlers\Admin\Users\Edit;
 
-use App\Exceptions\User\UserNotFoundException;
-use App\Repository\User\UserRepository;
-use App\Services\Media\Character\Skin\Image;
+use app\Exceptions\User\UserNotFoundException;
+use app\Repository\User\UserRepository;
+use app\Services\Media\Character\Skin\Image;
 use Illuminate\Filesystem\Filesystem;
 
 class DeleteSkinHandler

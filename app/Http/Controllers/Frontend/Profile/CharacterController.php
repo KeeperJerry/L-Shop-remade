@@ -1,30 +1,30 @@
 <?php
 declare(strict_types=1);
 
-namespace App\Http\Controllers\Frontend\Profile;
+namespace app\Http\Controllers\Frontend\Profile;
 
-use App\Exceptions\Media\Character\InvalidRatioException;
-use App\Exceptions\Media\Character\InvalidResolutionException;
-use App\Handlers\Frontend\Profile\Character\DeleteCloakHandler;
-use App\Handlers\Frontend\Profile\Character\DeleteSkinHandler;
-use App\Handlers\Frontend\Profile\Character\UploadCloakHandler;
-use App\Handlers\Frontend\Profile\Character\UploadSkinHandler;
-use App\Handlers\Frontend\Profile\Character\VisitHandler;
-use App\Http\Controllers\Controller;
-use App\Http\Requests\Frontend\Profile\Character\UploadCloakRequest;
-use App\Http\Requests\Frontend\Profile\Character\UploadSkinRequest;
-use App\Services\Auth\Auth;
-use App\Services\Media\Character\Cloak\Accessor as CloakAccessor;
-use App\Services\Media\Character\Skin\Accessor as SkinAccessor;
-use App\Services\Notification\Notifications\Error;
-use App\Services\Notification\Notifications\Info;
-use App\Services\Notification\Notifications\Success;
-use App\Services\Response\JsonResponse;
-use App\Services\Response\Status;
-use App\Services\Security\Accessors\Frontend\Profile\CharacterAccessor;
-use App\Services\Settings\DataType;
-use App\Services\Settings\Settings;
-use function App\accessor_middleware;
+use app\Exceptions\Media\Character\InvalidRatioException;
+use app\Exceptions\Media\Character\InvalidResolutionException;
+use app\Handlers\Frontend\Profile\Character\DeleteCloakHandler;
+use app\Handlers\Frontend\Profile\Character\DeleteSkinHandler;
+use app\Handlers\Frontend\Profile\Character\UploadCloakHandler;
+use app\Handlers\Frontend\Profile\Character\UploadSkinHandler;
+use app\Handlers\Frontend\Profile\Character\VisitHandler;
+use app\Http\Controllers\Controller;
+use app\Http\Requests\Frontend\Profile\Character\UploadCloakRequest;
+use app\Http\Requests\Frontend\Profile\Character\UploadSkinRequest;
+use app\Services\Auth\Auth;
+use app\Services\Media\Character\Cloak\Accessor as CloakAccessor;
+use app\Services\Media\Character\Skin\Accessor as SkinAccessor;
+use app\Services\Notification\Notifications\Error;
+use app\Services\Notification\Notifications\Info;
+use app\Services\Notification\Notifications\Success;
+use app\Services\Response\JsonResponse;
+use app\Services\Response\Status;
+use app\Services\Security\Accessors\Frontend\Profile\CharacterAccessor;
+use app\Services\Settings\DataType;
+use app\Services\Settings\Settings;
+use function app\accessor_middleware;
 
 /**
  * Class CharacterController

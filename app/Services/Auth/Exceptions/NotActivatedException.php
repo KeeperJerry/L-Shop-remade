@@ -1,9 +1,9 @@
 <?php
 declare(strict_types = 1);
 
-namespace App\Services\Auth\Exceptions;
+namespace app\Services\Auth\Exceptions;
 
-use App\Entity\User;
+use app\Entity\User;
 
 class NotActivatedException extends AuthException
 {

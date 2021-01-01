@@ -1,13 +1,13 @@
 <?php
 declare(strict_types=1);
 
-namespace App\Console\Commands\User;
+namespace app\Console\Commands\User;
 
-use App\Console\Command;
-use App\Exceptions\InvalidArgumentException;
-use App\Handlers\Consoe\User\CreateHandler;
-use App\Services\Auth\Exceptions\EmailAlreadyExistsException;
-use App\Services\Auth\Exceptions\UsernameAlreadyExistsException;
+use app\Console\Command;
+use app\Exceptions\InvalidArgumentException;
+use app\Handlers\Consoe\User\CreateHandler;
+use app\Services\Auth\Exceptions\EmailAlreadyExistsException;
+use app\Services\Auth\Exceptions\UsernameAlreadyExistsException;
 use Illuminate\Validation\ValidationException;
 
 class Create extends Command

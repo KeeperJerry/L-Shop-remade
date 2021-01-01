@@ -1,11 +1,11 @@
 <?php
 declare(strict_types = 1);
 
-namespace App\Repository\Page;
+namespace app\Repository\Page;
 
-use App\Entity\Page;
-use App\Services\Caching\CachingOptions;
-use App\Services\Caching\ClearsCache;
+use app\Entity\Page;
+use app\Services\Caching\CachingOptions;
+use app\Services\Caching\ClearsCache;
 use Doctrine\ORM\EntityManagerInterface;
 use Doctrine\ORM\EntityRepository;
 use Illuminate\Contracts\Pagination\LengthAwarePaginator;

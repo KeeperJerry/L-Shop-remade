@@ -9,9 +9,9 @@ return [
     |
     | The monitoring driver is a class that contains the logic for obtaining
     | server state data. It must necessarily implement the interface
-    | App\Services\Monitoring\Drivers\Driver.
+    | app\Services\Monitoring\Drivers\Driver.
     |
     */
 
-    'driver' => \App\Services\Monitoring\Drivers\RconDriver::class
+    'driver' => \app\Services\Monitoring\Drivers\RconDriver::class
 ];

@@ -1,10 +1,10 @@
 <?php
 declare(strict_types=1);
 
-namespace App\Services\Auth;
+namespace app\Services\Auth;
 
-use App\Entity\Activation;
-use App\Entity\User;
+use app\Entity\Activation;
+use app\Entity\User;
 
 interface Activator
 {

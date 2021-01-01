@@ -1,9 +1,9 @@
 <?php
 declare(strict_types = 1);
 
-namespace App\Exceptions\Permission;
+namespace app\Exceptions\Permission;
 
-use App\Exceptions\LogicException;
+use app\Exceptions\LogicException;
 
 class PermissionAlreadyExistsException extends LogicException
 {

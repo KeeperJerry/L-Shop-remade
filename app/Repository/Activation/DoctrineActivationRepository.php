@@ -1,10 +1,10 @@
 <?php
 declare(strict_types = 1);
 
-namespace App\Repository\Activation;
+namespace app\Repository\Activation;
 
-use App\Entity\Activation;
-use App\Entity\User;
+use app\Entity\Activation;
+use app\Entity\User;
 use Doctrine\ORM\EntityManagerInterface;
 use Doctrine\ORM\EntityRepository;
 

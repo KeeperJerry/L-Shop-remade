@@ -1,10 +1,10 @@
 <?php
 declare(strict_types = 1);
 
-namespace App\Entity;
+namespace app\Entity;
 
-use App\Services\Auth\Acl\PermissionTrait;
-use App\Services\Auth\Acl\RoleInterface;
+use app\Services\Auth\Acl\PermissionTrait;
+use app\Services\Auth\Acl\RoleInterface;
 use Doctrine\Common\Collections\ArrayCollection;
 use Doctrine\Common\Collections\Collection;
 use Doctrine\ORM\Mapping as ORM;
@@ -30,12 +30,12 @@ class Role implements RoleInterface
     private $name;
 
     /**
-     * @ORM\ManyToMany(targetEntity="App\Entity\User", inversedBy="roles")
+     * @ORM\ManyToMany(targetEntity="app\Entity\User", inversedBy="roles")
      */
     private $users;
 
     /**
-     * @ORM\ManyToMany(targetEntity="App\Entity\Permission", mappedBy="roles", cascade={"persist"})
+     * @ORM\ManyToMany(targetEntity="app\Entity\Permission", mappedBy="roles", cascade={"persist"})
      */
     private $permissions;
 

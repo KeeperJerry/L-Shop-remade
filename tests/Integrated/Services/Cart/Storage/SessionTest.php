@@ -3,7 +3,7 @@ declare(strict_types=1);
 
 namespace Tests\Integrated\Services\Cart\Storage;
 
-use App\Services\Cart\Storage\Session;
+use app\Services\Cart\Storage\Session;
 use Tests\TestCase;
 
 class SessionTest extends TestCase

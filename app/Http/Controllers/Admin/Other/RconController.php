@@ -1,18 +1,18 @@
 <?php
 declare(strict_types = 1);
 
-namespace App\Http\Controllers\Admin\Other;
+namespace app\Http\Controllers\Admin\Other;
 
-use App\Handlers\Admin\Other\Rcon\RenderHandler;
-use App\Handlers\Admin\Other\Rcon\SendHandler;
-use App\Http\Controllers\Controller;
-use App\Services\Auth\Permissions;
-use App\Services\Game\Colorizers\HtmlColorizer;
-use App\Services\Response\JsonResponse;
-use App\Services\Response\Status;
+use app\Handlers\Admin\Other\Rcon\RenderHandler;
+use app\Handlers\Admin\Other\Rcon\SendHandler;
+use app\Http\Controllers\Controller;
+use app\Services\Auth\Permissions;
+use app\Services\Game\Colorizers\HtmlColorizer;
+use app\Services\Response\JsonResponse;
+use app\Services\Response\Status;
 use D3lph1\MinecraftRconManager\Exceptions\ConnectSocketException;
 use Illuminate\Http\Request;
-use function App\permission_middleware;
+use function app\permission_middleware;
 
 class RconController extends Controller
 {

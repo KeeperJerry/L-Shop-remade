@@ -1,10 +1,10 @@
 <?php
 declare(strict_types = 1);
 
-namespace App\Repository\Product;
+namespace app\Repository\Product;
 
-use App\Entity\Category;
-use App\Entity\Product;
+use app\Entity\Category;
+use app\Entity\Product;
 use Illuminate\Contracts\Pagination\LengthAwarePaginator;
 
 interface ProductRepository

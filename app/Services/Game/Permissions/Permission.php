@@ -1,7 +1,7 @@
 <?php
 declare(strict_types = 1);
 
-namespace App\Services\Game\Permissions;
+namespace app\Services\Game\Permissions;
 
 /**
  * Class Permission

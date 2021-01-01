@@ -1,10 +1,10 @@
 <?php
 declare(strict_types = 1);
 
-namespace App\Handlers\Admin\Pages;
+namespace app\Handlers\Admin\Pages;
 
-use App\Exceptions\Page\PageNotFoundException;
-use App\Repository\Page\PageRepository;
+use app\Exceptions\Page\PageNotFoundException;
+use app\Repository\Page\PageRepository;
 
 class DeleteHandler
 {

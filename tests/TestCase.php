@@ -3,7 +3,7 @@ declare(strict_types = 1);
 
 namespace Tests;
 
-use App\Services\Auth\Auth;
+use app\Services\Auth\Auth;
 use Doctrine\ORM\EntityManagerInterface;
 use Illuminate\Foundation\Testing\TestCase as BaseTestCase;
 

@@ -1,11 +1,11 @@
 <?php
 declare(strict_types = 1);
 
-namespace App\Handlers\Frontend\Profile\Character;
+namespace app\Handlers\Frontend\Profile\Character;
 
-use App\Repository\User\UserRepository;
-use App\Services\Auth\Auth;
-use App\Services\Auth\Hashing\Hasher;
+use app\Repository\User\UserRepository;
+use app\Services\Auth\Auth;
+use app\Services\Auth\Hashing\Hasher;
 
 class ChangePasswordHandler
 {

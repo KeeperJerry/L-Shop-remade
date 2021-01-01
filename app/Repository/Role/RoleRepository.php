@@ -1,9 +1,9 @@
 <?php
 declare(strict_types = 1);
 
-namespace App\Repository\Role;
+namespace app\Repository\Role;
 
-use App\Entity\Role;
+use app\Entity\Role;
 use Illuminate\Contracts\Pagination\LengthAwarePaginator;
 
 interface RoleRepository

@@ -1,17 +1,17 @@
 <?php
 declare(strict_types = 1);
 
-namespace App\Http\Controllers\Api\Auth;
+namespace app\Http\Controllers\Api\Auth;
 
-use App\Handlers\Api\Auth\RegisterHandler;
-use App\Http\Controllers\Controller;
-use App\Services\Auth\Exceptions\EmailAlreadyExistsException;
-use App\Services\Auth\Exceptions\UsernameAlreadyExistsException;
-use App\Services\Response\JsonResponse;
-use App\Services\Response\Status;
+use app\Handlers\Api\Auth\RegisterHandler;
+use app\Http\Controllers\Controller;
+use app\Services\Auth\Exceptions\EmailAlreadyExistsException;
+use app\Services\Auth\Exceptions\UsernameAlreadyExistsException;
+use app\Services\Response\JsonResponse;
+use app\Services\Response\Status;
 use Illuminate\Http\Request;
 use Illuminate\Http\Response;
-use function App\signed_middleware;
+use function app\signed_middleware;
 
 class RegisterController extends Controller
 {

@@ -1,9 +1,9 @@
 <?php
 declare(strict_types = 1);
 
-namespace App\DataTransferObjects\Admin\Statistic\Purchases;
+namespace app\DataTransferObjects\Admin\Statistic\Purchases;
 
-use App\Services\Response\JsonRespondent;
+use app\Services\Response\JsonRespondent;
 use Illuminate\Contracts\Pagination\LengthAwarePaginator;
 
 class PaginationResult implements JsonRespondent

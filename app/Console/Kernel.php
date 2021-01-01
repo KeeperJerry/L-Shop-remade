@@ -1,16 +1,16 @@
 <?php
 declare(strict_types = 1);
 
-namespace App\Console;
+namespace app\Console;
 
-use App\Console\Commands\DB\Transfer;
-use App\Console\Commands\Purchase\Complete as CompletePurchase;
-use App\Console\Commands\Rcon;
-use App\Console\Commands\User\Create as CreateUser;
-use App\Console\Commands\User\Delete as DeleteUser;
-use App\Console\Commands\User\Roles\Attach as UserAttachRoles;
-use App\Console\Commands\User\Roles\Detach as UserDetachRoles;
-use App\Console\Commands\User\Roles\RolesList as UserRolesList;
+use app\Console\Commands\DB\Transfer;
+use app\Console\Commands\Purchase\Complete as CompletePurchase;
+use app\Console\Commands\Rcon;
+use app\Console\Commands\User\Create as CreateUser;
+use app\Console\Commands\User\Delete as DeleteUser;
+use app\Console\Commands\User\Roles\Attach as UserAttachRoles;
+use app\Console\Commands\User\Roles\Detach as UserDetachRoles;
+use app\Console\Commands\User\Roles\RolesList as UserRolesList;
 use Illuminate\Console\Scheduling\Schedule;
 use Illuminate\Foundation\Console\Kernel as ConsoleKernel;
 

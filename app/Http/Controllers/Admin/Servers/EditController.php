@@ -1,25 +1,25 @@
 <?php
 declare(strict_types = 1);
 
-namespace App\Http\Controllers\Admin\Servers;
+namespace app\Http\Controllers\Admin\Servers;
 
-use App\DataTransferObjects\Admin\Servers\Edit\Edit;
-use App\DataTransferObjects\Admin\Servers\Edit\EditedCategory;
-use App\Exceptions\Category\CategoryNotFoundException;
-use App\Exceptions\Distributor\DistributorNotFoundException;
-use App\Exceptions\Server\ServerNotFoundException;
-use App\Handlers\Admin\Servers\Edit\EditHandler;
-use App\Handlers\Admin\Servers\Edit\RenderHandler;
-use App\Http\Controllers\Controller;
-use App\Http\Requests\Admin\Servers\EditRequest;
-use App\Services\Auth\Permissions;
-use App\Services\Notification\Notifications\Error;
-use App\Services\Notification\Notifications\Success;
-use App\Services\Response\JsonResponse;
-use App\Services\Response\Status;
+use app\DataTransferObjects\Admin\Servers\Edit\Edit;
+use app\DataTransferObjects\Admin\Servers\Edit\EditedCategory;
+use app\Exceptions\Category\CategoryNotFoundException;
+use app\Exceptions\Distributor\DistributorNotFoundException;
+use app\Exceptions\Server\ServerNotFoundException;
+use app\Handlers\Admin\Servers\Edit\EditHandler;
+use app\Handlers\Admin\Servers\Edit\RenderHandler;
+use app\Http\Controllers\Controller;
+use app\Http\Requests\Admin\Servers\EditRequest;
+use app\Services\Auth\Permissions;
+use app\Services\Notification\Notifications\Error;
+use app\Services\Notification\Notifications\Success;
+use app\Services\Response\JsonResponse;
+use app\Services\Response\Status;
 use Illuminate\Http\Request;
 use Illuminate\Http\Response;
-use function App\permission_middleware;
+use function app\permission_middleware;
 
 class EditController extends Controller
 {

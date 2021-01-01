@@ -1,7 +1,7 @@
 <?php
 declare(strict_types = 1);
 
-namespace App\Services\Purchasing\Payments\Robokassa;
+namespace app\Services\Purchasing\Payments\Robokassa;
 
 class Payment
 {

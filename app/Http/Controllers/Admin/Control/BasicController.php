@@ -1,19 +1,19 @@
 <?php
 declare(strict_types = 1);
 
-namespace App\Http\Controllers\Admin\Control;
+namespace app\Http\Controllers\Admin\Control;
 
-use App\Handlers\Admin\Control\Basic\VisitHandler;
-use App\Http\Controllers\Controller;
-use App\Http\Requests\Admin\Control\SaveBasicSettingsRequest;
-use App\Services\Auth\Permissions;
-use App\Services\Notification\Notifications\Success;
-use App\Services\Response\JsonResponse;
-use App\Services\Response\Status;
-use App\Services\Settings\Settings;
+use app\Handlers\Admin\Control\Basic\VisitHandler;
+use app\Http\Controllers\Controller;
+use app\Http\Requests\Admin\Control\SaveBasicSettingsRequest;
+use app\Services\Auth\Permissions;
+use app\Services\Notification\Notifications\Success;
+use app\Services\Response\JsonResponse;
+use app\Services\Response\Status;
+use app\Services\Settings\Settings;
 use Illuminate\Contracts\Console\Kernel;
 use Illuminate\Contracts\Foundation\Application;
-use function App\permission_middleware;
+use function app\permission_middleware;
 
 class BasicController extends Controller
 {

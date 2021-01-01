@@ -1,9 +1,9 @@
 <?php
 declare(strict_types = 1);
 
-namespace App\Exceptions\Category;
+namespace app\Exceptions\Category;
 
-use App\Exceptions\DomainException;
+use app\Exceptions\DomainException;
 
 class CategoryNotFoundException extends DomainException
 {

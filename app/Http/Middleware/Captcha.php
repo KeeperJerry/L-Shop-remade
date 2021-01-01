@@ -1,13 +1,13 @@
 <?php
 declare(strict_types = 1);
 
-namespace App\Http\Middleware;
+namespace app\Http\Middleware;
 
-use App\Services\Notification\Notifications\Warning;
-use App\Services\Response\JsonResponse;
-use App\Services\Security\Captcha\Captcha as CaptchaInterface;
-use App\Services\Settings\DataType;
-use App\Services\Settings\Settings;
+use app\Services\Notification\Notifications\Warning;
+use app\Services\Response\JsonResponse;
+use app\Services\Security\Captcha\Captcha as CaptchaInterface;
+use app\Services\Settings\DataType;
+use app\Services\Settings\Settings;
 use Illuminate\Contracts\Config\Repository;
 use Illuminate\Http\Request;
 

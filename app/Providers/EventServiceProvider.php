@@ -1,15 +1,15 @@
 <?php
 declare(strict_types = 1);
 
-namespace App\Providers;
+namespace app\Providers;
 
-use App\Events\Auth\PasswordReminderCreatedEvent;
-use App\Events\Auth\RegistrationSuccessfulEvent;
-use App\Events\Purchase\PurchaseCompletedEvent;
-use App\Events\Purchase\PurchaseCreatedEvent;
-use App\Listeners\Auth\AttachDefaultRoles;
-use App\Listeners\Auth\SendEmailConfirmation;
-use App\Listeners\Auth\SendPasswordReminder;
+use app\Events\Auth\PasswordReminderCreatedEvent;
+use app\Events\Auth\RegistrationSuccessfulEvent;
+use app\Events\Purchase\PurchaseCompletedEvent;
+use app\Events\Purchase\PurchaseCreatedEvent;
+use app\Listeners\Auth\AttachDefaultRoles;
+use app\Listeners\Auth\SendEmailConfirmation;
+use app\Listeners\Auth\SendPasswordReminder;
 use Illuminate\Foundation\Support\Providers\EventServiceProvider as ServiceProvider;
 
 class EventServiceProvider extends ServiceProvider

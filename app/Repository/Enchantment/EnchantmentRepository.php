@@ -1,9 +1,9 @@
 <?php
 declare(strict_types = 1);
 
-namespace App\Repository\Enchantment;
+namespace app\Repository\Enchantment;
 
-use App\Entity\Enchantment;
+use app\Entity\Enchantment;
 
 interface EnchantmentRepository
 {

@@ -1,13 +1,13 @@
 <?php
 declare(strict_types = 1);
 
-namespace App\Handlers\Admin\Servers;
+namespace app\Handlers\Admin\Servers;
 
-use App\DataTransferObjects\Admin\Servers\DeleteResult;
-use App\Events\Server\ServerWillBeDeletedEvent;
-use App\Exceptions\Server\ServerNotFoundException;
-use App\Repository\Server\ServerRepository;
-use App\Services\Server\Persistence\Persistence;
+use app\DataTransferObjects\Admin\Servers\DeleteResult;
+use app\Events\Server\ServerWillBeDeletedEvent;
+use app\Exceptions\Server\ServerNotFoundException;
+use app\Repository\Server\ServerRepository;
+use app\Services\Server\Persistence\Persistence;
 use Illuminate\Contracts\Events\Dispatcher;
 
 class DeleteHandler

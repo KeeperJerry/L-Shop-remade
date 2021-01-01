@@ -1,18 +1,18 @@
 <?php
 declare(strict_types=1);
 
-namespace App\Services\Purchasing;
+namespace app\Services\Purchasing;
 
-use App\DataTransferObjects\Frontend\Shop\Purchase as DTO;
-use App\Entity\Purchase;
-use App\Entity\PurchaseItem;
-use App\Entity\User;
-use App\Events\Purchase\PurchaseCreatedEvent;
-use App\Exceptions\NotImplementedException;
-use App\Exceptions\Purchase\InvalidAmountException;
-use App\Repository\Purchase\PurchaseRepository;
-use App\Services\Item\Type;
-use App\Services\Product\Stack;
+use app\DataTransferObjects\Frontend\Shop\Purchase as DTO;
+use app\Entity\Purchase;
+use app\Entity\PurchaseItem;
+use app\Entity\User;
+use app\Events\Purchase\PurchaseCreatedEvent;
+use app\Exceptions\NotImplementedException;
+use app\Exceptions\Purchase\InvalidAmountException;
+use app\Repository\Purchase\PurchaseRepository;
+use app\Services\Item\Type;
+use app\Services\Product\Stack;
 use Illuminate\Contracts\Events\Dispatcher;
 
 class PurchaseCreator

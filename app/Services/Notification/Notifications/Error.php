@@ -1,9 +1,9 @@
 <?php
 declare(strict_types = 1);
 
-namespace App\Services\Notification\Notifications;
+namespace app\Services\Notification\Notifications;
 
-use App\Services\Notification\Notification;
+use app\Services\Notification\Notification;
 
 class Error implements Notification
 {

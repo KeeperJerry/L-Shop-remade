@@ -1,10 +1,10 @@
 <?php
 declare(strict_types = 1);
 
-namespace App\DataTransferObjects\Admin\Items\Edit;
+namespace app\DataTransferObjects\Admin\Items\Edit;
 
-use App\Entity\Enchantment as Entity;
-use App\Entity\EnchantmentItem;
+use app\Entity\Enchantment as Entity;
+use app\Entity\EnchantmentItem;
 use JsonSerializable;
 
 class Enchantment implements JsonSerializable

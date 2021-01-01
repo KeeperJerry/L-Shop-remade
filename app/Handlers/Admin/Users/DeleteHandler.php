@@ -1,12 +1,12 @@
 <?php
 declare(strict_types = 1);
 
-namespace App\Handlers\Admin\Users;
+namespace app\Handlers\Admin\Users;
 
-use App\Exceptions\LogicException;
-use App\Exceptions\User\UserNotFoundException;
-use App\Repository\User\UserRepository;
-use App\Services\Auth\Auth;
+use app\Exceptions\LogicException;
+use app\Exceptions\User\UserNotFoundException;
+use app\Repository\User\UserRepository;
+use app\Services\Auth\Auth;
 
 class DeleteHandler
 {

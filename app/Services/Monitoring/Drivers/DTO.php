@@ -1,7 +1,7 @@
 <?php
 declare(strict_types = 1);
 
-namespace App\Services\Monitoring\Drivers;
+namespace app\Services\Monitoring\Drivers;
 
 /**
  * Class DTO

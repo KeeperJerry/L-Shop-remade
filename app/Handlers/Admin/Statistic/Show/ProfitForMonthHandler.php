@@ -1,10 +1,10 @@
 <?php
 declare(strict_types = 1);
 
-namespace App\Handlers\Admin\Statistic\Show;
+namespace app\Handlers\Admin\Statistic\Show;
 
-use App\Repository\Purchase\PurchaseRepository;
-use App\Services\Purchasing\ViaContext;
+use app\Repository\Purchase\PurchaseRepository;
+use app\Services\Purchasing\ViaContext;
 
 class ProfitForMonthHandler
 {

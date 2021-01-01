@@ -1,15 +1,15 @@
 <?php
 declare(strict_types = 1);
 
-namespace App\Handlers\Api\Auth;
+namespace app\Handlers\Api\Auth;
 
-use App\Exceptions\ForbiddenException;
-use App\Exceptions\User\UserNotFoundException;
-use App\Repository\User\UserRepository;
-use App\Services\Auth\Auth;
-use App\Services\Auth\Checkpoint\Pool;
-use App\Services\Settings\DataType;
-use App\Services\Settings\Settings;
+use app\Exceptions\ForbiddenException;
+use app\Exceptions\User\UserNotFoundException;
+use app\Repository\User\UserRepository;
+use app\Services\Auth\Auth;
+use app\Services\Auth\Checkpoint\Pool;
+use app\Services\Settings\DataType;
+use app\Services\Settings\Settings;
 
 class LoginHandler
 {

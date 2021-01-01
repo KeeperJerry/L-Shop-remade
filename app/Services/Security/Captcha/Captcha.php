@@ -1,7 +1,7 @@
 <?php
 declare(strict_types = 1);
 
-namespace App\Services\Security\Captcha;
+namespace app\Services\Security\Captcha;
 
 interface Captcha
 {

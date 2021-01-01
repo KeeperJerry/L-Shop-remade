@@ -1,17 +1,17 @@
 <?php
 declare(strict_types = 1);
 
-namespace App\Handlers\Frontend\Shop\Catalog;
+namespace app\Handlers\Frontend\Shop\Catalog;
 
-use App\DataTransferObjects\Frontend\Shop\Catalog\Purchase as ResultDTO;
-use App\DataTransferObjects\Frontend\Shop\Purchase;
-use App\Exceptions\ForbiddenException;
-use App\Exceptions\Product\ProductNotFoundException;
-use App\Repository\Product\ProductRepository;
-use App\Services\Auth\Auth;
-use App\Services\Auth\Permissions;
-use App\Services\Purchasing\PurchaseProcessor;
-use App\Services\Server\ServerAccess;
+use app\DataTransferObjects\Frontend\Shop\Catalog\Purchase as ResultDTO;
+use app\DataTransferObjects\Frontend\Shop\Purchase;
+use app\Exceptions\ForbiddenException;
+use app\Exceptions\Product\ProductNotFoundException;
+use app\Repository\Product\ProductRepository;
+use app\Services\Auth\Auth;
+use app\Services\Auth\Permissions;
+use app\Services\Purchasing\PurchaseProcessor;
+use app\Services\Server\ServerAccess;
 
 class PurchaseHandler
 {

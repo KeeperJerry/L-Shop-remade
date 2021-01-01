@@ -1,11 +1,11 @@
 <?php
 declare(strict_types = 1);
 
-namespace App\Handlers\Admin\Products;
+namespace app\Handlers\Admin\Products;
 
-use App\Events\Product\ProductWillBeDeletedEvent;
-use App\Exceptions\Product\ProductNotFoundException;
-use App\Repository\Product\ProductRepository;
+use app\Events\Product\ProductWillBeDeletedEvent;
+use app\Exceptions\Product\ProductNotFoundException;
+use app\Repository\Product\ProductRepository;
 use Illuminate\Contracts\Events\Dispatcher;
 
 class DeleteHandler

@@ -1,9 +1,9 @@
 <?php
 declare(strict_types = 1);
 
-namespace App\DataTransferObjects\Admin\Users\Edit;
+namespace app\DataTransferObjects\Admin\Users\Edit;
 
-use App\DataTransferObjects\PaginationList as BasePaginationList;
+use app\DataTransferObjects\PaginationList as BasePaginationList;
 
 class PaginationList extends BasePaginationList
 {

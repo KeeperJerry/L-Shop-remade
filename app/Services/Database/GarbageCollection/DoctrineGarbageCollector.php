@@ -1,7 +1,7 @@
 <?php
 declare(strict_types = 1);
 
-namespace App\Services\Database\GarbageCollection;
+namespace app\Services\Database\GarbageCollection;
 
 use Doctrine\ORM\EntityManagerInterface;
 

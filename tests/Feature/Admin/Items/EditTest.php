@@ -3,11 +3,11 @@ declare(strict_types = 1);
 
 namespace Tests\Feature\Admin\Items;
 
-use App\Entity\Item;
-use App\Repository\Item\ItemRepository;
-use App\Services\Item\Image\Hashing\Hasher;
-use App\Services\Item\Image\Image;
-use App\Services\Item\Type;
+use app\Entity\Item;
+use app\Repository\Item\ItemRepository;
+use app\Services\Item\Image\Hashing\Hasher;
+use app\Services\Item\Image\Image;
+use app\Services\Item\Type;
 use Illuminate\Filesystem\Filesystem;
 use Illuminate\Http\UploadedFile;
 use Tests\TestCase;

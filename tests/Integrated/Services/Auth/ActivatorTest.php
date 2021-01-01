@@ -3,11 +3,11 @@ declare(strict_types = 1);
 
 namespace Tests\Integrated\Services\Auth;
 
-use App\Services\Auth\Activator;
-use App\Services\Auth\Auth;
-use App\Services\Auth\Checkpoint\ActivationCheckpoint;
-use App\Services\Auth\Exceptions\NotActivatedException;
-use App\Entity\User;
+use app\Services\Auth\Activator;
+use app\Services\Auth\Auth;
+use app\Services\Auth\Checkpoint\ActivationCheckpoint;
+use app\Services\Auth\Exceptions\NotActivatedException;
+use app\Entity\User;
 use Tests\TestCase;
 
 class ActivatorTest extends TestCase

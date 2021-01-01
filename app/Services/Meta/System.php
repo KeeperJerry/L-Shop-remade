@@ -1,9 +1,9 @@
 <?php
 declare(strict_types = 1);
 
-namespace App\Services\Meta;
+namespace app\Services\Meta;
 
-use App\Services\Meta\AdditionalVersion\Beta;
+use app\Services\Meta\AdditionalVersion\Beta;
 
 /**
  * This class contains metadata about L-Shop system.

@@ -1,10 +1,10 @@
 <?php
 declare(strict_types = 1);
 
-namespace App\DataTransferObjects\Admin\Products\Edit;
+namespace app\DataTransferObjects\Admin\Products\Edit;
 
-use App\DataTransferObjects\Admin\Products\Add\Item;
-use App\DataTransferObjects\Admin\Products\Add\Server;
+use app\DataTransferObjects\Admin\Products\Add\Item;
+use app\DataTransferObjects\Admin\Products\Add\Server;
 
 class Result
 {

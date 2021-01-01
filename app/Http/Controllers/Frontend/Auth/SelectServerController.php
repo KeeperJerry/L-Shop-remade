@@ -1,16 +1,16 @@
 <?php
 declare(strict_types = 1);
 
-namespace App\Http\Controllers\Frontend\Auth;
+namespace app\Http\Controllers\Frontend\Auth;
 
-use App\Handlers\Frontend\Auth\ServersHandler;
-use App\Http\Controllers\Controller;
-use App\Http\Middleware\Auth;
-use App\Services\Auth\AccessMode;
-use App\Services\Response\JsonResponse;
-use App\Services\Response\Status;
-use App\Services\Settings\Settings;
-use function App\auth_middleware;
+use app\Handlers\Frontend\Auth\ServersHandler;
+use app\Http\Controllers\Controller;
+use app\Http\Middleware\Auth;
+use app\Services\Auth\AccessMode;
+use app\Services\Response\JsonResponse;
+use app\Services\Response\Status;
+use app\Services\Settings\Settings;
+use function app\auth_middleware;
 
 /**
  * Class SelectServerController

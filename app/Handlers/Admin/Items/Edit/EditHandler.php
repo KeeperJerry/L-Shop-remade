@@ -1,19 +1,19 @@
 <?php
 declare(strict_types=1);
 
-namespace App\Handlers\Admin\Items\Edit;
+namespace app\Handlers\Admin\Items\Edit;
 
-use App\DataTransferObjects\Admin\Items\Edit\Edit;
-use App\Entity\Enchantment;
-use App\Entity\EnchantmentItem;
-use App\Exceptions\InvalidArgumentTypeException;
-use App\Exceptions\Item\ItemNotFoundException;
-use App\Exceptions\UnexpectedValueException;
-use App\Repository\Enchantment\EnchantmentRepository;
-use App\Repository\Item\ItemRepository;
-use App\Services\Item\Image\Hashing\Hasher;
-use App\Services\Item\Image\Image;
-use App\Services\Item\Type;
+use app\DataTransferObjects\Admin\Items\Edit\Edit;
+use app\Entity\Enchantment;
+use app\Entity\EnchantmentItem;
+use app\Exceptions\InvalidArgumentTypeException;
+use app\Exceptions\Item\ItemNotFoundException;
+use app\Exceptions\UnexpectedValueException;
+use app\Repository\Enchantment\EnchantmentRepository;
+use app\Repository\Item\ItemRepository;
+use app\Services\Item\Image\Hashing\Hasher;
+use app\Services\Item\Image\Image;
+use app\Services\Item\Type;
 use Illuminate\Http\UploadedFile;
 
 class EditHandler

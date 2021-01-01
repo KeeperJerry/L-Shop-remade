@@ -1,9 +1,9 @@
 <?php
 declare(strict_types = 1);
 
-namespace App\Handlers\Frontend\Auth;
+namespace app\Handlers\Frontend\Auth;
 
-use App\Services\Auth\Activator;
+use app\Services\Auth\Activator;
 
 class CompleteActivationHandler
 {

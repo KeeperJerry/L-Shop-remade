@@ -1,9 +1,9 @@
 <?php
 declare(strict_types = 1);
 
-namespace App\Services\Game\Permissions\LuckPerms\Repository\GroupPermission;
+namespace app\Services\Game\Permissions\LuckPerms\Repository\GroupPermission;
 
-use App\Services\Game\Permissions\LuckPerms\Entity\GroupPermission;
+use app\Services\Game\Permissions\LuckPerms\Entity\GroupPermission;
 
 interface GroupPermissionRepository
 {

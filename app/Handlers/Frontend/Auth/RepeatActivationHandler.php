@@ -1,13 +1,13 @@
 <?php
 declare(strict_types = 1);
 
-namespace App\Handlers\Frontend\Auth;
+namespace app\Handlers\Frontend\Auth;
 
-use App\Mail\Auth\Confirmation;
-use App\Repository\User\UserRepository;
-use App\Services\Auth\Activator;
-use App\Services\Auth\Exceptions\AlreadyActivatedException;
-use App\Services\Auth\Exceptions\UserDoesNotExistException;
+use app\Mail\Auth\Confirmation;
+use app\Repository\User\UserRepository;
+use app\Services\Auth\Activator;
+use app\Services\Auth\Exceptions\AlreadyActivatedException;
+use app\Services\Auth\Exceptions\UserDoesNotExistException;
 use Illuminate\Contracts\Mail\Mailer;
 
 class RepeatActivationHandler

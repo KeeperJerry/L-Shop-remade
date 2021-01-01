@@ -1,13 +1,13 @@
 <?php
 declare(strict_types = 1);
 
-namespace App\Handlers\Admin\Statistic\Show;
+namespace app\Handlers\Admin\Statistic\Show;
 
-use App\DataTransferObjects\Admin\Statistic\Show\VisitResult;
-use App\Repository\Purchase\PurchaseRepository;
-use App\Repository\PurchaseItem\PurchaseItemRepository;
-use App\Repository\User\UserRepository;
-use App\Services\Purchasing\ViaContext;
+use app\DataTransferObjects\Admin\Statistic\Show\VisitResult;
+use app\Repository\Purchase\PurchaseRepository;
+use app\Repository\PurchaseItem\PurchaseItemRepository;
+use app\Repository\User\UserRepository;
+use app\Services\Purchasing\ViaContext;
 
 class VisitHandler
 {

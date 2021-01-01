@@ -1,24 +1,24 @@
 <?php
 declare(strict_types = 1);
 
-namespace App\Http\Controllers\Admin\Products;
+namespace app\Http\Controllers\Admin\Products;
 
-use App\DataTransferObjects\Admin\Products\Edit\Edit;
-use App\Exceptions\Category\CategoryNotFoundException;
-use App\Exceptions\Item\ItemNotFoundException;
-use App\Exceptions\Product\ProductNotFoundException;
-use App\Handlers\Admin\Products\Edit\EditHandler;
-use App\Handlers\Admin\Products\Edit\RenderHandler;
-use App\Http\Controllers\Controller;
-use App\Http\Requests\Admin\Products\AddEditRequest;
-use App\Services\Auth\Permissions;
-use App\Services\Notification\Notifications\Error;
-use App\Services\Notification\Notifications\Success;
-use App\Services\Response\JsonResponse;
-use App\Services\Response\Status;
+use app\DataTransferObjects\Admin\Products\Edit\Edit;
+use app\Exceptions\Category\CategoryNotFoundException;
+use app\Exceptions\Item\ItemNotFoundException;
+use app\Exceptions\Product\ProductNotFoundException;
+use app\Handlers\Admin\Products\Edit\EditHandler;
+use app\Handlers\Admin\Products\Edit\RenderHandler;
+use app\Http\Controllers\Controller;
+use app\Http\Requests\Admin\Products\AddEditRequest;
+use app\Services\Auth\Permissions;
+use app\Services\Notification\Notifications\Error;
+use app\Services\Notification\Notifications\Success;
+use app\Services\Response\JsonResponse;
+use app\Services\Response\Status;
 use Illuminate\Http\Request;
 use Illuminate\Http\Response;
-use function App\permission_middleware;
+use function app\permission_middleware;
 
 class EditController extends Controller
 {

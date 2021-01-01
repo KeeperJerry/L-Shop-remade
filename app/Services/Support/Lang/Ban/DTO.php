@@ -1,7 +1,7 @@
 <?php
 declare(strict_types = 1);
 
-namespace App\Services\Support\Lang\Ban;
+namespace app\Services\Support\Lang\Ban;
 
 /**
  * Class DTO

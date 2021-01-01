@@ -1,11 +1,11 @@
 <?php
 declare(strict_types = 1);
 
-namespace App\Handlers\Admin\Control\Api;
+namespace app\Handlers\Admin\Control\Api;
 
-use App\DataTransferObjects\Admin\Control\Api\Save;
-use App\Exceptions\UnexpectedValueException;
-use App\Services\Settings\Settings;
+use app\DataTransferObjects\Admin\Control\Api\Save;
+use app\Exceptions\UnexpectedValueException;
+use app\Services\Settings\Settings;
 use Illuminate\Contracts\Config\Repository;
 
 class SaveHandler

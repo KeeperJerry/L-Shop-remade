@@ -1,12 +1,12 @@
 <?php
 declare(strict_types = 1);
 
-namespace App\Handlers\Admin\Products;
+namespace app\Handlers\Admin\Products;
 
-use App\DataTransferObjects\Admin\Products\EditList\Result;
-use App\DataTransferObjects\PaginationList;
-use App\Exceptions\InvalidArgumentException;
-use App\Repository\Product\ProductRepository;
+use app\DataTransferObjects\Admin\Products\EditList\Result;
+use app\DataTransferObjects\PaginationList;
+use app\Exceptions\InvalidArgumentException;
+use app\Repository\Product\ProductRepository;
 
 class ListHandler
 {

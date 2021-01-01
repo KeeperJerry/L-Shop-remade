@@ -1,16 +1,16 @@
 <?php
 declare(strict_types = 1);
 
-namespace App\Handlers\Frontend\Shop\Payment;
+namespace app\Handlers\Frontend\Shop\Payment;
 
-use App\DataTransferObjects\Frontend\Shop\Payer;
-use App\DataTransferObjects\Frontend\Shop\Payment;
-use App\Exceptions\ForbiddenException;
-use App\Exceptions\Purchase\PurchaseNotFoundException;
-use App\Repository\Purchase\PurchaseRepository;
-use App\Services\Auth\Auth;
-use App\Services\Purchasing\Payers\Pool;
-use App\Services\Settings\Settings;
+use app\DataTransferObjects\Frontend\Shop\Payer;
+use app\DataTransferObjects\Frontend\Shop\Payment;
+use app\Exceptions\ForbiddenException;
+use app\Exceptions\Purchase\PurchaseNotFoundException;
+use app\Repository\Purchase\PurchaseRepository;
+use app\Services\Auth\Auth;
+use app\Services\Purchasing\Payers\Pool;
+use app\Services\Settings\Settings;
 
 class VisitHandler
 {

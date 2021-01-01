@@ -1,21 +1,21 @@
 <?php
 declare(strict_types=1);
 
-namespace App\Http\Controllers\Admin\Products;
+namespace app\Http\Controllers\Admin\Products;
 
-use App\DataTransferObjects\Admin\Products\Add\Add;
-use App\Exceptions\Category\CategoryNotFoundException;
-use App\Exceptions\Item\ItemNotFoundException;
-use App\Handlers\Admin\Products\Add\AddHandler;
-use App\Handlers\Admin\Products\Add\RenderHandler;
-use App\Http\Controllers\Controller;
-use App\Http\Requests\Admin\Products\AddEditRequest;
-use App\Services\Auth\Permissions;
-use App\Services\Notification\Notifications\Success;
-use App\Services\Response\JsonResponse;
-use App\Services\Response\Status;
+use app\DataTransferObjects\Admin\Products\Add\Add;
+use app\Exceptions\Category\CategoryNotFoundException;
+use app\Exceptions\Item\ItemNotFoundException;
+use app\Handlers\Admin\Products\Add\AddHandler;
+use app\Handlers\Admin\Products\Add\RenderHandler;
+use app\Http\Controllers\Controller;
+use app\Http\Requests\Admin\Products\AddEditRequest;
+use app\Services\Auth\Permissions;
+use app\Services\Notification\Notifications\Success;
+use app\Services\Response\JsonResponse;
+use app\Services\Response\Status;
 use Illuminate\Http\Response;
-use function App\permission_middleware;
+use function app\permission_middleware;
 
 class AddController extends Controller
 {

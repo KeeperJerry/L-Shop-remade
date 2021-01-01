@@ -1,9 +1,9 @@
 <?php
 declare(strict_types = 1);
 
-namespace App\Services\Cart;
+namespace app\Services\Cart;
 
-use App\Entity\Product;
+use app\Entity\Product;
 
 /**
  * Class Item

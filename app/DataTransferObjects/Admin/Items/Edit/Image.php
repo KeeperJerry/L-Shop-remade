@@ -1,7 +1,7 @@
 <?php
 declare(strict_types = 1);
 
-namespace App\DataTransferObjects\Admin\Items\Edit;
+namespace app\DataTransferObjects\Admin\Items\Edit;
 
 use Symfony\Component\Finder\SplFileInfo;
 
@@ -30,7 +30,7 @@ class Image
     {
         return [
             'name' => $this->file->getFilename(),
-            'url' => \App\Services\Item\Image\Image::assetPathOrDefault($this->file->getFilename()),
+            'url' => \app\Services\Item\Image\Image::assetPathOrDefault($this->file->getFilename()),
             'current' => $this->isCurrent
         ];
     }

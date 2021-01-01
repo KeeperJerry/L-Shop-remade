@@ -25,9 +25,9 @@ return [
     */
 
     'checkpoints' => [
-        \App\Services\Auth\Checkpoint\ActivationCheckpoint::class,
-        \App\Services\Auth\Checkpoint\BanCheckpoint::class,
-        \App\Services\Auth\Checkpoint\ThrottleCheckpoint::class
+        \app\Services\Auth\Checkpoint\ActivationCheckpoint::class,
+        \app\Services\Auth\Checkpoint\BanCheckpoint::class,
+        \app\Services\Auth\Checkpoint\ThrottleCheckpoint::class
     ],
 
     'validation' => [
@@ -65,7 +65,7 @@ return [
             | Recommend use: "alpha_strict", "alpha_dash_strict", "alpha_num_strict"
             | or define custom in .
             |
-            | @see \App\Providers\ValidationServiceProvider::boot()
+            | @see \app\Providers\ValidationServiceProvider::boot()
             |
             */
 
@@ -221,7 +221,7 @@ return [
         */
 
         'default' => [
-            \App\Services\Auth\Roles::USER
+            \app\Services\Auth\Roles::USER
         ]
     ],
 
@@ -231,15 +231,15 @@ return [
     |--------------------------------------------------------------------------
     |
     | The class specified here is responsible for hashing passwords. He must
-    | implement the App\Services\Auth\Hashing\Hasher interface.
+    | implement the app\Services\Auth\Hashing\Hasher interface.
     | Builtin hashers:
-    | - App\Services\Auth\Hashing\BcryptHasher (Recommended)
-    | - App\Services\Auth\Hashing\CallbackHasher
-    | - App\Services\Auth\Hashing\Sha256Hasher
-    | - App\Services\Auth\Hashing\Sha512Hasher
-    | - App\Services\Auth\Hashing\WhirlpoolHasher
+    | - app\Services\Auth\Hashing\BcryptHasher (Recommended)
+    | - app\Services\Auth\Hashing\CallbackHasher
+    | - app\Services\Auth\Hashing\Sha256Hasher
+    | - app\Services\Auth\Hashing\Sha512Hasher
+    | - app\Services\Auth\Hashing\WhirlpoolHasher
     |
     */
 
-    'hasher' => \App\Services\Auth\Hashing\BcryptHasher::class
+    'hasher' => \app\Services\Auth\Hashing\BcryptHasher::class
 ];

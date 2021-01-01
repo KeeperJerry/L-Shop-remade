@@ -1,9 +1,9 @@
 <?php
 declare(strict_types = 1);
 
-namespace App\Exceptions\Distributor;
+namespace app\Exceptions\Distributor;
 
-use App\Exceptions\RuntimeException;
+use app\Exceptions\RuntimeException;
 
 class DistributionException extends RuntimeException
 {

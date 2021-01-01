@@ -1,10 +1,10 @@
 <?php
 declare(strict_types = 1);
 
-namespace App\Handlers\Frontend\Auth;
+namespace app\Handlers\Frontend\Auth;
 
-use App\Repository\Reminder\ReminderRepository;
-use App\Services\Auth\Reminder;
+use app\Repository\Reminder\ReminderRepository;
+use app\Services\Auth\Reminder;
 
 class ResetPasswordHandler
 {

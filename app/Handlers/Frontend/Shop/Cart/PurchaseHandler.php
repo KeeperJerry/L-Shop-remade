@@ -1,21 +1,21 @@
 <?php
 declare(strict_types = 1);
 
-namespace App\Handlers\Frontend\Shop\Cart;
+namespace app\Handlers\Frontend\Shop\Cart;
 
-use App\DataTransferObjects\Frontend\Shop\Cart\Purchase as PurchaseDTO;
-use App\DataTransferObjects\Frontend\Shop\Catalog\Purchase as ResultDTO;
-use App\DataTransferObjects\Frontend\Shop\Purchase;
-use App\Exceptions\Distributor\DistributionException;
-use App\Exceptions\ForbiddenException;
-use App\Exceptions\LogicException;
-use App\Exceptions\Server\ServerNotFoundException;
-use App\Repository\Server\ServerRepository;
-use App\Services\Auth\Auth;
-use App\Services\Auth\Permissions;
-use App\Services\Cart\Cart;
-use App\Services\Purchasing\PurchaseProcessor;
-use App\Services\Server\ServerAccess;
+use app\DataTransferObjects\Frontend\Shop\Cart\Purchase as PurchaseDTO;
+use app\DataTransferObjects\Frontend\Shop\Catalog\Purchase as ResultDTO;
+use app\DataTransferObjects\Frontend\Shop\Purchase;
+use app\Exceptions\Distributor\DistributionException;
+use app\Exceptions\ForbiddenException;
+use app\Exceptions\LogicException;
+use app\Exceptions\Server\ServerNotFoundException;
+use app\Repository\Server\ServerRepository;
+use app\Services\Auth\Auth;
+use app\Services\Auth\Permissions;
+use app\Services\Cart\Cart;
+use app\Services\Purchasing\PurchaseProcessor;
+use app\Services\Server\ServerAccess;
 
 class PurchaseHandler
 {

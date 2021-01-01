@@ -1,9 +1,9 @@
 <?php
 declare(strict_types = 1);
 
-namespace App\Services\Game\Permissions;
+namespace app\Services\Game\Permissions;
 
-use App\Entity\User;
+use app\Entity\User;
 
 class PlayerWithUser extends Player
 {

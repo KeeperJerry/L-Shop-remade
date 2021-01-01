@@ -1,16 +1,16 @@
 <?php
 declare(strict_types = 1);
 
-namespace App\Handlers\Admin\Users\Edit;
+namespace app\Handlers\Admin\Users\Edit;
 
-use App\DataTransferObjects\Admin\Users\Edit\AddBan;
-use App\DataTransferObjects\Admin\Users\Edit\Ban as BanDTO;
-use App\Exceptions\InvalidArgumentException;
-use App\Exceptions\UnexpectedValueException;
-use App\Exceptions\User\UserNotFoundException;
-use App\Repository\Ban\BanRepository;
-use App\Repository\User\UserRepository;
-use App\Services\Auth\BanManager;
+use app\DataTransferObjects\Admin\Users\Edit\AddBan;
+use app\DataTransferObjects\Admin\Users\Edit\Ban as BanDTO;
+use app\Exceptions\InvalidArgumentException;
+use app\Exceptions\UnexpectedValueException;
+use app\Exceptions\User\UserNotFoundException;
+use app\Repository\Ban\BanRepository;
+use app\Repository\User\UserRepository;
+use app\Services\Auth\BanManager;
 
 class AddBanHandler
 {

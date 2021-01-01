@@ -1,24 +1,24 @@
 <?php
 declare(strict_types = 1);
 
-namespace App\Providers;
+namespace app\Providers;
 
-use App\Exceptions\UnexpectedValueException;
-use App\Services\Purchasing\Distributors\Distributor;
-use App\Services\Purchasing\Distributors\Pool as DistributorsPool;
-use App\Services\Purchasing\Distributors\RconDistribution\CommandBuilder;
-use App\Services\Purchasing\Distributors\RconDistribution\Commands;
-use App\Services\Purchasing\Distributors\RconDistribution\Connections;
-use App\Services\Purchasing\Distributors\RconDistribution\DefaultCommandBuilder;
-use App\Services\Purchasing\Distributors\RconDistribution\ExtraCommands;
-use App\Services\Purchasing\Payers\InterkassaPayer;
-use App\Services\Purchasing\Payers\Payer;
-use App\Services\Purchasing\Payers\Pool;
-use App\Services\Purchasing\Payers\RobokassaPayer;
-use App\Services\Purchasing\Payments\Interkassa\Checkout as InterkassaCheckout;
-use App\Services\Purchasing\Payments\Robokassa\Checkout as RobokassaCheckout;
-use App\Services\Settings\DataType;
-use App\Services\Settings\Settings;
+use app\Exceptions\UnexpectedValueException;
+use app\Services\Purchasing\Distributors\Distributor;
+use app\Services\Purchasing\Distributors\Pool as DistributorsPool;
+use app\Services\Purchasing\Distributors\RconDistribution\CommandBuilder;
+use app\Services\Purchasing\Distributors\RconDistribution\Commands;
+use app\Services\Purchasing\Distributors\RconDistribution\Connections;
+use app\Services\Purchasing\Distributors\RconDistribution\DefaultCommandBuilder;
+use app\Services\Purchasing\Distributors\RconDistribution\ExtraCommands;
+use app\Services\Purchasing\Payers\InterkassaPayer;
+use app\Services\Purchasing\Payers\Payer;
+use app\Services\Purchasing\Payers\Pool;
+use app\Services\Purchasing\Payers\RobokassaPayer;
+use app\Services\Purchasing\Payments\Interkassa\Checkout as InterkassaCheckout;
+use app\Services\Purchasing\Payments\Robokassa\Checkout as RobokassaCheckout;
+use app\Services\Settings\DataType;
+use app\Services\Settings\Settings;
 use D3lph1\MinecraftRconManager\Connector;
 use Illuminate\Contracts\Config\Repository;
 use Illuminate\Contracts\Foundation\Application;
@@ -115,7 +115,7 @@ class PurchaseServiceProvider extends ServiceProvider
                 }
 
                 throw new UnexpectedValueException(
-                    "Payer {$payer} must be implements interface App\Services\Purchasing\Payers\Payer"
+                    "Payer {$payer} must be implements interface app\Services\Purchasing\Payers\Payer"
                 );
             }, $this->app->make(Repository::class)->get('purchasing.payers')));
         });
@@ -131,7 +131,7 @@ class PurchaseServiceProvider extends ServiceProvider
                     $distributors[] = $instance;
                 } else {
                     throw new UnexpectedValueException(
-                        "Distributor {$distributor} must be implements interface App\Services\Purchasing\Distributors\Distributor"
+                        "Distributor {$distributor} must be implements interface app\Services\Purchasing\Distributors\Distributor"
                     );
                 }
             }

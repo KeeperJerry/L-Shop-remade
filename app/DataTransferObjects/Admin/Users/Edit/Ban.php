@@ -1,10 +1,10 @@
 <?php
 declare(strict_types = 1);
 
-namespace App\DataTransferObjects\Admin\Users\Edit;
+namespace app\DataTransferObjects\Admin\Users\Edit;
 
-use App\Entity\Ban as Entity;
-use App\Services\DateTime\Formatting\JavaScriptFormatter;
+use app\Entity\Ban as Entity;
+use app\Services\DateTime\Formatting\JavaScriptFormatter;
 
 class Ban implements \JsonSerializable
 {

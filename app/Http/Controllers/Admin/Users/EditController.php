@@ -1,41 +1,41 @@
 <?php
 declare(strict_types = 1);
 
-namespace App\Http\Controllers\Admin\Users;
+namespace app\Http\Controllers\Admin\Users;
 
-use App\DataTransferObjects\Admin\Users\Edit\AddBan;
-use App\DataTransferObjects\Admin\Users\Edit\Edit;
-use App\DataTransferObjects\Admin\Users\Edit\PaginationList;
-use App\Exceptions\Ban\BanNotFoundException;
-use App\Exceptions\InvalidArgumentException;
-use App\Exceptions\Media\Character\InvalidRatioException;
-use App\Exceptions\User\UserNotFoundException;
-use App\Handlers\Admin\Users\Edit\AddBanHandler;
-use App\Handlers\Admin\Users\Edit\CartHandler;
-use App\Handlers\Admin\Users\Edit\DeleteBanHandler;
-use App\Handlers\Admin\Users\Edit\DeleteCloakHandler;
-use App\Handlers\Admin\Users\Edit\DeleteSkinHandler;
-use App\Handlers\Admin\Users\Edit\EditHandler;
-use App\Handlers\Admin\Users\Edit\PurchasesHandler;
-use App\Handlers\Admin\Users\Edit\RenderHandler;
-use App\Handlers\Admin\Users\Edit\UploadCloakHandler;
-use App\Handlers\Admin\Users\Edit\UploadSkinHandler;
-use App\Http\Controllers\Controller;
-use App\Http\Requests\Admin\Users\Edit\AddBanRequest;
-use App\Http\Requests\Admin\Users\Edit\EditRequest;
-use App\Http\Requests\Admin\Users\Edit\UploadSkinCloakRequest;
-use App\Services\Auth\Exceptions\EmailAlreadyExistsException;
-use App\Services\Auth\Exceptions\UsernameAlreadyExistsException;
-use App\Services\Auth\Permissions;
-use App\Services\Notification\Notifications\Error;
-use App\Services\Notification\Notifications\Info;
-use App\Services\Notification\Notifications\Success;
-use App\Services\Response\JsonResponse;
-use App\Services\Response\Status;
+use app\DataTransferObjects\Admin\Users\Edit\AddBan;
+use app\DataTransferObjects\Admin\Users\Edit\Edit;
+use app\DataTransferObjects\Admin\Users\Edit\PaginationList;
+use app\Exceptions\Ban\BanNotFoundException;
+use app\Exceptions\InvalidArgumentException;
+use app\Exceptions\Media\Character\InvalidRatioException;
+use app\Exceptions\User\UserNotFoundException;
+use app\Handlers\Admin\Users\Edit\AddBanHandler;
+use app\Handlers\Admin\Users\Edit\CartHandler;
+use app\Handlers\Admin\Users\Edit\DeleteBanHandler;
+use app\Handlers\Admin\Users\Edit\DeleteCloakHandler;
+use app\Handlers\Admin\Users\Edit\DeleteSkinHandler;
+use app\Handlers\Admin\Users\Edit\EditHandler;
+use app\Handlers\Admin\Users\Edit\PurchasesHandler;
+use app\Handlers\Admin\Users\Edit\RenderHandler;
+use app\Handlers\Admin\Users\Edit\UploadCloakHandler;
+use app\Handlers\Admin\Users\Edit\UploadSkinHandler;
+use app\Http\Controllers\Controller;
+use app\Http\Requests\Admin\Users\Edit\AddBanRequest;
+use app\Http\Requests\Admin\Users\Edit\EditRequest;
+use app\Http\Requests\Admin\Users\Edit\UploadSkinCloakRequest;
+use app\Services\Auth\Exceptions\EmailAlreadyExistsException;
+use app\Services\Auth\Exceptions\UsernameAlreadyExistsException;
+use app\Services\Auth\Permissions;
+use app\Services\Notification\Notifications\Error;
+use app\Services\Notification\Notifications\Info;
+use app\Services\Notification\Notifications\Success;
+use app\Services\Response\JsonResponse;
+use app\Services\Response\Status;
 use Illuminate\Http\Request;
 use Illuminate\Http\Response;
 use Symfony\Component\HttpKernel\Exception\NotFoundHttpException;
-use function App\permission_middleware;
+use function app\permission_middleware;
 
 class EditController extends Controller
 {

@@ -1,13 +1,13 @@
 <?php
 declare(strict_types = 1);
 
-namespace App\DataTransferObjects\Frontend\Profile\Purchases;
+namespace app\DataTransferObjects\Frontend\Profile\Purchases;
 
-use App\Entity\PurchaseItem;
-use App\Services\Item\Enchantment\Enchantment;
-use App\Services\Item\Image\Image;
-use App\Services\Product\Cost;
-use App\Services\Product\Stack;
+use app\Entity\PurchaseItem;
+use app\Services\Item\Enchantment\Enchantment;
+use app\Services\Item\Image\Image;
+use app\Services\Product\Cost;
+use app\Services\Product\Stack;
 
 class Item implements \JsonSerializable
 {

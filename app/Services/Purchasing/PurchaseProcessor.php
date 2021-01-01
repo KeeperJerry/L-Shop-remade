@@ -1,13 +1,13 @@
 <?php
 declare(strict_types = 1);
 
-namespace App\Services\Purchasing;
+namespace app\Services\Purchasing;
 
-use App\DataTransferObjects\Frontend\Shop\Catalog\Purchase as ResultDTO;
-use App\DataTransferObjects\Frontend\Shop\Purchase;
-use App\Entity\User;
-use App\Services\Auth\Auth;
-use App\Services\User\Balance\Transactor;
+use app\DataTransferObjects\Frontend\Shop\Catalog\Purchase as ResultDTO;
+use app\DataTransferObjects\Frontend\Shop\Purchase;
+use app\Entity\User;
+use app\Services\Auth\Auth;
+use app\Services\User\Balance\Transactor;
 
 class PurchaseProcessor
 {

@@ -1,7 +1,7 @@
 <?php
 declare(strict_types = 1);
 
-namespace App\Services\Server\Persistence\Storage;
+namespace app\Services\Server\Persistence\Storage;
 
 interface Storage
 {

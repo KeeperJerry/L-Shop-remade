@@ -1,9 +1,9 @@
 <?php
 declare(strict_types = 1);
 
-namespace App\DataTransferObjects\Admin\Users\Permissions;
+namespace app\DataTransferObjects\Admin\Users\Permissions;
 
-use App\Services\Response\JsonRespondent;
+use app\Services\Response\JsonRespondent;
 use Illuminate\Contracts\Pagination\LengthAwarePaginator;
 
 class ListResult implements JsonRespondent

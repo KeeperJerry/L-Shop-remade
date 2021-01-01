@@ -1,12 +1,12 @@
 <?php
 declare(strict_types = 1);
 
-namespace App\Services\Settings\Repository\Doctrine;
+namespace app\Services\Settings\Repository\Doctrine;
 
-use App\Services\Caching\CachingOptions;
-use App\Services\Caching\ClearsCache;
-use App\Services\Settings\Repository\Repository;
-use App\Services\Settings\Setting;
+use app\Services\Caching\CachingOptions;
+use app\Services\Caching\ClearsCache;
+use app\Services\Settings\Repository\Repository;
+use app\Services\Settings\Setting;
 use Doctrine\ORM\EntityManagerInterface;
 use Doctrine\ORM\EntityRepository;
 

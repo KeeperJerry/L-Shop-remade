@@ -1,10 +1,10 @@
 <?php
 declare(strict_types = 1);
 
-namespace App\Repository\Purchase;
+namespace app\Repository\Purchase;
 
-use App\Entity\Purchase;
-use App\Entity\User;
+use app\Entity\Purchase;
+use app\Entity\User;
 use Illuminate\Contracts\Pagination\LengthAwarePaginator;
 
 interface PurchaseRepository

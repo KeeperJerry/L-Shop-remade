@@ -1,9 +1,9 @@
 <?php
 declare(strict_types = 1);
 
-namespace App\DataTransferObjects\Admin\Servers\Edit;
+namespace app\DataTransferObjects\Admin\Servers\Edit;
 
-use App\Entity\Server as Entity;
+use app\Entity\Server as Entity;
 
 class Server implements \JsonSerializable
 {

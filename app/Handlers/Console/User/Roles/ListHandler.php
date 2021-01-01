@@ -1,11 +1,11 @@
 <?php
 declare(strict_types = 1);
 
-namespace App\Handlers\Consoe\User\Roles;
+namespace app\Handlers\Consoe\User\Roles;
 
-use App\DataTransferObjects\Commands\User\Roles\RolesList;
-use App\Exceptions\User\UserNotFoundException;
-use App\Repository\User\UserRepository;
+use app\DataTransferObjects\Commands\User\Roles\RolesList;
+use app\Exceptions\User\UserNotFoundException;
+use app\Repository\User\UserRepository;
 
 class ListHandler
 {

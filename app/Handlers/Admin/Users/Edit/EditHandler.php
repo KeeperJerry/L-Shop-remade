@@ -1,18 +1,18 @@
 <?php
 declare(strict_types = 1);
 
-namespace App\Handlers\Admin\Users\Edit;
+namespace app\Handlers\Admin\Users\Edit;
 
-use App\DataTransferObjects\Admin\Users\Edit\Edit;
-use App\Entity\User;
-use App\Exceptions\User\UserNotFoundException;
-use App\Repository\Permission\PermissionRepository;
-use App\Repository\Role\RoleRepository;
-use App\Repository\User\UserRepository;
-use App\Services\Auth\Exceptions\EmailAlreadyExistsException;
-use App\Services\Auth\Exceptions\UsernameAlreadyExistsException;
-use App\Services\Auth\Hashing\Hasher;
-use App\Services\User\Balance\Transactor;
+use app\DataTransferObjects\Admin\Users\Edit\Edit;
+use app\Entity\User;
+use app\Exceptions\User\UserNotFoundException;
+use app\Repository\Permission\PermissionRepository;
+use app\Repository\Role\RoleRepository;
+use app\Repository\User\UserRepository;
+use app\Services\Auth\Exceptions\EmailAlreadyExistsException;
+use app\Services\Auth\Exceptions\UsernameAlreadyExistsException;
+use app\Services\Auth\Hashing\Hasher;
+use app\Services\User\Balance\Transactor;
 
 class EditHandler
 {

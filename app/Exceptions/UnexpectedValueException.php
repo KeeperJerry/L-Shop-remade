@@ -1,7 +1,7 @@
 <?php
 declare(strict_types = 1);
 
-namespace App\Exceptions;
+namespace app\Exceptions;
 
 class UnexpectedValueException extends \UnexpectedValueException
 {

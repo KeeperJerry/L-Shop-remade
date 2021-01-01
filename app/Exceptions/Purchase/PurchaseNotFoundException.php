@@ -1,9 +1,9 @@
 <?php
 declare(strict_types = 1);
 
-namespace App\Exceptions\Purchase;
+namespace app\Exceptions\Purchase;
 
-use App\Exceptions\DomainException;
+use app\Exceptions\DomainException;
 
 class PurchaseNotFoundException extends DomainException
 {

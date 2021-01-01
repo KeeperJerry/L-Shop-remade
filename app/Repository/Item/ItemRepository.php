@@ -1,9 +1,9 @@
 <?php
 declare(strict_types = 1);
 
-namespace App\Repository\Item;
+namespace app\Repository\Item;
 
-use App\Entity\Item;
+use app\Entity\Item;
 use Illuminate\Contracts\Pagination\LengthAwarePaginator;
 
 interface ItemRepository

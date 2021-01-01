@@ -1,12 +1,12 @@
 <?php
 declare(strict_types = 1);
 
-use App\Entity\Category;
-use App\Entity\Server;
-use App\Repository\Category\CategoryRepository;
-use App\Repository\Product\ProductRepository;
-use App\Repository\Server\ServerRepository;
-use App\Services\Purchasing\Distributors\ShoppingCartDistributor;
+use app\Entity\Category;
+use app\Entity\Server;
+use app\Repository\Category\CategoryRepository;
+use app\Repository\Product\ProductRepository;
+use app\Repository\Server\ServerRepository;
+use app\Services\Purchasing\Distributors\ShoppingCartDistributor;
 use Illuminate\Database\Seeder;
 
 class ServersSeeder extends Seeder

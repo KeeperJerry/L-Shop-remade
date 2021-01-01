@@ -1,7 +1,7 @@
 <?php
 declare(strict_types = 1);
 
-namespace App\DataTransferObjects\Admin\Servers\Edit;
+namespace app\DataTransferObjects\Admin\Servers\Edit;
 
 class EditedCategory
 {

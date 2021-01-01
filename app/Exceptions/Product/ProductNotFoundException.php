@@ -1,9 +1,9 @@
 <?php
 declare(strict_types = 1);
 
-namespace App\Exceptions\Product;
+namespace app\Exceptions\Product;
 
-use App\Exceptions\DomainException;
+use app\Exceptions\DomainException;
 
 class ProductNotFoundException extends DomainException
 {

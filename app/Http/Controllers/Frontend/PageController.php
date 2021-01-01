@@ -1,13 +1,13 @@
 <?php
 declare(strict_types = 1);
 
-namespace App\Http\Controllers\Frontend;
+namespace app\Http\Controllers\Frontend;
 
-use App\Exceptions\Page\PageNotFoundException;
-use App\Handlers\Frontend\Shop\Page\VisitHandler;
-use App\Http\Controllers\Controller;
-use App\Services\Response\JsonResponse;
-use App\Services\Response\Status;
+use app\Exceptions\Page\PageNotFoundException;
+use app\Handlers\Frontend\Shop\Page\VisitHandler;
+use app\Http\Controllers\Controller;
+use app\Services\Response\JsonResponse;
+use app\Services\Response\Status;
 use Illuminate\Http\Request;
 use Illuminate\Http\Response;
 

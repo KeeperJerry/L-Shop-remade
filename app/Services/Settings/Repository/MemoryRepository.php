@@ -1,9 +1,9 @@
 <?php
 declare(strict_types=1);
 
-namespace App\Services\Settings\Repository;
+namespace app\Services\Settings\Repository;
 
-use App\Services\Settings\Setting;
+use app\Services\Settings\Setting;
 
 /**
  * Class MemoryRepository

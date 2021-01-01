@@ -1,13 +1,13 @@
 <?php
 declare(strict_types = 1);
 
-namespace App\Handlers\Admin\Users\Edit;
+namespace app\Handlers\Admin\Users\Edit;
 
-use App\DataTransferObjects\Admin\Users\Edit\CartResult;
-use App\DataTransferObjects\Admin\Users\Edit\PaginationList;
-use App\Exceptions\InvalidArgumentException;
-use App\Repository\Distribution\DistributionRepository;
-use App\Services\Auth\Auth;
+use app\DataTransferObjects\Admin\Users\Edit\CartResult;
+use app\DataTransferObjects\Admin\Users\Edit\PaginationList;
+use app\Exceptions\InvalidArgumentException;
+use app\Repository\Distribution\DistributionRepository;
+use app\Services\Auth\Auth;
 
 class CartHandler
 {

@@ -1,12 +1,12 @@
 <?php
 declare(strict_types = 1);
 
-namespace App\Http\Controllers\Frontend\Auth;
+namespace app\Http\Controllers\Frontend\Auth;
 
-use App\Http\Controllers\Controller;
-use App\Services\Auth\Auth;
-use App\Services\Response\JsonResponse;
-use App\Services\Response\Status;
+use app\Http\Controllers\Controller;
+use app\Services\Auth\Auth;
+use app\Services\Response\JsonResponse;
+use app\Services\Response\Status;
 
 /**
  * Class LogoutController

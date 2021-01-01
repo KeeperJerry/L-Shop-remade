@@ -1,9 +1,9 @@
 <?php
 declare(strict_types = 1);
 
-namespace App\DataTransferObjects\Frontend\Shop\Catalog;
+namespace app\DataTransferObjects\Frontend\Shop\Catalog;
 
-use App\Entity\Product as Entity;
+use app\Entity\Product as Entity;
 
 class Product implements \JsonSerializable
 {

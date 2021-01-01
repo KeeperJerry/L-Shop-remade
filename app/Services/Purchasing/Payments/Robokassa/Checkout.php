@@ -1,9 +1,9 @@
 <?php
 declare(strict_types = 1);
 
-namespace App\Services\Purchasing\Payments\Robokassa;
+namespace app\Services\Purchasing\Payments\Robokassa;
 
-use App\Exceptions\UnexpectedValueException;
+use app\Exceptions\UnexpectedValueException;
 
 class Checkout
 {

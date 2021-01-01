@@ -1,9 +1,9 @@
 <?php
 declare(strict_types = 1);
 
-namespace App\Exceptions\Page;
+namespace app\Exceptions\Page;
 
-use App\Exceptions\DomainException;
+use app\Exceptions\DomainException;
 
 class AlreadyExistException extends DomainException
 {

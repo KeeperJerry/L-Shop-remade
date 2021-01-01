@@ -1,17 +1,17 @@
 <?php
 declare(strict_types = 1);
 
-namespace App\Services\Response;
+namespace app\Services\Response;
 
-use App\Exceptions\InvalidArgumentTypeException;
-use App\Services\Notification\Notification;
+use app\Exceptions\InvalidArgumentTypeException;
+use app\Services\Notification\Notification;
 
 /**
  * Class JsonResponse
  * Used by the application to represent the data that is waiting for the frontend
  * from the backend. It should be returned from the controllers or used as the
  * object of the response of this class. As usual response statuses, you
- * should use predefined constants from the {@see \App\Services\Infrastructure\Response\Status}
+ * should use predefined constants from the {@see \app\Services\Infrastructure\Response\Status}
  * class.
  * <p>For example:</p>
  * <code>

@@ -1,14 +1,14 @@
 <?php
 declare(strict_types = 1);
 
-namespace App\Services\Auth;
+namespace app\Services\Auth;
 
-use App\Entity\User;
-use App\Repository\User\UserRepository;
-use App\Services\Auth\Checkpoint\Pool;
-use App\Services\Auth\Hashing\Hasher;
-use App\Services\Auth\Session\Session;
-use App\Services\Auth\Session\SessionPersistence;
+use app\Entity\User;
+use app\Repository\User\UserRepository;
+use app\Services\Auth\Checkpoint\Pool;
+use app\Services\Auth\Hashing\Hasher;
+use app\Services\Auth\Session\Session;
+use app\Services\Auth\Session\SessionPersistence;
 
 class DefaultAuthenticator implements Authenticator
 {

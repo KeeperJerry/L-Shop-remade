@@ -1,9 +1,9 @@
 <?php
 declare(strict_types = 1);
 
-namespace App\Exceptions\Payer;
+namespace app\Exceptions\Payer;
 
-use App\Exceptions\RuntimeException;
+use app\Exceptions\RuntimeException;
 
 class InvalidPaymentDataException extends RuntimeException
 {

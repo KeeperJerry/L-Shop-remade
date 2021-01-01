@@ -1,10 +1,10 @@
 <?php
 declare(strict_types = 1);
 
-namespace App\Handlers\Admin\Servers;
+namespace app\Handlers\Admin\Servers;
 
-use App\DataTransferObjects\Admin\Servers\EditList\Server;
-use App\Repository\Server\ServerRepository;
+use app\DataTransferObjects\Admin\Servers\EditList\Server;
+use app\Repository\Server\ServerRepository;
 
 class ListHandler
 {

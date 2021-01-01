@@ -1,7 +1,7 @@
 <?php
 declare(strict_types = 1);
 
-namespace App\DataTransferObjects\Admin\Pages;
+namespace app\DataTransferObjects\Admin\Pages;
 
 use Illuminate\Contracts\Pagination\LengthAwarePaginator;
 

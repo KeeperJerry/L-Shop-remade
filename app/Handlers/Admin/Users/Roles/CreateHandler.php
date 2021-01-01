@@ -1,13 +1,13 @@
 <?php
 declare(strict_types = 1);
 
-namespace App\Handlers\Admin\Users\Roles;
+namespace app\Handlers\Admin\Users\Roles;
 
-use App\Entity\Role;
-use App\Exceptions\Permission\PermissionNotFoundException;
-use App\Exceptions\Role\RoleAlreadyExistsException;
-use App\Repository\Permission\PermissionRepository;
-use App\Repository\Role\RoleRepository;
+use app\Entity\Role;
+use app\Exceptions\Permission\PermissionNotFoundException;
+use app\Exceptions\Role\RoleAlreadyExistsException;
+use app\Repository\Permission\PermissionRepository;
+use app\Repository\Role\RoleRepository;
 
 class CreateHandler
 {

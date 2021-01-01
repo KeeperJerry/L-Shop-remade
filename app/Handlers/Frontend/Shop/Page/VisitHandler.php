@@ -1,11 +1,11 @@
 <?php
 declare(strict_types = 1);
 
-namespace App\Handlers\Frontend\Shop\Page;
+namespace app\Handlers\Frontend\Shop\Page;
 
-use App\DataTransferObjects\Frontend\Page as DTO;
-use App\Exceptions\Page\PageNotFoundException;
-use App\Repository\Page\PageRepository;
+use app\DataTransferObjects\Frontend\Page as DTO;
+use app\Exceptions\Page\PageNotFoundException;
+use app\Repository\Page\PageRepository;
 
 class VisitHandler
 {

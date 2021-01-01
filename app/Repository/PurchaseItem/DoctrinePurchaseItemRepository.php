@@ -1,7 +1,7 @@
 <?php
 declare(strict_types=1);
 
-namespace App\Repository\PurchaseItem;
+namespace app\Repository\PurchaseItem;
 
 use Doctrine\ORM\EntityManagerInterface;
 use Doctrine\ORM\EntityRepository;

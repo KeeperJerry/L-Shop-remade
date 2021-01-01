@@ -1,9 +1,9 @@
 <?php
 declare(strict_types = 1);
 
-namespace App\Handlers\Admin\Servers\Add;
+namespace app\Handlers\Admin\Servers\Add;
 
-use App\DataTransferObjects\Admin\Servers\Add\RenderResult;
+use app\DataTransferObjects\Admin\Servers\Add\RenderResult;
 use Illuminate\Contracts\Config\Repository;
 
 class RenderHandler

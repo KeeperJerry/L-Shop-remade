@@ -1,7 +1,7 @@
 <?php
 declare(strict_types = 1);
 
-namespace App\DataTransferObjects\Admin\Items\Add;
+namespace app\DataTransferObjects\Admin\Items\Add;
 
 use Symfony\Component\Finder\SplFileInfo;
 
@@ -24,7 +24,7 @@ class Image implements \JsonSerializable
     {
         return [
             'name' => $this->file->getFilename(),
-            'url' => \App\Services\Item\Image\Image::assetPathOrDefault($this->file->getFilename())
+            'url' => \app\Services\Item\Image\Image::assetPathOrDefault($this->file->getFilename())
         ];
     }
 }

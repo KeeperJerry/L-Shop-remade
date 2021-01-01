@@ -1,7 +1,7 @@
 <?php
 declare(strict_types = 1);
 
-namespace App\Services\Auth\Session\Driver;
+namespace app\Services\Auth\Session\Driver;
 
 use Illuminate\Config\Repository;
 use Illuminate\Cookie\CookieJar;

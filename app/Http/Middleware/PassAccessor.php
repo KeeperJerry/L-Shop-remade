@@ -1,10 +1,10 @@
 <?php
 declare(strict_types = 1);
 
-namespace App\Http\Middleware;
+namespace app\Http\Middleware;
 
-use App\Exceptions\UnexpectedValueException;
-use App\Services\Security\Accessors\Accessor;
+use app\Exceptions\UnexpectedValueException;
+use app\Services\Security\Accessors\Accessor;
 use Closure;
 use Illuminate\Contracts\Container\Container;
 use Illuminate\Http\Response;
@@ -36,7 +36,7 @@ class PassAccessor
         $accessor = $this->container->make($accessorName);
         if (!($accessor instanceof Accessor)) {
             throw new UnexpectedValueException(
-                "Accessor class must be implements interface App\Services\Security\Accessors\Accessor"
+                "Accessor class must be implements interface app\Services\Security\Accessors\Accessor"
             );
         }
 

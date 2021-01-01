@@ -1,7 +1,7 @@
 <?php
 declare(strict_types = 1);
 
-namespace App\Entity;
+namespace app\Entity;
 
 use Doctrine\ORM\Mapping as ORM;
 
@@ -121,7 +121,7 @@ class Page
     /**
      * Creates string representation of object.
      * <p>For example:</p>
-     * <p>App\Entity\Page(id=7, title="Example title")</p>
+     * <p>app\Entity\Page(id=7, title="Example title")</p>
      *
      * @return string
      */

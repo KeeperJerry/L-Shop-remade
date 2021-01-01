@@ -1,14 +1,14 @@
 <?php
 declare(strict_types = 1);
 
-namespace App\Handlers\Frontend\Auth;
+namespace app\Handlers\Frontend\Auth;
 
-use App\DataTransferObjects\Frontend\Auth\Server as ServerDTO;
-use App\DataTransferObjects\Frontend\Auth\Servers;
-use App\Entity\Server;
-use App\Repository\Server\ServerRepository;
-use App\Services\Auth\Auth;
-use App\Services\Auth\Permissions;
+use app\DataTransferObjects\Frontend\Auth\Server as ServerDTO;
+use app\DataTransferObjects\Frontend\Auth\Servers;
+use app\Entity\Server;
+use app\Repository\Server\ServerRepository;
+use app\Services\Auth\Auth;
+use app\Services\Auth\Permissions;
 
 class ServersHandler
 {

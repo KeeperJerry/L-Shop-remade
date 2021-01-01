@@ -1,9 +1,9 @@
 <?php
 declare(strict_types = 1);
 
-namespace App\DataTransferObjects\Admin\Users\Permissions;
+namespace app\DataTransferObjects\Admin\Users\Permissions;
 
-use App\Entity\Permission as Entity;
+use app\Entity\Permission as Entity;
 
 class Permission implements \JsonSerializable
 {

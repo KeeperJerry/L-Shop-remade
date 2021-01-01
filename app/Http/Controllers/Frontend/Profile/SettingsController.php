@@ -1,18 +1,18 @@
 <?php
 declare(strict_types = 1);
 
-namespace App\Http\Controllers\Frontend\Profile;
+namespace app\Http\Controllers\Frontend\Profile;
 
-use App\Handlers\Frontend\Profile\Character\ChangePasswordHandler;
-use App\Handlers\Frontend\Profile\Character\ResetSessionsHandler;
-use App\Http\Controllers\Controller;
-use App\Http\Requests\Frontend\Profile\Character\ChangePasswordRequest;
-use App\Services\Auth\Permissions;
-use App\Services\Notification\Notifications\Info;
-use App\Services\Notification\Notifications\Success;
-use App\Services\Response\JsonResponse;
-use App\Services\Response\Status;
-use function App\permission_middleware;
+use app\Handlers\Frontend\Profile\Character\ChangePasswordHandler;
+use app\Handlers\Frontend\Profile\Character\ResetSessionsHandler;
+use app\Http\Controllers\Controller;
+use app\Http\Requests\Frontend\Profile\Character\ChangePasswordRequest;
+use app\Services\Auth\Permissions;
+use app\Services\Notification\Notifications\Info;
+use app\Services\Notification\Notifications\Success;
+use app\Services\Response\JsonResponse;
+use app\Services\Response\Status;
+use function app\permission_middleware;
 
 /**
  * Class SettingsController

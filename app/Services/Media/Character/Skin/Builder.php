@@ -1,9 +1,9 @@
 <?php
 declare(strict_types = 1);
 
-namespace App\Services\Media\Character\Skin;
+namespace app\Services\Media\Character\Skin;
 
-use App\Services\Media\Character\Skin\Applicators\Applicator;
+use app\Services\Media\Character\Skin\Applicators\Applicator;
 use Intervention\Image\Image;
 use Intervention\Image\ImageManager;
 

@@ -1,12 +1,12 @@
 <?php
 declare(strict_types = 1);
 
-namespace App\Console\Commands\Purchase;
+namespace app\Console\Commands\Purchase;
 
-use App\Console\Command;
-use App\Exceptions\Purchase\AlreadyCompletedException;
-use App\Exceptions\Purchase\PurchaseNotFoundException;
-use App\Handlers\Console\Purchase\CompleteHandler;
+use app\Console\Command;
+use app\Exceptions\Purchase\AlreadyCompletedException;
+use app\Exceptions\Purchase\PurchaseNotFoundException;
+use app\Handlers\Console\Purchase\CompleteHandler;
 
 class Complete extends Command
 {

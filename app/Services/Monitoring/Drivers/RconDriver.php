@@ -1,10 +1,10 @@
 <?php
 declare(strict_types=1);
 
-namespace App\Services\Monitoring\Drivers;
+namespace app\Services\Monitoring\Drivers;
 
-use App\Entity\Server;
-use App\Services\Monitoring\MonitoringException;
+use app\Entity\Server;
+use app\Services\Monitoring\MonitoringException;
 use D3lph1\MinecraftRconManager\Connector;
 use D3lph1\MinecraftRconManager\Exceptions\ConnectSocketException;
 

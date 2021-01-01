@@ -1,11 +1,11 @@
 <?php
 declare(strict_types = 1);
 
-namespace App\Handlers\Admin\Items;
+namespace app\Handlers\Admin\Items;
 
-use App\Events\Item\ItemWillBeDeletedEvent;
-use App\Exceptions\Item\ItemNotFoundException;
-use App\Repository\Item\ItemRepository;
+use app\Events\Item\ItemWillBeDeletedEvent;
+use app\Exceptions\Item\ItemNotFoundException;
+use app\Repository\Item\ItemRepository;
 use Illuminate\Contracts\Events\Dispatcher;
 
 class DeleteHandler

@@ -1,10 +1,10 @@
 <?php
 declare(strict_types = 1);
 
-namespace App\Services\Auth;
+namespace app\Services\Auth;
 
-use App\Entity\Reminder as Entity;
-use App\Entity\User;
+use app\Entity\Reminder as Entity;
+use app\Entity\User;
 
 interface Reminder
 {

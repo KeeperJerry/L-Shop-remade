@@ -1,13 +1,13 @@
 <?php
 declare(strict_types = 1);
 
-namespace App\Handlers\Admin\Products\Add;
+namespace app\Handlers\Admin\Products\Add;
 
-use App\DataTransferObjects\Admin\Products\Add\Item;
-use App\DataTransferObjects\Admin\Products\Add\Result;
-use App\DataTransferObjects\Admin\Products\Add\Server;
-use App\Repository\Item\ItemRepository;
-use App\Repository\Server\ServerRepository;
+use app\DataTransferObjects\Admin\Products\Add\Item;
+use app\DataTransferObjects\Admin\Products\Add\Result;
+use app\DataTransferObjects\Admin\Products\Add\Server;
+use app\Repository\Item\ItemRepository;
+use app\Repository\Server\ServerRepository;
 
 class RenderHandler
 {

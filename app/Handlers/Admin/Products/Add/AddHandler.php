@@ -1,16 +1,16 @@
 <?php
 declare(strict_types = 1);
 
-namespace App\Handlers\Admin\Products\Add;
+namespace app\Handlers\Admin\Products\Add;
 
-use App\DataTransferObjects\Admin\Products\Add\Add;
-use App\Entity\Product;
-use App\Events\Product\ProductCreatedEvent;
-use App\Exceptions\Category\CategoryNotFoundException;
-use App\Exceptions\Item\ItemNotFoundException;
-use App\Repository\Category\CategoryRepository;
-use App\Repository\Item\ItemRepository;
-use App\Repository\Product\ProductRepository;
+use app\DataTransferObjects\Admin\Products\Add\Add;
+use app\Entity\Product;
+use app\Events\Product\ProductCreatedEvent;
+use app\Exceptions\Category\CategoryNotFoundException;
+use app\Exceptions\Item\ItemNotFoundException;
+use app\Repository\Category\CategoryRepository;
+use app\Repository\Item\ItemRepository;
+use app\Repository\Product\ProductRepository;
 use Illuminate\Contracts\Events\Dispatcher;
 
 class AddHandler

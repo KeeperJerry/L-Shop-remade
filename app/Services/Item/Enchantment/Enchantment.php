@@ -1,9 +1,9 @@
 <?php
 declare(strict_types = 1);
 
-namespace App\Services\Item\Enchantment;
+namespace app\Services\Item\Enchantment;
 
-use App\Entity\Item;
+use app\Entity\Item;
 
 /**
  * Class Enchantment

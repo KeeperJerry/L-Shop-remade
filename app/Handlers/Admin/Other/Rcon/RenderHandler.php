@@ -1,10 +1,10 @@
 <?php
 declare(strict_types = 1);
 
-namespace App\Handlers\Admin\Other\Rcon;
+namespace app\Handlers\Admin\Other\Rcon;
 
-use App\DataTransferObjects\Admin\Other\Rcon\Server;
-use App\Repository\Server\ServerRepository;
+use app\DataTransferObjects\Admin\Other\Rcon\Server;
+use app\Repository\Server\ServerRepository;
 
 class RenderHandler
 {

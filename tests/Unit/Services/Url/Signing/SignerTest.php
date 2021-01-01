@@ -3,8 +3,8 @@ declare(strict_types = 1);
 
 namespace Tests\Unit\Services\Url\Signing;
 
-use App\Services\Url\Signing\Signer;
-use App\Services\Url\Signing\Signable;
+use app\Services\Url\Signing\Signer;
+use app\Services\Url\Signing\Signable;
 use Tests\TestCase;
 
 class SignerTest extends TestCase

@@ -1,7 +1,7 @@
 <?php
 declare(strict_types = 1);
 
-namespace App\DataTransferObjects\Frontend\Profile\Purchases;
+namespace app\DataTransferObjects\Frontend\Profile\Purchases;
 
 use Illuminate\Contracts\Pagination\LengthAwarePaginator;
 

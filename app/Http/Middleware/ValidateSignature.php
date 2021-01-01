@@ -1,10 +1,10 @@
 <?php
 declare(strict_types = 1);
 
-namespace App\Http\Middleware;
+namespace app\Http\Middleware;
 
-use App\Services\Url\Signing\Signed;
-use App\Services\Url\Signing\Validator;
+use app\Services\Url\Signing\Signed;
+use app\Services\Url\Signing\Validator;
 use Symfony\Component\HttpKernel\Exception\BadRequestHttpException;
 
 class ValidateSignature

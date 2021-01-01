@@ -1,15 +1,15 @@
 <?php
 declare(strict_types = 1);
 
-namespace App\Services\Purchasing\Distributors\RconDistribution;
+namespace app\Services\Purchasing\Distributors\RconDistribution;
 
-use App\Entity\EnchantmentItem;
-use App\Entity\PurchaseItem;
-use App\Exceptions\NotImplementedException;
-use App\Services\DateTime\DateTimeUtil;
-use App\Services\Item\Enchantment\Enchantment;
-use App\Services\Item\Type;
-use App\Services\Product\Stack;
+use app\Entity\EnchantmentItem;
+use app\Entity\PurchaseItem;
+use app\Exceptions\NotImplementedException;
+use app\Services\DateTime\DateTimeUtil;
+use app\Services\Item\Enchantment\Enchantment;
+use app\Services\Item\Type;
+use app\Services\Product\Stack;
 
 class DefaultCommandBuilder implements CommandBuilder
 {

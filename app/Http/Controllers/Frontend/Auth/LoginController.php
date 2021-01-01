@@ -1,30 +1,30 @@
 <?php
 declare(strict_types = 1);
 
-namespace App\Http\Controllers\Frontend\Auth;
+namespace app\Http\Controllers\Frontend\Auth;
 
-use App\Exceptions\ForbiddenException;
-use App\Handlers\Frontend\Auth\LoginHandler;
-use App\Http\Controllers\Controller;
-use App\Http\Middleware\Auth as AuthMiddleware;
-use App\Http\Requests\Frontend\Auth\LoginRequest;
-use App\Services\Auth\AccessMode;
-use App\Services\Auth\Auth;
-use App\Services\Auth\Exceptions\BannedException;
-use App\Services\Auth\Exceptions\NotActivatedException;
-use App\Services\Auth\Exceptions\ThrottlingException;
-use App\Services\Notification\Notifications\Error;
-use App\Services\Notification\Notifications\Success;
-use App\Services\Notification\Notifications\Warning;
-use App\Services\Notification\Notificator;
-use App\Services\Response\JsonResponse;
-use App\Services\Response\Status;
-use App\Services\Settings\DataType;
-use App\Services\Settings\Settings;
-use App\Services\Support\Lang\Ban\BanMessage;
+use app\Exceptions\ForbiddenException;
+use app\Handlers\Frontend\Auth\LoginHandler;
+use app\Http\Controllers\Controller;
+use app\Http\Middleware\Auth as AuthMiddleware;
+use app\Http\Requests\Frontend\Auth\LoginRequest;
+use app\Services\Auth\AccessMode;
+use app\Services\Auth\Auth;
+use app\Services\Auth\Exceptions\BannedException;
+use app\Services\Auth\Exceptions\NotActivatedException;
+use app\Services\Auth\Exceptions\ThrottlingException;
+use app\Services\Notification\Notifications\Error;
+use app\Services\Notification\Notifications\Success;
+use app\Services\Notification\Notifications\Warning;
+use app\Services\Notification\Notificator;
+use app\Services\Response\JsonResponse;
+use app\Services\Response\Status;
+use app\Services\Settings\DataType;
+use app\Services\Settings\Settings;
+use app\Services\Support\Lang\Ban\BanMessage;
 use Illuminate\Contracts\Foundation\Application;
 use Illuminate\Http\Response;
-use function App\auth_middleware;
+use function app\auth_middleware;
 
 /**
  * Class LoginController

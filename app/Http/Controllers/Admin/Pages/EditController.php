@@ -1,22 +1,22 @@
 <?php
 declare(strict_types = 1);
 
-namespace App\Http\Controllers\Admin\Pages;
+namespace app\Http\Controllers\Admin\Pages;
 
-use App\DataTransferObjects\Admin\Pages\Edit\Edit;
-use App\Exceptions\Page\PageNotFoundException;
-use App\Handlers\Admin\Pages\Edit\EditHandler;
-use App\Handlers\Admin\Pages\Edit\RenderHandler;
-use App\Http\Controllers\Controller;
-use App\Http\Requests\Admin\Pages\AddEditRequest;
-use App\Services\Auth\Permissions;
-use App\Services\Notification\Notifications\Error;
-use App\Services\Notification\Notifications\Success;
-use App\Services\Response\JsonResponse;
-use App\Services\Response\Status;
+use app\DataTransferObjects\Admin\Pages\Edit\Edit;
+use app\Exceptions\Page\PageNotFoundException;
+use app\Handlers\Admin\Pages\Edit\EditHandler;
+use app\Handlers\Admin\Pages\Edit\RenderHandler;
+use app\Http\Controllers\Controller;
+use app\Http\Requests\Admin\Pages\AddEditRequest;
+use app\Services\Auth\Permissions;
+use app\Services\Notification\Notifications\Error;
+use app\Services\Notification\Notifications\Success;
+use app\Services\Response\JsonResponse;
+use app\Services\Response\Status;
 use Illuminate\Http\Request;
 use Illuminate\Http\Response;
-use function App\permission_middleware;
+use function app\permission_middleware;
 
 class EditController extends Controller
 {

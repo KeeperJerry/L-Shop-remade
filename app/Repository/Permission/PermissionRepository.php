@@ -1,9 +1,9 @@
 <?php
 declare(strict_types = 1);
 
-namespace App\Repository\Permission;
+namespace app\Repository\Permission;
 
-use App\Entity\Permission;
+use app\Entity\Permission;
 use Illuminate\Contracts\Pagination\LengthAwarePaginator;
 
 interface PermissionRepository

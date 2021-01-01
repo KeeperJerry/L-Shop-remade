@@ -1,13 +1,13 @@
 <?php
 declare(strict_types = 1);
 
-namespace App\Services\Auth;
+namespace app\Services\Auth;
 
-use App\Entity\Throttle;
-use App\Entity\User;
-use App\Repository\Throttle\ThrottleRepository;
-use App\Services\Auth\Exceptions\ThrottlingException;
-use App\Services\DateTime\DateTimeUtil;
+use app\Entity\Throttle;
+use app\Entity\User;
+use app\Repository\Throttle\ThrottleRepository;
+use app\Services\Auth\Exceptions\ThrottlingException;
+use app\Services\DateTime\DateTimeUtil;
 
 class DefaultThrottlingManager implements ThrottlingManager
 {

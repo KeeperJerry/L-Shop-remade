@@ -1,11 +1,11 @@
 <?php
 declare(strict_types = 1);
 
-namespace App\Handlers\Admin\Users\Roles;
+namespace app\Handlers\Admin\Users\Roles;
 
-use App\Exceptions\Role\RoleAlreadyExistsException;
-use App\Exceptions\Role\RoleNotFoundException;
-use App\Repository\Role\RoleRepository;
+use app\Exceptions\Role\RoleAlreadyExistsException;
+use app\Exceptions\Role\RoleNotFoundException;
+use app\Repository\Role\RoleRepository;
 
 class UpdateNameHandler
 {

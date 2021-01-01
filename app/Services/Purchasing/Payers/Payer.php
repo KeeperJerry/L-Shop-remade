@@ -1,9 +1,9 @@
 <?php
 declare(strict_types = 1);
 
-namespace App\Services\Purchasing\Payers;
+namespace app\Services\Purchasing\Payers;
 
-use App\Entity\Purchase;
+use app\Entity\Purchase;
 
 /**
  * Interface Payer

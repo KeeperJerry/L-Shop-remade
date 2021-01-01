@@ -1,22 +1,22 @@
 <?php
 declare(strict_types = 1);
 
-namespace App\Http\Controllers\Frontend\Auth;
+namespace app\Http\Controllers\Frontend\Auth;
 
-use App\Handlers\Frontend\Auth\ForgotPasswordHandler;
-use App\Http\Controllers\Controller;
-use App\Http\Middleware\Captcha as CaptchaMiddleware;
-use App\Http\Requests\Frontend\Auth\ForgotPasswordRequest;
-use App\Services\Auth\AccessMode;
-use App\Services\Auth\Auth;
-use App\Services\Auth\Exceptions\UserDoesNotExistException;
-use App\Services\Notification\Notifications\Error;
-use App\Services\Notification\Notifications\Success;
-use App\Services\Response\JsonResponse;
-use App\Services\Response\Status;
-use App\Services\Security\Captcha\Captcha;
-use App\Services\Settings\DataType;
-use App\Services\Settings\Settings;
+use app\Handlers\Frontend\Auth\ForgotPasswordHandler;
+use app\Http\Controllers\Controller;
+use app\Http\Middleware\Captcha as CaptchaMiddleware;
+use app\Http\Requests\Frontend\Auth\ForgotPasswordRequest;
+use app\Services\Auth\AccessMode;
+use app\Services\Auth\Auth;
+use app\Services\Auth\Exceptions\UserDoesNotExistException;
+use app\Services\Notification\Notifications\Error;
+use app\Services\Notification\Notifications\Success;
+use app\Services\Response\JsonResponse;
+use app\Services\Response\Status;
+use app\Services\Security\Captcha\Captcha;
+use app\Services\Settings\DataType;
+use app\Services\Settings\Settings;
 use Illuminate\Http\Response;
 
 /**

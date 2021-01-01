@@ -1,7 +1,7 @@
 <?php
 declare(strict_types = 1);
 
-namespace App\Services\Utils;
+namespace app\Services\Utils;
 
 class EnvironmentUtil
 {

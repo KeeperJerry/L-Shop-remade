@@ -1,7 +1,7 @@
 <?php
 declare(strict_types = 1);
 
-namespace App\DataTransferObjects\Admin\Items\EditList;
+namespace app\DataTransferObjects\Admin\Items\EditList;
 
 use Illuminate\Contracts\Pagination\LengthAwarePaginator;
 

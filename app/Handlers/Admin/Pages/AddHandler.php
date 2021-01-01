@@ -1,12 +1,12 @@
 <?php
 declare(strict_types = 1);
 
-namespace App\Handlers\Admin\Pages;
+namespace app\Handlers\Admin\Pages;
 
-use App\DataTransferObjects\Admin\Pages\Add;
-use App\Entity\Page;
-use App\Exceptions\Page\AlreadyExistException;
-use App\Repository\Page\PageRepository;
+use app\DataTransferObjects\Admin\Pages\Add;
+use app\Entity\Page;
+use app\Exceptions\Page\AlreadyExistException;
+use app\Repository\Page\PageRepository;
 
 class AddHandler
 {

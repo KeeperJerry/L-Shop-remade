@@ -1,9 +1,9 @@
 <?php
 declare(strict_types = 1);
 
-namespace App\Repository\BalanceTransaction;
+namespace app\Repository\BalanceTransaction;
 
-use App\Entity\BalanceTransaction;
+use app\Entity\BalanceTransaction;
 use Doctrine\ORM\EntityManagerInterface;
 use Doctrine\ORM\EntityRepository;
 

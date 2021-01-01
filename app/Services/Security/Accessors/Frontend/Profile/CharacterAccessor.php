@@ -1,12 +1,12 @@
 <?php
 declare(strict_types = 1);
 
-namespace App\Services\Security\Accessors\Frontend\Profile;
+namespace app\Services\Security\Accessors\Frontend\Profile;
 
-use App\Services\Auth\Auth;
-use App\Services\Media\Character\Cloak\Accessor as CloakAccessor;
-use App\Services\Media\Character\Skin\Accessor as SkinAccessor;
-use App\Services\Security\Accessors\Accessor;
+use app\Services\Auth\Auth;
+use app\Services\Media\Character\Cloak\Accessor as CloakAccessor;
+use app\Services\Media\Character\Skin\Accessor as SkinAccessor;
+use app\Services\Security\Accessors\Accessor;
 
 class CharacterAccessor implements Accessor
 {

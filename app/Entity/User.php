@@ -1,13 +1,13 @@
 <?php
 declare(strict_types = 1);
 
-namespace App\Entity;
+namespace app\Entity;
 
-use App\Exceptions\InvalidArgumentException;
-use App\Services\Auth\Acl\HasPermissions;
-use App\Services\Auth\Acl\HasRoles;
-use App\Services\Auth\Acl\PermissionTrait;
-use App\Services\Auth\Acl\RoleTrait;
+use app\Exceptions\InvalidArgumentException;
+use app\Services\Auth\Acl\HasPermissions;
+use app\Services\Auth\Acl\HasRoles;
+use app\Services\Auth\Acl\PermissionTrait;
+use app\Services\Auth\Acl\RoleTrait;
 use Doctrine\Common\Collections\ArrayCollection;
 use Doctrine\Common\Collections\Collection;
 use Doctrine\ORM\Mapping as ORM;
@@ -89,39 +89,39 @@ class User implements HasRoles, HasPermissions
     /**
      * Roles that the user has.
      *
-     * @ORM\ManyToMany(targetEntity="App\Entity\Role", mappedBy="users", cascade={"persist", "merge"})
+     * @ORM\ManyToMany(targetEntity="app\Entity\Role", mappedBy="users", cascade={"persist", "merge"})
      */
     private $roles;
 
     /**
      * Permissions that the user has.
      *
-     * @ORM\ManyToMany(targetEntity="App\Entity\Permission", mappedBy="users")
+     * @ORM\ManyToMany(targetEntity="app\Entity\Permission", mappedBy="users")
      */
     private $permissions;
 
     /**
-     * @ORM\OneToMany(targetEntity="App\Entity\Activation", mappedBy="user", cascade={"remove"})
+     * @ORM\OneToMany(targetEntity="app\Entity\Activation", mappedBy="user", cascade={"remove"})
      */
     private $activations;
 
     /**
-     * @ORM\OneToMany(targetEntity="App\Entity\Persistence", mappedBy="user", cascade={"remove"})
+     * @ORM\OneToMany(targetEntity="app\Entity\Persistence", mappedBy="user", cascade={"remove"})
      */
     private $persistences;
 
     /**
-     * @ORM\OneToMany(targetEntity="App\Entity\Ban", mappedBy="user", cascade={"persist", "merge", "remove"})
+     * @ORM\OneToMany(targetEntity="app\Entity\Ban", mappedBy="user", cascade={"persist", "merge", "remove"})
      */
     private $bans;
 
     /**
-     * @ORM\OneToMany(targetEntity="App\Entity\Reminder", mappedBy="user", cascade={"remove"})
+     * @ORM\OneToMany(targetEntity="app\Entity\Reminder", mappedBy="user", cascade={"remove"})
      */
     private $reminders;
 
     /**
-     * @ORM\OneToMany(targetEntity="App\Entity\Purchase", mappedBy="user")
+     * @ORM\OneToMany(targetEntity="app\Entity\Purchase", mappedBy="user")
      */
     private $purchases;
 
@@ -333,7 +333,7 @@ class User implements HasRoles, HasPermissions
 
     /**
      * @return string Object string representation.
-     * @example App\Entity\User(id=1, username="Admin", email="admin@example.com", balance=1000)
+     * @example app\Entity\User(id=1, username="Admin", email="admin@example.com", balance=1000)
      */
     public function __toString(): string
     {

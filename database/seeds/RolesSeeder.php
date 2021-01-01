@@ -1,12 +1,12 @@
 <?php
 declare(strict_types = 1);
 
-use App\Entity\Permission;
-use App\Entity\Role;
-use App\Repository\Permission\PermissionRepository;
-use App\Repository\Role\RoleRepository;
-use App\Services\Auth\Permissions;
-use App\Services\Auth\Roles;
+use app\Entity\Permission;
+use app\Entity\Role;
+use app\Repository\Permission\PermissionRepository;
+use app\Repository\Role\RoleRepository;
+use app\Services\Auth\Permissions;
+use app\Services\Auth\Roles;
 use Illuminate\Database\Seeder;
 
 class RolesSeeder extends Seeder

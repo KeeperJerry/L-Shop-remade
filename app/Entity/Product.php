@@ -1,7 +1,7 @@
 <?php
 declare(strict_types = 1);
 
-namespace App\Entity;
+namespace app\Entity;
 
 use Doctrine\ORM\Mapping as ORM;
 
@@ -23,7 +23,7 @@ use Doctrine\ORM\Mapping as ORM;
  *                                 |        '.'        |
  *                                 +-------------------+
  *
- * <p>Diamond is {@see \App\Entity\Item}. Package is {@see \App\Entity\Product}.
+ * <p>Diamond is {@see \app\Entity\Item}. Package is {@see \app\Entity\Product}.
  * Just like in the store, we can not sell the jewelry without packaging, so the item can not
  * be sold without binding it to the product.</p>
  *
@@ -52,9 +52,9 @@ class Product
 
     /**
      * Number of items in one stack.
-     * <p>For type {@see \App\Entity\Item::type} = {@see \App\Services\Item\Type::ITEM}, the quantity
-     * is indicated in pieces, for type {@see \App\Entity\Item::type} =
-     * {@see \App\Services\Item\Type::PERMGROUP} the duration is indicated in days.</p>
+     * <p>For type {@see \app\Entity\Item::type} = {@see \app\Services\Item\Type::ITEM}, the quantity
+     * is indicated in pieces, for type {@see \app\Entity\Item::type} =
+     * {@see \app\Services\Item\Type::PERMGROUP} the duration is indicated in days.</p>
      *
      * @ORM\Column(name="stack", type="integer", nullable=false, unique=false)
      */
@@ -77,14 +77,14 @@ class Product
     /**
      * The item that attached to this product.
      *
-     * @ORM\ManyToOne(targetEntity="App\Entity\Item", inversedBy="products", cascade={"persist"})
+     * @ORM\ManyToOne(targetEntity="app\Entity\Item", inversedBy="products", cascade={"persist"})
      */
     private $item;
 
     /**
      * The server category in which this product is sold.
      *
-     * @ORM\ManyToOne(targetEntity="App\Entity\Category")
+     * @ORM\ManyToOne(targetEntity="app\Entity\Category")
      * @ORM\JoinColumns({
      *      @ORM\JoinColumn(onDelete="CASCADE")
      * })
@@ -238,7 +238,7 @@ class Product
     /**
      * Creates string representation of object.
      * <p>For example:</p>
-     * <p>App\Entity\Product(id=3, price=0.99, stack=64, item={id=1, name="Block of grass",
+     * <p>app\Entity\Product(id=3, price=0.99, stack=64, item={id=1, name="Block of grass",
      * type="item", game_id="minecraft:grass"})</p>
      *
      * @return string

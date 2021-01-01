@@ -1,9 +1,9 @@
 <?php
 declare(strict_types = 1);
 
-namespace App\Repository\ShoppingCart;
+namespace app\Repository\ShoppingCart;
 
-use App\Entity\ShoppingCart;
+use app\Entity\ShoppingCart;
 
 interface ShoppingCartRepository
 {

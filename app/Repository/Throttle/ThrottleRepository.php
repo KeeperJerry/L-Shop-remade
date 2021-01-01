@@ -1,10 +1,10 @@
 <?php
 declare(strict_types = 1);
 
-namespace App\Repository\Throttle;
+namespace app\Repository\Throttle;
 
-use App\Entity\Throttle;
-use App\Entity\User;
+use app\Entity\Throttle;
+use app\Entity\User;
 
 interface ThrottleRepository
 {

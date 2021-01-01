@@ -1,7 +1,7 @@
 <?php
 declare(strict_types = 1);
 
-namespace App\Http\Requests\Admin\Users\Roles;
+namespace app\Http\Requests\Admin\Users\Roles;
 
 use Illuminate\Foundation\Http\FormRequest;
 

@@ -1,9 +1,9 @@
 <?php
 declare(strict_types = 1);
 
-namespace App\DataTransferObjects\Frontend\Auth;
+namespace app\DataTransferObjects\Frontend\Auth;
 
-use App\Entity\User;
+use app\Entity\User;
 
 class LoginResult
 {

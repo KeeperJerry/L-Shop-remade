@@ -1,11 +1,11 @@
 <?php
 declare(strict_types=1);
 
-namespace App\Repository\Purchase;
+namespace app\Repository\Purchase;
 
-use App\Entity\Purchase;
-use App\Entity\PurchaseItem;
-use App\Entity\User;
+use app\Entity\Purchase;
+use app\Entity\PurchaseItem;
+use app\Entity\User;
 use Doctrine\ORM\EntityManagerInterface;
 use Doctrine\ORM\EntityRepository;
 use Illuminate\Contracts\Pagination\LengthAwarePaginator;

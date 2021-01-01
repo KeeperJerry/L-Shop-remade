@@ -1,13 +1,13 @@
 <?php
 declare(strict_types=1);
 
-namespace App\Handlers\Consoe\User\Roles;
+namespace app\Handlers\Consoe\User\Roles;
 
-use App\Exceptions\Permission\PermissionNotFoundException;
-use App\Exceptions\User\RoleAlreadyAttachedException;
-use App\Exceptions\User\UserNotFoundException;
-use App\Repository\Role\RoleRepository;
-use App\Repository\User\UserRepository;
+use app\Exceptions\Permission\PermissionNotFoundException;
+use app\Exceptions\User\RoleAlreadyAttachedException;
+use app\Exceptions\User\UserNotFoundException;
+use app\Repository\Role\RoleRepository;
+use app\Repository\User\UserRepository;
 
 class AttachHandler
 {

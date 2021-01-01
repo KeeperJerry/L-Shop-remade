@@ -1,19 +1,19 @@
 <?php
 declare(strict_types = 1);
 
-namespace App\Http\Controllers\Admin\Servers;
+namespace app\Http\Controllers\Admin\Servers;
 
-use App\DataTransferObjects\Admin\Servers\Add\Add;
-use App\Exceptions\Distributor\DistributorNotFoundException;
-use App\Handlers\Admin\Servers\Add\AddHandler;
-use App\Handlers\Admin\Servers\Add\RenderHandler;
-use App\Http\Controllers\Controller;
-use App\Http\Requests\Admin\Servers\AddRequest;
-use function App\permission_middleware;
-use App\Services\Auth\Permissions;
-use App\Services\Notification\Notifications\Success;
-use App\Services\Response\JsonResponse;
-use App\Services\Response\Status;
+use app\DataTransferObjects\Admin\Servers\Add\Add;
+use app\Exceptions\Distributor\DistributorNotFoundException;
+use app\Handlers\Admin\Servers\Add\AddHandler;
+use app\Handlers\Admin\Servers\Add\RenderHandler;
+use app\Http\Controllers\Controller;
+use app\Http\Requests\Admin\Servers\AddRequest;
+use function app\permission_middleware;
+use app\Services\Auth\Permissions;
+use app\Services\Notification\Notifications\Success;
+use app\Services\Response\JsonResponse;
+use app\Services\Response\Status;
 use Illuminate\Http\Response;
 
 class AddController extends Controller

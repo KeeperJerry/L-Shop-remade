@@ -3,9 +3,9 @@ declare(strict_types = 1);
 
 namespace Tests\Integrated\Services\Auth;
 
-use App\Services\Auth\Auth;
-use App\Services\Auth\Reminder;
-use App\Entity\User;
+use app\Services\Auth\Auth;
+use app\Services\Auth\Reminder;
+use app\Entity\User;
 use Tests\TestCase;
 
 class ReminderTest extends TestCase

@@ -1,10 +1,10 @@
 <?php
 declare(strict_types = 1);
 
-namespace App\Repository\Persistence;
+namespace app\Repository\Persistence;
 
-use App\Entity\Persistence;
-use App\Entity\User;
+use app\Entity\Persistence;
+use app\Entity\User;
 
 interface PersistenceRepository
 {

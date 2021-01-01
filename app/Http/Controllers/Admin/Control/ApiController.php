@@ -1,18 +1,18 @@
 <?php
 declare(strict_types = 1);
 
-namespace App\Http\Controllers\Admin\Control;
+namespace app\Http\Controllers\Admin\Control;
 
-use App\DataTransferObjects\Admin\Control\Api\Save;
-use App\Handlers\Admin\Control\Api\SaveHandler;
-use App\Handlers\Admin\Control\Api\VisitHandler;
-use App\Http\Controllers\Controller;
-use App\Http\Requests\Admin\Control\SaveApiSettingsRequest;
-use App\Services\Auth\Permissions;
-use App\Services\Notification\Notifications\Success;
-use App\Services\Response\JsonResponse;
-use App\Services\Response\Status;
-use function App\permission_middleware;
+use app\DataTransferObjects\Admin\Control\Api\Save;
+use app\Handlers\Admin\Control\Api\SaveHandler;
+use app\Handlers\Admin\Control\Api\VisitHandler;
+use app\Http\Controllers\Controller;
+use app\Http\Requests\Admin\Control\SaveApiSettingsRequest;
+use app\Services\Auth\Permissions;
+use app\Services\Notification\Notifications\Success;
+use app\Services\Response\JsonResponse;
+use app\Services\Response\Status;
+use function app\permission_middleware;
 
 class ApiController extends Controller
 {

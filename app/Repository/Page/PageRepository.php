@@ -1,9 +1,9 @@
 <?php
 declare(strict_types = 1);
 
-namespace App\Repository\Page;
+namespace app\Repository\Page;
 
-use App\Entity\Page;
+use app\Entity\Page;
 use Illuminate\Contracts\Pagination\LengthAwarePaginator;
 
 interface PageRepository

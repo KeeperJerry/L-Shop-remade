@@ -1,23 +1,23 @@
 <?php
 declare(strict_types = 1);
 
-namespace App\Http\Controllers\Admin\Statistic;
+namespace app\Http\Controllers\Admin\Statistic;
 
-use App\Exceptions\Distributor\DistributionException;
-use App\Exceptions\Purchase\AlreadyCompletedException;
-use App\Handlers\Admin\Statistic\Purchases\CompleteHandler;
-use App\Handlers\Admin\Statistic\Purchases\PaginationHandler;
-use App\Http\Controllers\Controller;
-use App\Services\Auth\Permissions;
-use App\Services\DateTime\Formatting\JavaScriptFormatter;
-use App\Services\Notification\Notifications\Success;
-use App\Services\Notification\Notifications\Warning;
-use App\Services\Purchasing\ViaContext;
-use App\Services\Response\JsonResponse;
-use App\Services\Response\Status;
+use app\Exceptions\Distributor\DistributionException;
+use app\Exceptions\Purchase\AlreadyCompletedException;
+use app\Handlers\Admin\Statistic\Purchases\CompleteHandler;
+use app\Handlers\Admin\Statistic\Purchases\PaginationHandler;
+use app\Http\Controllers\Controller;
+use app\Services\Auth\Permissions;
+use app\Services\DateTime\Formatting\JavaScriptFormatter;
+use app\Services\Notification\Notifications\Success;
+use app\Services\Notification\Notifications\Warning;
+use app\Services\Purchasing\ViaContext;
+use app\Services\Response\JsonResponse;
+use app\Services\Response\Status;
 use Illuminate\Http\Request;
 use Illuminate\Http\Response;
-use function App\permission_middleware;
+use function app\permission_middleware;
 
 class PurchasesController extends Controller
 {

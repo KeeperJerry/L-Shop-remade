@@ -36,7 +36,7 @@ return [
             'proxies' => [
                 'namespace' => false,
                 'path' => storage_path('proxies'),
-                'auto_generate' => env('DOCTRINE_PROXY_AUTOGENERATE', \App\Services\Utils\EnvironmentUtil::inDevelopment())
+                'auto_generate' => env('DOCTRINE_PROXY_AUTOGENERATE', \app\Services\Utils\EnvironmentUtil::inDevelopment())
             ],
 
             /*
@@ -137,9 +137,9 @@ return [
 
 //        For PostgreSQL:
 //        'DATE_FORMAT' => \DoctrineExtensions\Query\Postgresql\DateFormat::class,
-//        'YEAR' => \App\Services\Database\Query\Postgresql\Year::class,
-//        'MONTH' => \App\Services\Database\Query\Postgresql\Month::class,
-//        'DAY' => \App\Services\Database\Query\Postgresql\Day::class
+//        'YEAR' => \app\Services\Database\Query\Postgresql\Year::class,
+//        'MONTH' => \app\Services\Database\Query\Postgresql\Month::class,
+//        'DAY' => \app\Services\Database\Query\Postgresql\Day::class
     ],
 
     /*

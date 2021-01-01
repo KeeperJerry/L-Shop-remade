@@ -1,10 +1,10 @@
 <?php
 declare(strict_types = 1);
 
-namespace App\Http\Middleware;
+namespace app\Http\Middleware;
 
-use App\Services\Auth\Auth;
-use App\Services\Response\JsonResponse;
+use app\Services\Auth\Auth;
+use app\Services\Response\JsonResponse;
 use Closure;
 
 class RedirectIfAuthenticated

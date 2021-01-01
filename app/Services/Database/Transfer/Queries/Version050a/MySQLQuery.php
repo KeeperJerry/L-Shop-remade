@@ -1,7 +1,7 @@
 <?php
 declare(strict_types = 1);
 
-namespace App\Services\Database\Transfer\Queries\Version050a;
+namespace app\Services\Database\Transfer\Queries\Version050a;
 
 /**
  * Class MySQLQuery
@@ -140,7 +140,7 @@ SQL;
                 ip,
                 port,
                 password,
-                'App\\Services\\Purchasing\\Distributors\\ShoppingCartDistributor',
+                'app\\Services\\Purchasing\\Distributors\\ShoppingCartDistributor',
                 enabled,
                 monitoring_enabled
               FROM {$this->from}servers;

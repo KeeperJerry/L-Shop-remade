@@ -1,8 +1,8 @@
 <?php
 declare(strict_types = 1);
 
-use App\Entity\Page;
-use App\Repository\Page\PageRepository;
+use app\Entity\Page;
+use app\Repository\Page\PageRepository;
 use Illuminate\Database\Seeder;
 
 class PagesSeeder extends Seeder

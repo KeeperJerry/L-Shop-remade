@@ -1,10 +1,10 @@
 <?php
 declare(strict_types = 1);
 
-namespace App\Handlers\Frontend\Profile\Character;
+namespace app\Handlers\Frontend\Profile\Character;
 
-use App\Services\Auth\Auth;
-use App\Services\Media\Character\Skin\Image;
+use app\Services\Auth\Auth;
+use app\Services\Media\Character\Skin\Image;
 use Illuminate\Filesystem\Filesystem;
 
 // Знакомая библиотека

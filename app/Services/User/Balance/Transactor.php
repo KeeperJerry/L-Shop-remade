@@ -1,13 +1,13 @@
 <?php
 declare(strict_types = 1);
 
-namespace App\Services\User\Balance;
+namespace app\Services\User\Balance;
 
-use App\Entity\BalanceTransaction;
-use App\Entity\User;
-use App\Exceptions\InvalidArgumentException;
-use App\Repository\BalanceTransaction\BalanceTransactionRepository;
-use App\Repository\User\UserRepository;
+use app\Entity\BalanceTransaction;
+use app\Entity\User;
+use app\Exceptions\InvalidArgumentException;
+use app\Repository\BalanceTransaction\BalanceTransactionRepository;
+use app\Repository\User\UserRepository;
 
 /**
  * Class Transactor

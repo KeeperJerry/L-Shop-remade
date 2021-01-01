@@ -1,7 +1,7 @@
 <?php
 declare(strict_types = 1);
 
-namespace App\Services\Monitoring;
+namespace app\Services\Monitoring;
 
 /**
  * Class ResponseException

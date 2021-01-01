@@ -1,11 +1,11 @@
 <?php
 declare(strict_types = 1);
 
-namespace App\Console\Commands\DB;
+namespace app\Console\Commands\DB;
 
-use App\Console\Command;
-use App\Handlers\Console\DB\AttachDefaultRolesToAllUsers;
-use App\Services\Database\Transfer\Pool;
+use app\Console\Command;
+use app\Handlers\Console\DB\AttachDefaultRolesToAllUsers;
+use app\Services\Database\Transfer\Pool;
 use Illuminate\Container\Container;
 
 class Transfer extends Command

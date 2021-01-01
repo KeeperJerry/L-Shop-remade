@@ -1,9 +1,9 @@
 <?php
 declare(strict_types = 1);
 
-namespace App\Handlers\Frontend\Profile\Character;
+namespace app\Handlers\Frontend\Profile\Character;
 
-use App\Services\Auth\Auth;
+use app\Services\Auth\Auth;
 
 class ResetSessionsHandler
 {

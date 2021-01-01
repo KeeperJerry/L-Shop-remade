@@ -1,7 +1,7 @@
 <?php
 declare(strict_types = 1);
 
-namespace App\Services\Database\Transfer\Queries\Version050a;
+namespace app\Services\Database\Transfer\Queries\Version050a;
 
 /**
  * Interface Query
@@ -12,7 +12,7 @@ interface Query
     /**
      * Returns a query to transfer users.
      *
-     * @see \App\Entity\User
+     * @see \app\Entity\User
      *
      * @return string
      */
@@ -21,7 +21,7 @@ interface Query
     /**
      * Returns a query to transfer user account activations.
      *
-     * @see \App\Entity\Activation
+     * @see \app\Entity\Activation
      *
      * @return string
      */
@@ -30,7 +30,7 @@ interface Query
     /**
      * Returns a query to transfer user persistence sessions.
      *
-     * @see \App\Entity\Persistence
+     * @see \app\Entity\Persistence
      *
      * @return string
      */
@@ -39,7 +39,7 @@ interface Query
     /**
      * Returns a query to transfer user bans.
      *
-     * @see \App\Entity\Ban
+     * @see \app\Entity\Ban
      *
      * @return string
      */
@@ -48,7 +48,7 @@ interface Query
     /**
      * Returns a query to transfer servers.
      *
-     * @see \App\Entity\Server
+     * @see \app\Entity\Server
      *
      * @return string
      */
@@ -57,7 +57,7 @@ interface Query
     /**
      * Returns a query to transfer user categories.
      *
-     * @see \App\Entity\Category
+     * @see \app\Entity\Category
      *
      * @return string
      */
@@ -66,7 +66,7 @@ interface Query
     /**
      * Returns a query to transfer items.
      *
-     * @see \App\Entity\Item
+     * @see \app\Entity\Item
      *
      * @return string
      */
@@ -75,7 +75,7 @@ interface Query
     /**
      * Returns a query to transfer products.
      *
-     * @see \App\Entity\Product
+     * @see \app\Entity\Product
      *
      * @return string
      */
@@ -84,7 +84,7 @@ interface Query
     /**
      * Returns a query to transfer news.
      *
-     * @see \App\Entity\News
+     * @see \app\Entity\News
      *
      * @return string
      */
@@ -93,7 +93,7 @@ interface Query
     /**
      * Returns a query to transfer pages.
      *
-     * @see \App\Entity\Page
+     * @see \app\Entity\Page
      *
      * @return string
      */
@@ -102,8 +102,8 @@ interface Query
     /**
      * Returns a query to select payments.
      *
-     * @see \App\Entity\Purchase
-     * @see \App\Entity\PurchaseItem
+     * @see \app\Entity\Purchase
+     * @see \app\Entity\PurchaseItem
      *
      * @return string
      */
@@ -112,7 +112,7 @@ interface Query
     /**
      * Returns a query to insert purchase.
      *
-     * @see \App\Entity\Purchase
+     * @see \app\Entity\Purchase
      *
      * @return string
      */
@@ -121,7 +121,7 @@ interface Query
     /**
      * Returns a query to insert purchase.
      *
-     * @see \App\Entity\PurchaseItem
+     * @see \app\Entity\PurchaseItem
      *
      * @return string
      */
@@ -130,7 +130,7 @@ interface Query
     /**
      * Returns a query to delete purchase.
      *
-     * @see \App\Entity\Purchase
+     * @see \app\Entity\Purchase
      *
      * @return string
      */

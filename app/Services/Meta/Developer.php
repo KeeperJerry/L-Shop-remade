@@ -1,7 +1,7 @@
 <?php
 declare(strict_types = 1);
 
-namespace App\Services\Meta;
+namespace app\Services\Meta;
 
 use Illuminate\Contracts\Support\Arrayable;
 

@@ -1,19 +1,19 @@
 <?php
 declare(strict_types = 1);
 
-namespace App\Services\Purchasing;
+namespace app\Services\Purchasing;
 
-use App\Entity\Distribution;
-use App\Entity\Purchase;
-use App\Entity\PurchaseItem;
-use App\Events\Purchase\PurchaseCompletedEvent;
-use App\Exceptions\Distributor\DistributionException;
-use App\Exceptions\Distributor\DistributorNotFoundException;
-use App\Exceptions\Purchase\AlreadyCompletedException;
-use App\Repository\Distribution\DistributionRepository;
-use App\Repository\Purchase\PurchaseRepository;
-use App\Services\Purchasing\Distributors\Pool;
-use App\Services\User\Balance\Transactor as BalanceTransactor;
+use app\Entity\Distribution;
+use app\Entity\Purchase;
+use app\Entity\PurchaseItem;
+use app\Events\Purchase\PurchaseCompletedEvent;
+use app\Exceptions\Distributor\DistributionException;
+use app\Exceptions\Distributor\DistributorNotFoundException;
+use app\Exceptions\Purchase\AlreadyCompletedException;
+use app\Repository\Distribution\DistributionRepository;
+use app\Repository\Purchase\PurchaseRepository;
+use app\Services\Purchasing\Distributors\Pool;
+use app\Services\User\Balance\Transactor as BalanceTransactor;
 use Illuminate\Contracts\Events\Dispatcher;
 
 class PurchaseCompleter

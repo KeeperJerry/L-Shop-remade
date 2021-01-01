@@ -1,9 +1,9 @@
 <?php
 declare(strict_types = 1);
 
-namespace App\Exceptions\User;
+namespace app\Exceptions\User;
 
-use App\Exceptions\LogicException;
+use app\Exceptions\LogicException;
 
 class RoleAlreadyAttachedException extends LogicException
 {

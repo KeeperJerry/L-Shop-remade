@@ -1,9 +1,9 @@
 <?php
 declare(strict_types = 1);
 
-use App\Entity\News;
-use App\Repository\News\NewsRepository;
-use App\Repository\User\UserRepository;
+use app\Entity\News;
+use app\Repository\News\NewsRepository;
+use app\Repository\User\UserRepository;
 use Faker\Generator;
 use Illuminate\Database\Seeder;
 

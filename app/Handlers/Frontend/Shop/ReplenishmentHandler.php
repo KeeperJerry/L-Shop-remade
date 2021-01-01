@@ -1,10 +1,10 @@
 <?php
 declare(strict_types = 1);
 
-namespace App\Handlers\Frontend\Shop;
+namespace app\Handlers\Frontend\Shop;
 
-use App\Services\Auth\Auth;
-use App\Services\Purchasing\ReplenishmentCreator;
+use app\Services\Auth\Auth;
+use app\Services\Purchasing\ReplenishmentCreator;
 
 class ReplenishmentHandler
 {

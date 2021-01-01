@@ -1,11 +1,11 @@
 <?php
 declare(strict_types = 1);
 
-namespace App\Handlers\Frontend\Auth;
+namespace app\Handlers\Frontend\Auth;
 
-use App\Repository\User\UserRepository;
-use App\Services\Auth\Exceptions\UserDoesNotExistException;
-use App\Services\Auth\Reminder;
+use app\Repository\User\UserRepository;
+use app\Services\Auth\Exceptions\UserDoesNotExistException;
+use app\Services\Auth\Reminder;
 
 class ForgotPasswordHandler
 {

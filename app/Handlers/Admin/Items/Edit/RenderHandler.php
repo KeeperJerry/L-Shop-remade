@@ -1,16 +1,16 @@
 <?php
 declare(strict_types=1);
 
-namespace App\Handlers\Admin\Items\Edit;
+namespace app\Handlers\Admin\Items\Edit;
 
-use App\DataTransferObjects\Admin\Items\Edit\Enchantment;
-use App\DataTransferObjects\Admin\Items\Edit\Item;
-use App\DataTransferObjects\Admin\Items\Edit\Result;
-use App\Entity\EnchantmentItem;
-use App\Exceptions\Item\ItemNotFoundException;
-use App\Repository\Enchantment\EnchantmentRepository;
-use App\Repository\Item\ItemRepository;
-use App\Services\Item\Image\Image;
+use app\DataTransferObjects\Admin\Items\Edit\Enchantment;
+use app\DataTransferObjects\Admin\Items\Edit\Item;
+use app\DataTransferObjects\Admin\Items\Edit\Result;
+use app\Entity\EnchantmentItem;
+use app\Exceptions\Item\ItemNotFoundException;
+use app\Repository\Enchantment\EnchantmentRepository;
+use app\Repository\Item\ItemRepository;
+use app\Services\Item\Image\Image;
 use Illuminate\Filesystem\Filesystem;
 
 class RenderHandler
@@ -55,7 +55,7 @@ class RenderHandler
         }
         $images = [];
         foreach ($this->filesystem->allFiles(Image::absolutePath()) as $image) {
-            $images[] = new \App\DataTransferObjects\Admin\Items\Add\Image($image);
+            $images[] = new \app\DataTransferObjects\Admin\Items\Add\Image($image);
         }
 
         $enchantments = [];

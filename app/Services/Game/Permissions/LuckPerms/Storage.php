@@ -1,24 +1,24 @@
 <?php
 declare(strict_types = 1);
 
-namespace App\Services\Game\Permissions\LuckPerms;
+namespace app\Services\Game\Permissions\LuckPerms;
 
-use App\Entity\User;
-use App\Repository\Server\ServerRepository;
-use App\Services\Game\Permissions\Group;
-use App\Services\Game\Permissions\LuckPerms\Entity\GroupPermission;
-use App\Services\Game\Permissions\LuckPerms\Entity\Permission as PermissionEntity;
-use App\Services\Game\Permissions\LuckPerms\Entity\Player as PlayerEntity;
-use App\Services\Game\Permissions\LuckPerms\Entity\PlayerPermission;
-use App\Services\Game\Permissions\LuckPerms\Repository\Group\GroupRepository;
-use App\Services\Game\Permissions\LuckPerms\Repository\GroupPermission\GroupPermissionRepository;
-use App\Services\Game\Permissions\LuckPerms\Repository\Player\PlayerRepository;
-use App\Services\Game\Permissions\Permission;
-use App\Services\Game\Permissions\Player;
-use App\Services\Game\Permissions\PlayerWithUser;
-use App\Services\Game\Permissions\PlayerWithUsername;
-use App\Services\Game\Permissions\PlayerWithUuid;
-use App\Services\Game\Permissions\Storage as StorageInterface;
+use app\Entity\User;
+use app\Repository\Server\ServerRepository;
+use app\Services\Game\Permissions\Group;
+use app\Services\Game\Permissions\LuckPerms\Entity\GroupPermission;
+use app\Services\Game\Permissions\LuckPerms\Entity\Permission as PermissionEntity;
+use app\Services\Game\Permissions\LuckPerms\Entity\Player as PlayerEntity;
+use app\Services\Game\Permissions\LuckPerms\Entity\PlayerPermission;
+use app\Services\Game\Permissions\LuckPerms\Repository\Group\GroupRepository;
+use app\Services\Game\Permissions\LuckPerms\Repository\GroupPermission\GroupPermissionRepository;
+use app\Services\Game\Permissions\LuckPerms\Repository\Player\PlayerRepository;
+use app\Services\Game\Permissions\Permission;
+use app\Services\Game\Permissions\Player;
+use app\Services\Game\Permissions\PlayerWithUser;
+use app\Services\Game\Permissions\PlayerWithUsername;
+use app\Services\Game\Permissions\PlayerWithUuid;
+use app\Services\Game\Permissions\Storage as StorageInterface;
 use Ramsey\Uuid\UuidInterface;
 
 class Storage implements StorageInterface

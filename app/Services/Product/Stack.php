@@ -1,12 +1,12 @@
 <?php
 declare(strict_types = 1);
 
-namespace App\Services\Product;
+namespace app\Services\Product;
 
-use App\Entity\Product;
-use App\Exceptions\Item\InvalidTypeException;
-use App\Exceptions\UnexpectedValueException;
-use App\Services\Item\Type;
+use app\Entity\Product;
+use app\Exceptions\Item\InvalidTypeException;
+use app\Exceptions\UnexpectedValueException;
+use app\Services\Item\Type;
 
 /**
  * Class Stack

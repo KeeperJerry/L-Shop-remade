@@ -1,7 +1,7 @@
 <?php
 declare(strict_types = 1);
 
-namespace App\Services\DateTime\Formatting;
+namespace app\Services\DateTime\Formatting;
 
 use DateTimeInterface;
 

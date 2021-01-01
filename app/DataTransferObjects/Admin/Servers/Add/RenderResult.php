@@ -1,9 +1,9 @@
 <?php
 declare(strict_types = 1);
 
-namespace App\DataTransferObjects\Admin\Servers\Add;
+namespace app\DataTransferObjects\Admin\Servers\Add;
 
-use App\Services\Response\JsonRespondent;
+use app\Services\Response\JsonRespondent;
 
 class RenderResult implements JsonRespondent
 {

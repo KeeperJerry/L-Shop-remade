@@ -1,11 +1,11 @@
 <?php
 declare(strict_types = 1);
 
-namespace App\Http\Requests\Frontend\Profile\Character;
+namespace app\Http\Requests\Frontend\Profile\Character;
 
-use App\Services\Settings\Settings;
-use App\Services\Validation\Rule;
-use App\Services\Validation\RulesBuilder;
+use app\Services\Settings\Settings;
+use app\Services\Validation\Rule;
+use app\Services\Validation\RulesBuilder;
 use Illuminate\Foundation\Http\FormRequest;
 
 class UploadSkinRequest extends FormRequest

@@ -1,9 +1,9 @@
 <?php
 declare(strict_types = 1);
 
-namespace App\DataTransferObjects\Admin\Servers\EditList;
+namespace app\DataTransferObjects\Admin\Servers\EditList;
 
-use App\Entity\Category as Entity;
+use app\Entity\Category as Entity;
 
 class Category implements \JsonSerializable
 {

@@ -1,9 +1,9 @@
 <?php
 declare(strict_types = 1);
 
-namespace App\Mail\Auth;
+namespace app\Mail\Auth;
 
-use App\Entity\Activation;
+use app\Entity\Activation;
 use Illuminate\Bus\Queueable;
 use Illuminate\Contracts\Config\Repository;
 use Illuminate\Contracts\Routing\UrlGenerator;

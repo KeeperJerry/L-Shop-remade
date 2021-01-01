@@ -1,10 +1,10 @@
 <?php
 declare(strict_types = 1);
 
-namespace App\Composers;
+namespace app\Composers;
 
-use App\Services\Settings\DataType;
-use App\Services\Settings\Settings;
+use app\Services\Settings\DataType;
+use app\Services\Settings\Settings;
 use Illuminate\Contracts\Config\Repository;
 use Illuminate\View\View;
 

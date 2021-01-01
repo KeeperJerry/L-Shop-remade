@@ -1,7 +1,7 @@
 <?php
 declare(strict_types = 1);
 
-namespace App\Entity;
+namespace app\Entity;
 
 use Doctrine\Common\Collections\ArrayCollection;
 use Doctrine\Common\Collections\Collection;
@@ -12,8 +12,8 @@ use Doctrine\ORM\Mapping as ORM;
  * of products can be sold. This division is convenient, if you want to divide the products
  * on some basis.
  *
- * @see \App\Entity\Server
- * @see \App\Entity\Product
+ * @see \app\Entity\Server
+ * @see \app\Entity\Product
  *
  * @ORM\Entity
  * @ORM\Table(name="categories")
@@ -37,7 +37,7 @@ class Category
     private $name;
 
     /**
-     * @ORM\ManyToOne(targetEntity="App\Entity\Server", inversedBy="categories", cascade={"persist"})
+     * @ORM\ManyToOne(targetEntity="app\Entity\Server", inversedBy="categories", cascade={"persist"})
      * @ORM\JoinColumns({
      *      @ORM\JoinColumn(onDelete="CASCADE")
      * })
@@ -45,7 +45,7 @@ class Category
     private $server;
 
     /**
-     * @ORM\OneToMany(targetEntity="App\Entity\Product", mappedBy="category")
+     * @ORM\OneToMany(targetEntity="app\Entity\Product", mappedBy="category")
      */
     private $products;
 
@@ -98,7 +98,7 @@ class Category
     /**
      * Creates string representation of object.
      * <p>For example:</p>
-     * <p>App\Entity\Category(id=2, name="Blocks")</p>
+     * <p>app\Entity\Category(id=2, name="Blocks")</p>
      *
      * @return string
      */

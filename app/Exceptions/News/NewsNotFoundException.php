@@ -1,9 +1,9 @@
 <?php
 declare(strict_types = 1);
 
-namespace App\Exceptions\News;
+namespace app\Exceptions\News;
 
-use App\Exceptions\DomainException;
+use app\Exceptions\DomainException;
 
 class NewsNotFoundException extends DomainException
 {

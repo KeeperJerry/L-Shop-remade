@@ -1,16 +1,16 @@
 <?php
 declare(strict_types = 1);
 
-namespace App\Http\Controllers\Frontend\News;
+namespace app\Http\Controllers\Frontend\News;
 
-use App\Exceptions\News\NewsNotFoundException;
-use App\Handlers\Frontend\News\LoadHandler;
-use App\Handlers\Frontend\News\VisitHandler;
-use App\Http\Controllers\Controller;
-use App\Http\Requests\Frontend\Shop\News\LoadRequest;
-use App\Services\DateTime\Formatting\Formatter;
-use App\Services\Response\JsonResponse;
-use App\Services\Response\Status;
+use app\Exceptions\News\NewsNotFoundException;
+use app\Handlers\Frontend\News\LoadHandler;
+use app\Handlers\Frontend\News\VisitHandler;
+use app\Http\Controllers\Controller;
+use app\Http\Requests\Frontend\Shop\News\LoadRequest;
+use app\Services\DateTime\Formatting\Formatter;
+use app\Services\Response\JsonResponse;
+use app\Services\Response\Status;
 use Illuminate\Http\Request;
 use Illuminate\Http\Response;
 

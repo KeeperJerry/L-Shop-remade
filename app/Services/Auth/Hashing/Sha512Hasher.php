@@ -1,7 +1,7 @@
 <?php
 declare(strict_types = 1);
 
-namespace App\Services\Auth\Hashing;
+namespace app\Services\Auth\Hashing;
 
 class Sha512Hasher implements Hasher
 {

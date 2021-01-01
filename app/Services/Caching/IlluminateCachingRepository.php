@@ -1,7 +1,7 @@
 <?php
 declare(strict_types = 1);
 
-namespace App\Services\Caching;
+namespace app\Services\Caching;
 
 use Illuminate\Cache\CacheManager;
 

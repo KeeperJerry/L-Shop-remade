@@ -1,9 +1,9 @@
 <?php
 declare(strict_types = 1);
 
-namespace App\Exceptions\Media\Character;
+namespace app\Exceptions\Media\Character;
 
-use App\Exceptions\Media\ImageException;
+use app\Exceptions\Media\ImageException;
 
 class InvalidResolutionException extends ImageException
 {

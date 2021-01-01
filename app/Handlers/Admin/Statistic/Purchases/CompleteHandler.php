@@ -1,15 +1,15 @@
 <?php
 declare(strict_types = 1);
 
-namespace App\Handlers\Admin\Statistic\Purchases;
+namespace app\Handlers\Admin\Statistic\Purchases;
 
-use App\Entity\Purchase;
-use App\Exceptions\Distributor\DistributionException;
-use App\Exceptions\Purchase\AlreadyCompletedException;
-use App\Exceptions\Purchase\PurchaseNotFoundException;
-use App\Repository\Purchase\PurchaseRepository;
-use App\Services\Purchasing\PurchaseCompleter;
-use App\Services\Purchasing\ViaContext;
+use app\Entity\Purchase;
+use app\Exceptions\Distributor\DistributionException;
+use app\Exceptions\Purchase\AlreadyCompletedException;
+use app\Exceptions\Purchase\PurchaseNotFoundException;
+use app\Repository\Purchase\PurchaseRepository;
+use app\Services\Purchasing\PurchaseCompleter;
+use app\Services\Purchasing\ViaContext;
 
 class CompleteHandler
 {

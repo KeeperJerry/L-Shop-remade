@@ -1,16 +1,16 @@
 <?php
 declare(strict_types = 1);
 
-namespace App\Handlers\Frontend\Profile\Character;
+namespace app\Handlers\Frontend\Profile\Character;
 
-use App\DataTransferObjects\Frontend\Profile\Character\VisitResult;
-use App\Services\Auth\Auth;
-use App\Services\Media\Character\Cloak\Accessor as CloakAccessor;
-use App\Services\Media\Character\Cloak\Image as CloakImage;
-use App\Services\Media\Character\Skin\Accessor as SkinAccessor;
-use App\Services\Media\Character\Skin\Image as SkinImage;
-use App\Services\Settings\DataType;
-use App\Services\Settings\Settings;
+use app\DataTransferObjects\Frontend\Profile\Character\VisitResult;
+use app\Services\Auth\Auth;
+use app\Services\Media\Character\Cloak\Accessor as CloakAccessor;
+use app\Services\Media\Character\Cloak\Image as CloakImage;
+use app\Services\Media\Character\Skin\Accessor as SkinAccessor;
+use app\Services\Media\Character\Skin\Image as SkinImage;
+use app\Services\Settings\DataType;
+use app\Services\Settings\Settings;
 
 class VisitHandler
 {

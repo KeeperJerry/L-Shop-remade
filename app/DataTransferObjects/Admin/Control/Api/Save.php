@@ -1,7 +1,7 @@
 <?php
 declare(strict_types = 1);
 
-namespace App\DataTransferObjects\Admin\Control\Api;
+namespace app\DataTransferObjects\Admin\Control\Api;
 
 class Save
 {

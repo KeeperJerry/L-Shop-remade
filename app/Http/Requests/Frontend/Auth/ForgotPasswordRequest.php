@@ -1,7 +1,7 @@
 <?php
 declare(strict_types = 1);
 
-namespace App\Http\Requests\Frontend\Auth;
+namespace app\Http\Requests\Frontend\Auth;
 
 use Illuminate\Foundation\Http\FormRequest;
 

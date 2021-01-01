@@ -1,10 +1,10 @@
 <?php
 declare(strict_types = 1);
 
-namespace App\Http\Requests\Frontend\Profile\Character;
+namespace app\Http\Requests\Frontend\Profile\Character;
 
-use App\Services\Validation\Rule;
-use App\Services\Validation\RulesBuilder;
+use app\Services\Validation\Rule;
+use app\Services\Validation\RulesBuilder;
 use Illuminate\Contracts\Config\Repository;
 use Illuminate\Foundation\Http\FormRequest;
 

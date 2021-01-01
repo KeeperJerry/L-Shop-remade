@@ -173,17 +173,17 @@ return [
         /*
          * Application Service Providers...
          */
-        App\Providers\AppServiceProvider::class,
-        \App\Providers\RepositoryServiceProvider::class,
-        App\Providers\AuthServiceProvider::class,
-        // App\Providers\BroadcastServiceProvider::class,
-        App\Providers\EventServiceProvider::class,
-        App\Providers\RouteServiceProvider::class,
-        App\Providers\RepositoryServiceProvider::class,
-        App\Providers\ValidationServiceProvider::class,
-        App\Providers\ComposerServiceProvider::class,
-        App\Providers\PurchaseServiceProvider::class,
-        App\Providers\GameServiceProvider::class
+        app\Providers\AppServiceProvider::class,
+        \app\Providers\RepositoryServiceProvider::class,
+        app\Providers\AuthServiceProvider::class,
+        // app\Providers\BroadcastServiceProvider::class,
+        app\Providers\EventServiceProvider::class,
+        app\Providers\RouteServiceProvider::class,
+        app\Providers\RepositoryServiceProvider::class,
+        app\Providers\ValidationServiceProvider::class,
+        app\Providers\ComposerServiceProvider::class,
+        app\Providers\PurchaseServiceProvider::class,
+        app\Providers\GameServiceProvider::class
 
     ],
 

@@ -1,11 +1,11 @@
 <?php
 declare(strict_types = 1);
 
-namespace App\Services\Auth\Checkpoint;
+namespace app\Services\Auth\Checkpoint;
 
-use App\Entity\User;
-use App\Services\Auth\BanManager;
-use App\Services\Auth\Exceptions\BannedException;
+use app\Entity\User;
+use app\Services\Auth\BanManager;
+use app\Services\Auth\Exceptions\BannedException;
 
 /**
  * Class BanCheckpoint

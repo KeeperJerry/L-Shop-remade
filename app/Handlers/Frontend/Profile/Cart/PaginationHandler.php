@@ -1,16 +1,16 @@
 <?php
 declare(strict_types = 1);
 
-namespace App\Handlers\Frontend\Profile\Cart;
+namespace app\Handlers\Frontend\Profile\Cart;
 
-use App\DataTransferObjects\Frontend\Profile\Cart\ListResult;
-use App\DataTransferObjects\Frontend\Profile\Cart\Server;
-use App\Exceptions\InvalidArgumentException;
-use App\Exceptions\Server\ServerNotFoundException;
-use App\Repository\Distribution\DistributionRepository;
-use App\Repository\Server\ServerRepository;
-use App\Services\Auth\Auth;
-use App\Services\Auth\Permissions;
+use app\DataTransferObjects\Frontend\Profile\Cart\ListResult;
+use app\DataTransferObjects\Frontend\Profile\Cart\Server;
+use app\Exceptions\InvalidArgumentException;
+use app\Exceptions\Server\ServerNotFoundException;
+use app\Repository\Distribution\DistributionRepository;
+use app\Repository\Server\ServerRepository;
+use app\Services\Auth\Auth;
+use app\Services\Auth\Permissions;
 
 class PaginationHandler
 {
@@ -113,7 +113,7 @@ class PaginationHandler
     {
         $servers = [];
 
-        /** @var \App\Entity\Server $server */
+        /** @var \app\Entity\Server $server */
         foreach ($this->serverRepository->findAll() as $server) {
             if (!$server->isEnabled()) {
                 if ($this->auth->getUser()->hasPermission(Permissions::SWITCH_SERVERS_STATE)) {

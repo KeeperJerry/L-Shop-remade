@@ -1,7 +1,7 @@
 <?php
 declare(strict_types = 1);
 
-namespace App\DataTransferObjects\Frontend\Shop\News;
+namespace app\DataTransferObjects\Frontend\Shop\News;
 
 class Container implements \JsonSerializable
 {

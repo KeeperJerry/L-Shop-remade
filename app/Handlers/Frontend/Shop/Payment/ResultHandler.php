@@ -1,17 +1,17 @@
 <?php
 declare(strict_types = 1);
 
-namespace App\Handlers\Frontend\Shop\Payment;
+namespace app\Handlers\Frontend\Shop\Payment;
 
-use App\Entity\Purchase;
-use App\Exceptions\Payer\InvalidPaymentDataException;
-use App\Exceptions\Payer\PayerNotFoundException;
-use App\Exceptions\Purchase\AlreadyCompletedException;
-use App\Exceptions\Purchase\PurchaseNotFoundException;
-use App\Repository\Purchase\PurchaseRepository;
-use App\Services\Purchasing\Payers\Payer;
-use App\Services\Purchasing\Payers\Pool;
-use App\Services\Purchasing\PurchaseCompleter;
+use app\Entity\Purchase;
+use app\Exceptions\Payer\InvalidPaymentDataException;
+use app\Exceptions\Payer\PayerNotFoundException;
+use app\Exceptions\Purchase\AlreadyCompletedException;
+use app\Exceptions\Purchase\PurchaseNotFoundException;
+use app\Repository\Purchase\PurchaseRepository;
+use app\Services\Purchasing\Payers\Payer;
+use app\Services\Purchasing\Payers\Pool;
+use app\Services\Purchasing\PurchaseCompleter;
 use Psr\Log\LoggerInterface;
 
 class ResultHandler

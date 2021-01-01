@@ -3,9 +3,9 @@ declare(strict_types = 1);
 
 namespace Tests\Feature\Frontend\Auth;
 
-use App\Services\Auth\Checkpoint\ActivationCheckpoint;
-use App\Services\Auth\Checkpoint\Pool;
-use App\Services\Response\Status;
+use app\Services\Auth\Checkpoint\ActivationCheckpoint;
+use app\Services\Auth\Checkpoint\Pool;
+use app\Services\Response\Status;
 use Tests\TestCase;
 
 class ActivationTest extends TestCase

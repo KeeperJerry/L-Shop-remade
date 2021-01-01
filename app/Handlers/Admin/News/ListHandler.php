@@ -1,12 +1,12 @@
 <?php
 declare(strict_types = 1);
 
-namespace App\Handlers\Admin\News;
+namespace app\Handlers\Admin\News;
 
-use App\DataTransferObjects\Admin\News\ListResult;
-use App\DataTransferObjects\PaginationList;
-use App\Exceptions\InvalidArgumentException;
-use App\Repository\News\NewsRepository;
+use app\DataTransferObjects\Admin\News\ListResult;
+use app\DataTransferObjects\PaginationList;
+use app\Exceptions\InvalidArgumentException;
+use app\Repository\News\NewsRepository;
 
 class ListHandler
 {

@@ -1,10 +1,10 @@
 <?php
 declare(strict_types = 1);
 
-namespace App\Handlers;
+namespace app\Handlers;
 
-use App\Services\Caching\CachingRepository;
-use App\Services\Utils\EnvironmentUtil;
+use app\Services\Caching\CachingRepository;
+use app\Services\Utils\EnvironmentUtil;
 use Illuminate\Contracts\Translation\Translator;
 
 class LangHandler

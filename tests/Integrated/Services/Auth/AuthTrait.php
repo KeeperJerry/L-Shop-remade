@@ -3,7 +3,7 @@ declare(strict_types = 1);
 
 namespace Tests\Integrated\Services\Auth;
 
-use App\Services\Auth\Checkpoint\Pool;
+use app\Services\Auth\Checkpoint\Pool;
 
 trait AuthTrait
 {

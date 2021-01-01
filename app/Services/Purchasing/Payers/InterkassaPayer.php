@@ -1,11 +1,11 @@
 <?php
 declare(strict_types = 1);
 
-namespace App\Services\Purchasing\Payers;
+namespace app\Services\Purchasing\Payers;
 
-use App\Entity\Purchase;
-use App\Services\Purchasing\Payments\Interkassa\Checkout;
-use App\Services\Purchasing\Payments\Interkassa\Payment;
+use app\Entity\Purchase;
+use app\Services\Purchasing\Payments\Interkassa\Checkout;
+use app\Services\Purchasing\Payments\Interkassa\Payment;
 
 /**
  * Class InterkassaPayer

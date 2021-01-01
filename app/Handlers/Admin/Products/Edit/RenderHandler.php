@@ -1,16 +1,16 @@
 <?php
 declare(strict_types = 1);
 
-namespace App\Handlers\Admin\Products\Edit;
+namespace app\Handlers\Admin\Products\Edit;
 
-use App\DataTransferObjects\Admin\Products\Add\Item;
-use App\DataTransferObjects\Admin\Products\Add\Server;
-use App\DataTransferObjects\Admin\Products\Edit\Product;
-use App\DataTransferObjects\Admin\Products\Edit\Result;
-use App\Exceptions\Product\ProductNotFoundException;
-use App\Repository\Item\ItemRepository;
-use App\Repository\Product\ProductRepository;
-use App\Repository\Server\ServerRepository;
+use app\DataTransferObjects\Admin\Products\Add\Item;
+use app\DataTransferObjects\Admin\Products\Add\Server;
+use app\DataTransferObjects\Admin\Products\Edit\Product;
+use app\DataTransferObjects\Admin\Products\Edit\Result;
+use app\Exceptions\Product\ProductNotFoundException;
+use app\Repository\Item\ItemRepository;
+use app\Repository\Product\ProductRepository;
+use app\Repository\Server\ServerRepository;
 
 class RenderHandler
 {

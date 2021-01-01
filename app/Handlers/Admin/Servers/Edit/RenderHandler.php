@@ -1,12 +1,12 @@
 <?php
 declare(strict_types = 1);
 
-namespace App\Handlers\Admin\Servers\Edit;
+namespace app\Handlers\Admin\Servers\Edit;
 
-use App\DataTransferObjects\Admin\Servers\Edit\RenderResult;
-use App\DataTransferObjects\Admin\Servers\Edit\Server;
-use App\Exceptions\Server\ServerNotFoundException;
-use App\Repository\Server\ServerRepository;
+use app\DataTransferObjects\Admin\Servers\Edit\RenderResult;
+use app\DataTransferObjects\Admin\Servers\Edit\Server;
+use app\Exceptions\Server\ServerNotFoundException;
+use app\Repository\Server\ServerRepository;
 use Illuminate\Contracts\Config\Repository;
 
 class RenderHandler

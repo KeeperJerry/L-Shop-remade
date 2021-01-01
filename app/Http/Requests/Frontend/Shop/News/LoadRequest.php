@@ -1,7 +1,7 @@
 <?php
 declare(strict_types = 1);
 
-namespace App\Http\Requests\Frontend\Shop\News;
+namespace app\Http\Requests\Frontend\Shop\News;
 
 use Illuminate\Foundation\Http\FormRequest;
 

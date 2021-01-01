@@ -1,9 +1,9 @@
 <?php
 declare(strict_types = 1);
 
-namespace App\Services\Auth\Exceptions;
+namespace app\Services\Auth\Exceptions;
 
-use App\Exceptions\DomainException;
+use app\Exceptions\DomainException;
 
 class UserDoesNotExistException extends DomainException
 {

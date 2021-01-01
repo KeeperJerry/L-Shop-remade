@@ -1,7 +1,7 @@
 <?php
 declare(strict_types = 1);
 
-namespace App\Services\Validation;
+namespace app\Services\Validation;
 
 /**
  * Class Rule

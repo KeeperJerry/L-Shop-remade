@@ -1,9 +1,9 @@
 <?php
 declare(strict_types = 1);
 
-namespace App\Exceptions\Permission;
+namespace app\Exceptions\Permission;
 
-use App\Exceptions\DomainException;
+use app\Exceptions\DomainException;
 
 class PermissionNotFoundException extends DomainException
 {

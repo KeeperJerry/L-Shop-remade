@@ -3,11 +3,11 @@ declare(strict_types = 1);
 
 namespace Tests\Integrated\Services\Auth;
 
-use App\Entity\User;
-use App\Services\Auth\Auth;
-use App\Services\Auth\BanManager;
-use App\Services\Auth\Checkpoint\BanCheckpoint;
-use App\Services\Auth\Exceptions\BannedException;
+use app\Entity\User;
+use app\Services\Auth\Auth;
+use app\Services\Auth\BanManager;
+use app\Services\Auth\Checkpoint\BanCheckpoint;
+use app\Services\Auth\Exceptions\BannedException;
 use Tests\TestCase;
 
 class BanManagerTest extends TestCase

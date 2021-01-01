@@ -1,18 +1,18 @@
 <?php
 declare(strict_types = 1);
 
-namespace App\Http\Controllers\Admin\Servers;
+namespace app\Http\Controllers\Admin\Servers;
 
-use App\Exceptions\Server\ServerNotFoundException;
-use App\Handlers\Admin\Servers\DeleteHandler;
-use App\Handlers\Admin\Servers\ListHandler;
-use App\Http\Controllers\Controller;
-use App\Services\Auth\Permissions;
-use App\Services\Notification\Notifications\Error;
-use App\Services\Notification\Notifications\Info;
-use App\Services\Response\JsonResponse;
-use App\Services\Response\Status;
-use function App\permission_middleware;
+use app\Exceptions\Server\ServerNotFoundException;
+use app\Handlers\Admin\Servers\DeleteHandler;
+use app\Handlers\Admin\Servers\ListHandler;
+use app\Http\Controllers\Controller;
+use app\Services\Auth\Permissions;
+use app\Services\Notification\Notifications\Error;
+use app\Services\Notification\Notifications\Info;
+use app\Services\Response\JsonResponse;
+use app\Services\Response\Status;
+use function app\permission_middleware;
 use Illuminate\Http\Request;
 use Illuminate\Http\Response;
 

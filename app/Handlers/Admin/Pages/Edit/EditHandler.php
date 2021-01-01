@@ -1,11 +1,11 @@
 <?php
 declare(strict_types = 1);
 
-namespace App\Handlers\Admin\Pages\Edit;
+namespace app\Handlers\Admin\Pages\Edit;
 
-use App\DataTransferObjects\Admin\Pages\Edit\Edit;
-use App\Exceptions\Page\PageNotFoundException;
-use App\Repository\Page\PageRepository;
+use app\DataTransferObjects\Admin\Pages\Edit\Edit;
+use app\Exceptions\Page\PageNotFoundException;
+use app\Repository\Page\PageRepository;
 
 class EditHandler
 {

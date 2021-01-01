@@ -1,9 +1,9 @@
 <?php
 declare(strict_types = 1);
 
-namespace App\Exceptions\Ban;
+namespace app\Exceptions\Ban;
 
-use App\Exceptions\DomainException;
+use app\Exceptions\DomainException;
 
 class BanNotFoundException extends DomainException
 {

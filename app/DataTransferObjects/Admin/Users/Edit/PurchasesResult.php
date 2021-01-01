@@ -1,10 +1,10 @@
 <?php
 declare(strict_types = 1);
 
-namespace App\DataTransferObjects\Admin\Users\Edit;
+namespace app\DataTransferObjects\Admin\Users\Edit;
 
-use App\DataTransferObjects\Frontend\Profile\Purchases\Purchase;
-use App\Services\Response\JsonRespondent;
+use app\DataTransferObjects\Frontend\Profile\Purchases\Purchase;
+use app\Services\Response\JsonRespondent;
 use Illuminate\Contracts\Pagination\LengthAwarePaginator;
 
 class PurchasesResult implements JsonRespondent
