@@ -7,9 +7,6 @@ use app\Services\Auth\Auth;
 use app\Services\Media\Character\Skin\Image;
 use Illuminate\Filesystem\Filesystem;
 
-// Знакомая библиотека
-use Illuminate\Support\Facades\DB;
-
 class DeleteSkinHandler
 {
     /**
@@ -30,7 +27,7 @@ class DeleteSkinHandler
 
     public function handle(): bool
     {
-        $skinHash = DB::table('users')->where('id', $this->auth->getUser()->getId())->value('skin_hash');
+        $skinHash = $this->auth->getUser()->getSkinHash();
         if (Image::isDefault($skinHash)) {
             return false;
         }

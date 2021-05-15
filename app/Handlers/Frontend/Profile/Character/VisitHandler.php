@@ -11,7 +11,6 @@ use app\Services\Media\Character\Skin\Accessor as SkinAccessor;
 use app\Services\Media\Character\Skin\Image as SkinImage;
 use app\Services\Settings\DataType;
 use app\Services\Settings\Settings;
-use Illuminate\Support\Facades\DB;
 
 class VisitHandler
 {
@@ -66,11 +65,7 @@ class VisitHandler
             ->setAllowSetCloak($this->cloakAccessor->allowSet($this->auth->getUser()))
             ->setAvailableSkinImageSizes($availableSkinImageSizes)
             ->setAvailableCloakImageSizes($availableCloakImageSizes)
-            ->setSkinDefault(SkinImage::isDefault(
-                DB::table('users')->where('username', $this->auth->getUser()->getUsername())->value('skin_hash') ?? ''
-            ))
-            ->setCloakExists(CloakImage::exists(
-                DB::table('users')->where('username', $this->auth->getUser()->getUsername())->value('cloak_hash') ?? ''
-            ));
+            ->setSkinDefault(SkinImage::isDefault($this->auth->getUser()->getSkinHash() ?? ''))
+            ->setCloakExists(CloakImage::exists($this->auth->getUser()->getCloakHash() ?? ''));
     }
 }

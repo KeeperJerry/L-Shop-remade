@@ -7,9 +7,6 @@ use app\Services\Auth\Auth;
 use app\Services\Media\Character\Cloak\Image;
 use Illuminate\Filesystem\Filesystem;
 
-// Знакомая библиотека
-use Illuminate\Support\Facades\DB;
-
 class DeleteCloakHandler
 {
     /**
@@ -30,7 +27,7 @@ class DeleteCloakHandler
 
     public function handle(): bool
     {
-        $cloakHash = DB::table('users')->where('id', $this->auth->getUser()->getId())->value('cloak_hash');
+        $cloakHash = $this->auth->getUser()->getCloakHash();
         if (!Image::exists($cloakHash)) {
             return false;
         }

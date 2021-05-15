@@ -242,11 +242,8 @@ class User implements HasRoles, HasPermissions
      */
     public function getBalance(): float
     {
-		$prefix = DB::getTablePrefix(); // Доступ из коробки для своих префиксов (да да, для школоты)
-		// Мать еб@л этих сессии
-		$result = DB::selectOne('SELECT balance FROM '.$prefix.'users WHERE username = ?', [ $this->getUsername() ]);
-		return $result->balance;
-		//return $this->balance;
+        // Так а чё, так нельзя что ли было сделать?
+		return DB::table('users')->where('id', $this->id)->value('balance');
     }
 
     /**
@@ -279,19 +276,7 @@ class User implements HasRoles, HasPermissions
      */
     public function getSkinHash(): string
     {
-        return $this->skinHash;
-    }
-
-    /**
-     * @param string $hash
-     *
-     * @return User
-     */
-    public function setSkinHash(string $hash): User
-    {
-        $this->skinHash = $hash;
-
-        return $this;
+		return DB::table('users')->where('id', $this->id)->value('skin_hash');
     }
 
     /**
@@ -299,19 +284,7 @@ class User implements HasRoles, HasPermissions
      */
     public function getCloakHash(): string
     {
-        return $this->cloakHash;
-    }
-
-    /**
-     * @param string $hash
-     *
-     * @return User
-     */
-    public function setCloakHash(string $hash): User
-    {
-        $this->cloakHash = $hash;
-
-        return $this;
+		return DB::table('users')->where('id', $this->id)->value('cloak_hash');
     }
 
     /**
