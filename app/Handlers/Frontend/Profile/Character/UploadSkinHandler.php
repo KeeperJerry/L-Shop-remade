@@ -71,6 +71,8 @@ class UploadSkinHandler
     public function handle(UploadedFile $file): void
     {
         $image = $this->imageManager->make($file);
+        $hash = sha1_file($file->getPathname());
+
         if ($this->accessor->allowSetHD($this->auth->getUser())) {
             if (!$this->validator->validate($image->width(), $image->height())) {
                 throw new InvalidRatioException($image->width(), $image->height());
@@ -80,7 +82,7 @@ class UploadSkinHandler
                 throw new InvalidResolutionException($image->width(), $image->height());
             }
 
-            $this->move($image);
+            $this->move($image, $hash);
 
             return;
         }
@@ -94,7 +96,7 @@ class UploadSkinHandler
                 throw new InvalidResolutionException($image->width(), $image->height());
             }
 
-            $this->move($image);
+            $this->move($image, $hash);
 
             return;
         }
@@ -107,10 +109,8 @@ class UploadSkinHandler
      *
      * @throws FileException
      */
-    private function move(Image $image): void
+    private function move(Image $image, string $hash): void
     {
-		// Привет костыли, помните меня?
-		$usersUUID = DB::table('users')->where('username', $this->auth->getUser()->getUsername())->value('uuid');
-        $image->save(SkinImage::getAbsolutePath($usersUUID));
+        $image->save(SkinImage::getAbsolutePath($hash));
     }
 }
