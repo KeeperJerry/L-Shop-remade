@@ -30,13 +30,11 @@ class DeleteCloakHandler
 
     public function handle(): bool
     {
-		// Почемы бы и нет?
-		$usersUUID = DB::table('users')->where('username', $this->auth->getUser()->getUsername())->value('uuid');
-        // $username = $this->auth->getUser()->getUsername();
-        if (!Image::exists($usersUUID)) {
+        $cloakHash = DB::table('users')->where('id', $this->auth->getUser()->getId())->value('cloak_hash');
+        if (!Image::exists($cloakHash)) {
             return false;
         }
 
-        return $this->filesystem->delete(Image::absolutePath($usersUUID));
+        return $this->filesystem->delete(Image::absolutePath($cloakHash));
     }
 }

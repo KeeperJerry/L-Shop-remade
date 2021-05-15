@@ -30,13 +30,11 @@ class DeleteSkinHandler
 
     public function handle(): bool
     {
-		// Почемы бы и нет?
-		$usersUUID = DB::table('users')->where('username', $this->auth->getUser()->getUsername())->value('uuid');
-        // $username = $this->auth->getUser()->getUsername();
-        if (Image::isDefault($usersUUID)) {
+        $skinHash = DB::table('users')->where('id', $this->auth->getUser()->getId())->value('skin_hash');
+        if (Image::isDefault($skinHash)) {
             return false;
         }
 
-        return $this->filesystem->delete(Image::absolutePath($usersUUID));
+        return $this->filesystem->delete(Image::absolutePath($skinHash));
     }
 }
