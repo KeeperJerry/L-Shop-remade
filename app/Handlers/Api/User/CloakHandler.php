@@ -36,7 +36,7 @@ class CloakHandler
     {
         $this->checkUser($username);
         $cloakHash = DB::table('users')->where('username', $username)->value('cloak_hash') ?? '';
-        if (!CloakImage::exists($username)) {
+        if (!CloakImage::exists($cloakHash)) {
             return null;
         }
         $canvas = $this->imageManager->make(CloakImage::absolutePath($cloakHash));
@@ -48,7 +48,7 @@ class CloakHandler
     {
         $this->checkUser($username);
         $cloakHash = DB::table('users')->where('username', $username)->value('cloak_hash') ?? '';
-        if (!CloakImage::exists($username)) {
+        if (!CloakImage::exists($cloakHash)) {
             return null;
         }
         $canvas = $this->imageManager->make(CloakImage::absolutePath($cloakHash));
