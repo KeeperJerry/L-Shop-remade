@@ -88,6 +88,20 @@ class User implements HasRoles, HasPermissions
     private $serverId;
 
     /**
+     * SHA1 skin file hash eq. filename.
+     *
+     * @ORM\Column(name="skin_hash", type="string", length=40, nullable=true)
+     */
+    private $skinHash;
+
+    /**
+     * SHA1 cloak file hash eq. filename.
+     *
+     * @ORM\Column(name="cloak_hash", type="string", length=40, nullable=true)
+     */
+    private $cloakHash;
+
+    /**
      * Roles that the user has.
      *
      * @ORM\ManyToMany(targetEntity="app\Entity\Role", mappedBy="users", cascade={"persist", "merge"})
@@ -258,6 +272,46 @@ class User implements HasRoles, HasPermissions
     public function getUuid(): UuidInterface
     {
         return Uuid::fromString($this->uuid);
+    }
+
+    /**
+     * @return string
+     */
+    public function getSkinHash(): string
+    {
+        return $this->skinHash;
+    }
+
+    /**
+     * @param string $hash
+     *
+     * @return User
+     */
+    public function setSkinHash(string $hash): User
+    {
+        $this->skinHash = $hash;
+
+        return $this;
+    }
+
+    /**
+     * @return string
+     */
+    public function getCloakHash(): string
+    {
+        return $this->cloakHash;
+    }
+
+    /**
+     * @param string $hash
+     *
+     * @return User
+     */
+    public function setCloakHash(string $hash): User
+    {
+        $this->cloakHash = $hash;
+
+        return $this;
     }
 
     /**
