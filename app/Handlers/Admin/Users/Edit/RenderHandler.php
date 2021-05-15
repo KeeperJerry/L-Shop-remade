@@ -83,14 +83,13 @@ class RenderHandler
         $activation = $this->activator->activation($user);
         $activatedAt = $activation !== null ? $activation->getCompletedAt() : null;
 
-        $cloakExists = CloakImage::exists($user->getUsername());
         $userDTO = (new User($user, $this->banManager))
             ->setSkinFront(route('api.skin.front', ['username' => $user->getUsername()]))
             ->setSkinBack(route('api.skin.back', ['username' => $user->getUsername()]))
             ->setCloakFront(route('api.cloak.front', ['username' => $user->getUsername()]))
             ->setCloakBack(route('api.cloak.back', ['username' => $user->getUsername()]))
-            ->setSkinDefault(SkinImage::isDefault($user->getUsername()))
-            ->setCloakExists($cloakExists)
+            ->setSkinDefault(SkinImage::isDefault($user->getSkinHash()))
+            ->setCloakExists(CloakImage::exists($user->getCloakHash()))
             ->setActivatedAt((new JavaScriptFormatter())->format($activatedAt))
             ->setBanned($this->banManager->isBanned($user));
 

@@ -13,6 +13,7 @@ use Doctrine\Common\Collections\Collection;
 use Doctrine\ORM\Mapping as ORM;
 use Ramsey\Uuid\Uuid;
 use Ramsey\Uuid\UuidInterface;
+use Illuminate\Support\Facades\DB;
 
 /**
  * Represents a user in the system.
@@ -85,6 +86,20 @@ class User implements HasRoles, HasPermissions
      * @ORM\Column(name="server_id", type="string", length=41, nullable=true)
      */
     private $serverId;
+
+    /**
+     * SHA1 skin file hash eq. filename.
+     *
+     * @ORM\Column(name="skin_hash", type="string", length=40, nullable=true)
+     */
+    private $skinHash;
+
+    /**
+     * SHA1 cloak file hash eq. filename.
+     *
+     * @ORM\Column(name="cloak_hash", type="string", length=40, nullable=true)
+     */
+    private $cloakHash;
 
     /**
      * Roles that the user has.
@@ -227,11 +242,8 @@ class User implements HasRoles, HasPermissions
      */
     public function getBalance(): float
     {
-		$prefix = DB::getTablePrefix(); // Доступ из коробки для своих префиксов (да да, для школоты)
-		// Мать еб@л этих сессии
-		$result = DB::selectOne('SELECT balance FROM '.$prefix.'users WHERE username = ?', [ $this->getUsername() ]);
-		return $result->balance;
-		//return $this->balance;
+        // Так а чё, так нельзя что ли было сделать?
+		return DB::table('users')->where('id', $this->id)->value('balance');
     }
 
     /**
@@ -257,6 +269,22 @@ class User implements HasRoles, HasPermissions
     public function getUuid(): UuidInterface
     {
         return Uuid::fromString($this->uuid);
+    }
+
+    /**
+     * @return string
+     */
+    public function getSkinHash(): string
+    {
+		return DB::table('users')->where('id', $this->id)->value('skin_hash');
+    }
+
+    /**
+     * @return string
+     */
+    public function getCloakHash(): string
+    {
+		return DB::table('users')->where('id', $this->id)->value('cloak_hash');
     }
 
     /**

@@ -34,24 +34,24 @@ class CloakHandler
 
     public function front(string $username): ?Image
     {
-		$usersUUID = DB::table('users')->where('username', $username)->value('uuid');
         $this->checkUser($username);
-        if (!CloakImage::exists($username)) {
+        $cloakHash = DB::table('users')->where('username', $username)->value('cloak_hash') ?? '';
+        if (!CloakImage::exists($cloakHash)) {
             return null;
         }
-        $canvas = $this->imageManager->make(CloakImage::absolutePath($usersUUID));
+        $canvas = $this->imageManager->make(CloakImage::absolutePath($cloakHash));
 
         return $this->builder($canvas)->front(256);
     }
 
     public function back(string $username): ?Image
     {
-		$usersUUID = DB::table('users')->where('username', $username)->value('uuid');
         $this->checkUser($username);
-        if (!CloakImage::exists($username)) {
+        $cloakHash = DB::table('users')->where('username', $username)->value('cloak_hash') ?? '';
+        if (!CloakImage::exists($cloakHash)) {
             return null;
         }
-        $canvas = $this->imageManager->make(CloakImage::absolutePath($usersUUID));
+        $canvas = $this->imageManager->make(CloakImage::absolutePath($cloakHash));
 
         return $this->builder($canvas)->back(256);
     }

@@ -39,10 +39,10 @@ class DeleteSkinHandler
             throw UserNotFoundException::byId($userId);
         }
 
-        if (Image::isDefault($user->getUsername())) {
+        if (Image::isDefault($user->getSkinHash())) {
             return false;
         }
 
-        return $this->filesystem->delete(Image::getAbsolutePath($user->getUsername()));
+        return $this->filesystem->delete(Image::getAbsolutePath($user->getSkinHash()));
     }
 }

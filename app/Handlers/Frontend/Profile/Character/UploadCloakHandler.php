@@ -71,6 +71,8 @@ class UploadCloakHandler
     public function handle(UploadedFile $file)
     {
         $image = $this->imageManager->make($file);
+        $hash = sha1_file($file->getPathname());
+
         if ($this->accessor->allowSetHD($this->auth->getUser())) {
             if (!$this->validator->validate($image->width(), $image->height())) {
                 throw new InvalidRatioException($image->width(), $image->height());
@@ -80,7 +82,7 @@ class UploadCloakHandler
                 throw new InvalidResolutionException($image->width(), $image->height());
             }
 
-            $this->move($image);
+            $this->move($image, $hash);
 
             return;
         }
@@ -94,7 +96,7 @@ class UploadCloakHandler
                 throw new InvalidResolutionException($image->width(), $image->height());
             }
 
-            $this->move($image);
+            $this->move($image, $hash);
 
             return;
         }
@@ -107,10 +109,9 @@ class UploadCloakHandler
      *
      * @throws FileException
      */
-    private function move(Image $image)
+    private function move(Image $image, string $hash)
     {
-		// Привет костыли, помните меня?
-		$usersUUID = DB::table('users')->where('username', $this->auth->getUser()->getUsername())->value('uuid');
-        $image->save(CloakImage::getAbsolutePath($usersUUID));
+        DB::table('users')->where('id', $this->auth->getUser()->getId())->update(['cloak_hash' => $hash]);
+        $image->save(CloakImage::getAbsolutePath($hash));
     }
 }

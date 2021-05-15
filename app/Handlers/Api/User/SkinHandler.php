@@ -34,20 +34,18 @@ class SkinHandler
 
     public function front(string $username): Image
     {
-		// Костыль здесь
-		$usersUUID = DB::table('users')->where('username', $username)->value('uuid');
         $this->checkUser($username);
-        $canvas = $this->imageManager->make(SkinImage::absolutePath($usersUUID ));
+        $skinHash = DB::table('users')->where('username', $username)->value('skin_hash') ?? '';
+        $canvas = $this->imageManager->make(SkinImage::absolutePath($skinHash));
 
         return $this->builder($canvas)->front(256);
     }
 
     public function back(string $username): Image
     {
-		// Костыль здесь
-		$usersUUID = DB::table('users')->where('username', $username)->value('uuid');
         $this->checkUser($username);
-        $canvas = $this->imageManager->make(SkinImage::absolutePath($usersUUID));
+        $skinHash = DB::table('users')->where('username', $username)->value('skin_hash') ?? '';
+        $canvas = $this->imageManager->make(SkinImage::absolutePath($skinHash));
 
         return $this->builder($canvas)->back(256);
     }
