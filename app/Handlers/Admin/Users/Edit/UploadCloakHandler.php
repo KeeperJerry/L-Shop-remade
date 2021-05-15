@@ -10,6 +10,7 @@ use app\Repository\User\UserRepository;
 use app\Services\Media\Character\Cloak\Image as CloakImage;
 use app\Services\Validation\CloakValidator;
 use Illuminate\Http\UploadedFile;
+use Illuminate\Support\Facades\DB;
 use Intervention\Image\Image;
 use Intervention\Image\ImageManager;
 
@@ -51,19 +52,22 @@ class UploadCloakHandler
         }
 
         $image = $this->imageManager->make($file);
+        $hash = sha1_file($file->getPathname());
+
         if (!$this->validator->validate($image->width(), $image->height())) {
             throw new InvalidRatioException($image->width(), $image->height());
         }
 
-        $this->move($user, $image);
+        $this->move($user, $image, $hash);
     }
 
     /**
      * @param User  $user
      * @param Image $image
      */
-    private function move(User $user, Image $image): void
+    private function move(User $user, Image $image, string $hash): void
     {
-        $image->save(CloakImage::getAbsolutePath($user->getUsername()));
+        DB::table('users')->where('id', $user->getId())->update(['cloak_hash' => $hash]);
+        $image->save(CloakImage::getAbsolutePath($hash));
     }
 }

@@ -39,10 +39,10 @@ class DeleteCloakHandler
             throw UserNotFoundException::byId($userId);
         }
 
-        if (!Image::exists($user->getUsername())) {
+        if (!Image::exists($user->getCloakHash())) {
             return false;
         }
 
-        return $this->filesystem->delete(Image::getAbsolutePath($user->getUsername()));
+        return $this->filesystem->delete(Image::getAbsolutePath($user->getCloakHash()));
     }
 }
