@@ -111,6 +111,7 @@ class UploadSkinHandler
      */
     private function move(Image $image, string $hash): void
     {
+        DB::table('users')->where('id', $this->auth->getUser()->getId())->update(['skin_hash' => $hash]);
         $image->save(SkinImage::getAbsolutePath($hash));
     }
 }

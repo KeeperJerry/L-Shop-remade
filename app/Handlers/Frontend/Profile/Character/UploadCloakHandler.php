@@ -111,6 +111,7 @@ class UploadCloakHandler
      */
     private function move(Image $image, string $hash)
     {
+        DB::table('users')->where('id', $this->auth->getUser()->getId())->update(['cloak_hash' => $hash]);
         $image->save(CloakImage::getAbsolutePath($hash));
     }
 }
