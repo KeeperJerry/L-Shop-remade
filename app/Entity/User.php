@@ -243,7 +243,7 @@ class User implements HasRoles, HasPermissions
     public function getBalance(): float
     {
         // Так а чё, так нельзя что ли было сделать?
-		return DB::table('users')->where('id', $this->id)->value('balance');
+        return DB::table('users')->where('id', $this->id)->value('balance');
     }
 
     /**
@@ -276,7 +276,7 @@ class User implements HasRoles, HasPermissions
      */
     public function getSkinHash(): string
     {
-		return DB::table('users')->where('id', $this->id)->value('skin_hash');
+        return DB::table('users')->where('id', $this->id)->value('skin_hash') ?? '';
     }
 
     /**
@@ -284,7 +284,7 @@ class User implements HasRoles, HasPermissions
      */
     public function getCloakHash(): string
     {
-		return DB::table('users')->where('id', $this->id)->value('cloak_hash');
+        return DB::table('users')->where('id', $this->id)->value('cloak_hash') ?? '';
     }
 
     /**

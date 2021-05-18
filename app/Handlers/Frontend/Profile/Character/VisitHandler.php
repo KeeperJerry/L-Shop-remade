@@ -65,7 +65,7 @@ class VisitHandler
             ->setAllowSetCloak($this->cloakAccessor->allowSet($this->auth->getUser()))
             ->setAvailableSkinImageSizes($availableSkinImageSizes)
             ->setAvailableCloakImageSizes($availableCloakImageSizes)
-            ->setSkinDefault(SkinImage::isDefault($this->auth->getUser()->getSkinHash() ?? ''))
-            ->setCloakExists(CloakImage::exists($this->auth->getUser()->getCloakHash() ?? ''));
+            ->setSkinDefault(SkinImage::isDefault($this->auth->getUser()->getSkinHash()))
+            ->setCloakExists(CloakImage::exists($this->auth->getUser()->getCloakHash()));
     }
 }
